@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Psychology of Tackling Hard Problems"
-date:   2012-03-27 12:00:00 -0800
+date:   2012-03-27
 ---
 
 The thing about hard problems is that there are many difficulties and few solutions. Sounds obvious, but what’s often overlooked is the psychological component to this asymmetry. There’s a simple reason why tackling a hard problem can lead to depressive symptoms: you’re necessarily wrong 99% of the time.

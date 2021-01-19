@@ -1,0 +1,26 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.center-image{
+    margin: 0 auto;
+    display: block;
+}
+
+.inline-image {
+    display: inline-block;
+    float: left;
+}
+
+img + em { 
+    font-size: 13px;
+    display: block; 
+    text-align: center;
+    color: gray;
+}
+
+blockquote em {
+    display: block;
+    text-align: right;
+}
