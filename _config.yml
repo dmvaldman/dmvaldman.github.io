@@ -11,7 +11,7 @@
 #   sort_reverse: true
 
 # jekyll-paginate configuration
-paginate:            5
+paginate:            6
 
 # Build settings
 markdown:            kramdown
@@ -20,9 +20,10 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Lagrange'
-description:	       'a minimalist Jekyll theme'
-author:              'Paul Le'
+title:		           'Writings'
+description:	       ''
+author:              'David Valdman'
+twitter_username:    'dmvaldman'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

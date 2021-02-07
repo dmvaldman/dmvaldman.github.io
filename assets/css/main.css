@@ -68,8 +68,43 @@ blockquote {
   padding: 0px 15px;
   border-left: 0.25em solid #ccc;
   color: #999;
-  line-height: 1.5;
+  line-height: 2;
+  position:relative;
 }
+
+blockquote em {
+  display: block;
+  font-style: italic;  
+}
+
+blockquote em:before {
+  content: "—";
+}
+
+blockquote:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    height: 2em;
+    width: 5px;
+    margin-top: -1em;
+}
+
+
+/* blockquote p:first-of-type:before {
+	content: '\201c';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  font-size:40px;
+} */
+
+/* blockquote p:last-of-type:after {
+	content: '\201d';
+  position: relative;
+  font-size:30px;
+} */
 
 hr {
   border-top: 1px solid #ccc;
@@ -82,7 +117,7 @@ hr {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  width: 800px;
 }
 
 /*48em*/
@@ -130,8 +165,8 @@ hr {
 }
 
 .thumbnail-container img{
-  margin-top: -11.5%;
-  margin-bottom: -11.5%;
+  margin-top: -10%;
+  margin-bottom: -10%;
 }
 
 /*
