@@ -3,8 +3,8 @@ layout: post
 title: "A Space for the Unfamiliar"
 date: 2019-03-04
 excerpt: "It was made as if to create separation from this world."
-image: unfamiliar_banner_16_9.jpg
-categories: travel
+image: unfamiliar/unfamiliar_banner_16_9.jpg
+tags: [travel]
 ---
 
 “Where are you going camping?” a friend asked. “North.” I said.
@@ -19,11 +19,11 @@ This is a story about creating space for the unfamiliar.
 
 I needed to use the bathroom. In a hurry, I stopped at the first restaurant I came across and walked into this:
 
-![](/assets/img/1*_w2mHcYEJxG_PLzwHvU7HQ.png)
+![](/assets/img/unfamiliar/1*_w2mHcYEJxG_PLzwHvU7HQ.png)
 
 There was a table with a medley of Russian plates and a sign that read, “Welcome! Please help yourself with food and pay from your wisdom.”
 
-![](/assets/img/1*nS55ajJeEthEZSdEu5TfIg.png)
+![](/assets/img/unfamiliar/1*nS55ajJeEthEZSdEu5TfIg.png)
 
 I tiptoed around looking for staff while trying to balance the material need to pee and the abstract desire to comprehend this alternate universe.
 
@@ -31,13 +31,13 @@ I tiptoed around looking for staff while trying to balance the material need to 
 
 In the bathroom was an ad for a chef. No cooking experience necessary, salary $0/yr.
 
-![](/assets/img/1*UIa4_Pr54OFDK7KSU0T3Qw.png)
+![](/assets/img/unfamiliar/1*UIa4_Pr54OFDK7KSU0T3Qw.png)
 
 I mentioned I was going to stay at a campsite nearby and they offered me their trailer out back. I washed their dishes that night and swept their floors the next morning.
 
 We became friends. They asked if I could stay longer, but I had to say no.
 
-![](/assets/img/1*OpzDw3dPE4xIQYryMnq3yg.jpeg)
+![](/assets/img/unfamiliar/1*OpzDw3dPE4xIQYryMnq3yg.jpeg)
 
 ---
 
@@ -55,13 +55,13 @@ This gas station is not on Google maps though it’s existed since 1974. I found
 
 I left thinking “Albion” is a great name for a post-apocalyptic town.
 
-![](/assets/img/1*k67GXWeiM5FpkC-sKmmOqw.jpeg)
+![](/assets/img/unfamiliar/1*k67GXWeiM5FpkC-sKmmOqw.jpeg)
 
 I turned on Highway 128 towards Hendry Grove, a Redwood park where I’d set up camp for the night. The road follows the Navarro River Redwoods: 15 miles of a twisty two-lane highway through thick forest.
 
 For 30 minutes I glided though an aspect-ratio of long, narrow and tall.
 
-![](/assets/img/1*qSl7OGi6lnQQ5kLGCsn3og.png)
+![](/assets/img/unfamiliar/1*qSl7OGi6lnQQ5kLGCsn3og.png)
 
 ---
 
@@ -73,7 +73,7 @@ Redwood groves are pretty during the day, but boy do they get cold at night. In 
 
 While making coffee I reminded myself of the last time I was this cold. The memory came distinctly, vividly.
 
-![](/assets/img/1*nSc7Gje8RT2seW2fibcekg.jpeg)
+![](/assets/img/unfamiliar/1*nSc7Gje8RT2seW2fibcekg.jpeg)
 
 The last thing you want to do when you’re cold is ride a motorcycle. I stopped often to warm up, but everywhere I stopped I was cold.
 
@@ -83,7 +83,7 @@ As I rode from the coast to the Central Valley the skies cleared and I could fee
 
 My experience of this trip is encapsulated in a place I visited along the way.
 
-![](/assets/img/1*GAg5SoMcZDqWLKHzaUsRFQ.png)
+![](/assets/img/unfamiliar/1*GAg5SoMcZDqWLKHzaUsRFQ.png)
 
 Just outside the town of Sea Ranch is a [chapel](http://www.thesearanchchapel.org/). Everything about its design and construction is strange. The craftsmanship is evident, but the specifications are a mystery.
 
@@ -91,7 +91,7 @@ The patterns are foreign. The proportions are odd. Pieces fit crookedly. Lines m
 
 From the outside, you are at a loss to describe its volume. From the inside, you are at a loss to describe its shape.
 
-![](/assets/img/unfamiliar_chapel_interior.jpg)
+![](/assets/img/unfamiliar/unfamiliar_chapel_interior.jpg)
 
 It was made as if to create separation from this world; so that when you step inside, you are compelled to create your own.
 

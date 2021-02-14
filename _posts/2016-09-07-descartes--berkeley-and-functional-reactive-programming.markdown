@@ -3,7 +3,7 @@ layout: post
 title: "Descartes, Berkeley and Functional Reactive Programming"
 date:	2016-09-07
 excerpt: "Beneath the concepts of functional reactive program is a deeper principle."
-image: frp_banner_16_9.png
+image: frp/frp_banner_16_9.png
 tags: [philosophy, software]
 ---
 
@@ -50,17 +50,17 @@ This is the _reactive_ `tree`. Its patterns are events and transforms. In its pu
 
 The object-oriented and reactive approaches give two different answers to our thought experiment because they embody two contradictory philosophies of epistemology: Rationalism, popularized by Descartes in the late 1600s, and Empiricism popularized by Berkeley in the early 1700s.
 
-![](/assets/img/1*6YaJYhP7N-Ue4p3CWr1cYw.png)
+![](/assets/img/frp/1*6YaJYhP7N-Ue4p3CWr1cYw.png)
 
 Descartes takes as a short break from writing a Java interfaceDescartes, in a streak of fanatical skepticism, found he could only be sure of one thing: his own existence. He came to this conclusion because he couldn’t doubt the existence of his thoughts and concluded there must be some entity doing the thinking, thus coining the phrase, *cogito ergo sum*: I think therefore I am. In other words: by acknowledging that there is some internal state that is changing, there must be some agent for whom the state belongs. To Descartes, changes of state is proof of existence — just like our first `tree`.
 
-![](/assets/img/1*e_9xwJkCExj4-jBsLgGJag.png)
+![](/assets/img/frp/1*e_9xwJkCExj4-jBsLgGJag.png)
 
 Berkeley seen pondering Haskell type definitionsSoon after Descartes comes George Berkeley. Berkeley denounced the realist’s view. To Berkeley, it made no sense for material objects, like trees, to have existence. Existence only comes to us through thoughts (mental as opposed to physical experience), and thoughts must assimilate in the mind to exist. Material objects are deceptions; their essence is not their physicality but their ability to transform the immaterial. If a thought is not assimilated in the mind, it has no existence. Thus he popularized the Latin phrase _esse percepi_: to be is to be perceived.
 
 Let’s translate Berkeley’s reality into code. For our second `tree` to make a sound a mind must interpret it. We will create a chain of causality, starting from the tree falling, to the air vibrating, to the ear creating an electrical stimulus, to the brain interpreting it as sound.
 
-![](/assets/img/1*3JOSU7inWkTzeI-hR-FMLA.png)
+![](/assets/img/frp/1*3JOSU7inWkTzeI-hR-FMLA.png)
 
 When the tree falls, the air vibrates.
 

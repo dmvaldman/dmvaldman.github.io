@@ -61,6 +61,8 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
 blockquote {
@@ -221,7 +223,8 @@ hr {
 .pagination-button {
   color: #999;
   border: 1px solid #e0e0e0;
-  padding: 15px 45px;
+  padding: 10px 0px;
+  width: 80px;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
@@ -259,7 +262,7 @@ hr {
   Menu
 */
 
-.menu {
+.menu {  
   padding-top: 0.5rem;
   display: block;
 }
@@ -270,7 +273,7 @@ hr {
 
 .menu-content a {
   color: #999;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-right: 10px;
 }
 
