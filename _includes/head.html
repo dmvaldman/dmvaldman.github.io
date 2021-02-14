@@ -27,7 +27,9 @@
   {% endif %}
 
   {% if page.image %}
+  {% if page.title != 'Writings' %}
   <meta name="twitter:card"  content="summary_large_image">
+  {% endif %}
   <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
   {% endif %}
   <!-- end of Twitter cards -->
