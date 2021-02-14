@@ -4,6 +4,7 @@ title: "Is Traveling an Escape?"
 date: 2015-01-14
 excerpt: "By paying attention to what you miss, you'll know what you want."
 image: escape_banner_16_9.jpg
+tags: [travel]
 ---
 
 I was feeling lost at home in San Francisco. I didn’t know my next step. I was recently unemployed, and felt I had been gifted back a most precious resource: time. So I engrossed myself in the technologies I found interesting but had no time for. I developed for the Oculus Rift, learned about Bitcoin and distributed systems, took online classes in social choice, computer architecture and network theory. The gears were all turning, but there was no traction. I had time, but no direction. And most of all, I couldn’t tell the difference between a distraction, and what I was being distracted from.

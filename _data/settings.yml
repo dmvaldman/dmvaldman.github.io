@@ -4,12 +4,12 @@ disqus:
   disqus_shortname: 'https-lenpaul-github-io-lagrange'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: 'UA-112060364-1'
+google-ID: 'UA-27168505-1'
 
 menu:
+- {name: 'Writing', path: 'menu', url: '../'}
+- {name: 'Photos', path: 'menu', url: 'photography.html'}
 - {name: 'About', path: 'menu', url: 'about.html'}
-- {name: 'Writing', path: 'menu', url: 'writing.html'}
-- {name: 'Contact', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
@@ -26,6 +26,6 @@ pagination:
 
 sharing_button_prompt: ''
 
-related_posts: 'Related content:'
+related_posts: 'Related posts:'
 
 post_date_prefix: 'Written on'

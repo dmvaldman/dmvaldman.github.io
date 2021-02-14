@@ -4,6 +4,7 @@ title: "A Month in Vietnam"
 date: 2014-12-24
 excerpt: "To see the future being created by following the present, rather than planning for it."
 image: 1*6uWNLuE8sIWt8OF5boFWAg.jpeg
+tags: [travel]
 ---
 
 I’m writing from Chau Doc, a small town in the Mekong Delta on the border with Cambodia. Tomorrow I leave Vietnam and cross the border on a five hour boat ride to Phnom Penh. It sounded like a cool way to make an entrance into a new country.

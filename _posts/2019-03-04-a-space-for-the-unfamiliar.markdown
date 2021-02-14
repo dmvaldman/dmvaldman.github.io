@@ -4,7 +4,7 @@ title: "A Space for the Unfamiliar"
 date: 2019-03-04
 excerpt: "It was made as if to create separation from this world."
 image: unfamiliar_banner_16_9.jpg
-# image: 1*L_-RKA-XNnTmGx05ZAaHgg.jpeg
+categories: travel
 ---
 
 “Where are you going camping?” a friend asked. “North.” I said.
@@ -13,7 +13,9 @@ Two days later, with that plan in hand, I left San Francisco for a 3-day motorcy
 
 This is a story about creating space for the unfamiliar.
 
-### Day 1
+---
+
+## Day 1
 
 I needed to use the bathroom. In a hurry, I stopped at the first restaurant I came across and walked into this:
 
@@ -37,7 +39,9 @@ We became friends. They asked if I could stay longer, but I had to say no.
 
 ![](/assets/img/1*OpzDw3dPE4xIQYryMnq3yg.jpeg)
 
-### Day 2
+---
+
+## Day 2
 
 After riding for 30 miles without seeing a gas station I began to worry. I stopped by a local general store in Elk, a vestige of a forgotten logging town with population tipping over 200.
 
@@ -59,7 +63,9 @@ For 30 minutes I glided though an aspect-ratio of long, narrow and tall.
 
 ![](/assets/img/1*qSl7OGi6lnQQ5kLGCsn3og.png)
 
-### Day 3
+---
+
+## Day 3
 
 Redwood groves are pretty during the day, but boy do they get cold at night. In the morning I walked to the bathrooms when a campmate waved me over.
 
@@ -73,6 +79,8 @@ The last thing you want to do when you’re cold is ride a motorcycle. I stopped
 
 As I rode from the coast to the Central Valley the skies cleared and I could feel the sun at my back all the way to San Francisco.
 
+---
+
 My experience of this trip is encapsulated in a place I visited along the way.
 
 ![](/assets/img/1*GAg5SoMcZDqWLKHzaUsRFQ.png)
@@ -83,7 +91,7 @@ The patterns are foreign. The proportions are odd. Pieces fit crookedly. Lines m
 
 From the outside, you are at a loss to describe its volume. From the inside, you are at a loss to describe its shape.
 
-![](/assets/img/1*f05id75_uMwDoyOfpebEwA.jpeg)
+![](/assets/img/unfamiliar_chapel_interior.jpg)
 
 It was made as if to create separation from this world; so that when you step inside, you are compelled to create your own.
 

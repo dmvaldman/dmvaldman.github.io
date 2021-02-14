@@ -3,6 +3,7 @@ layout:	post
 title: "Wittgenstein and Interpreting Language Models "
 date: 2020-02-01
 excerpt: "A new research direction for interpretibility of language models."
+tags: [philosophy, deep learning]
 ---
 
 >'Meaning is use.' 

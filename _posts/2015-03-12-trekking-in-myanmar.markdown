@@ -4,6 +4,7 @@ title: "Trekking in Myanmar"
 date: 2015-03-12
 excerpt: "A three day trek in the Shan hill tribes of Myanmar."
 image: myanmar_banner_16_9.jpg
+tags: [travel]
 ---
 
 I did a three day trek in the Shan hill tribes of Myanmar and it has been one of most different and authentic experiences of my life. I find myself processing it still.
@@ -65,7 +66,7 @@ I’ve fantasized about living off the grid. I thought it was something first-wo
 I believed modern civilization was a strict improvement over an agrarian society. Something to save us from a difficult life of tireless labor. That technology and specialization allow us to save time, enjoy life more, and enhance our shared experience. I no longer think that. I don’t think we should all quit our day jobs and become farmers, either. I’m only convinced that the tradeoffs are not black and white.
 
 > Whether that state that is proudly, perhaps erroneously, called civilization, has most promoted or most injured the general happiness of man, is a question that may be strongly contested. 
-*— Thomas Paine (Agrarian Justice)*
+*Thomas Paine*
 
 ![](/assets/img/1*XPbwggaQfjzlbp4-b_HU-w.jpeg)A goat at the farmMaybe the strangest thing was watching the Chinese trucks climbing the unpaved roads to extract coal from a land sprinkled with homes that see it as nothing more than a barren rock.
 

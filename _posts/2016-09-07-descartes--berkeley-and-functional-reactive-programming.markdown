@@ -4,6 +4,7 @@ title: "Descartes, Berkeley and Functional Reactive Programming"
 date:	2016-09-07
 excerpt: "Beneath the concepts of functional reactive program is a deeper principle."
 image: frp_banner_16_9.png
+tags: [philosophy, software]
 ---
 
 Functional reactive programming is laden with unfamiliar terminology to the newcomer: pure functions, immutability, monads, etc. But beneath these concepts is a deeper principle — one debated long before Charles Babbage and the first computers. <!--more-->I argue the difference between object-oriented programming (OOP) and functional reactive programming (FRP) is as much about interpretations of reality as it is about structures of programs.
@@ -45,7 +46,7 @@ tree.emit('fall');
 
 This is the _reactive_ `tree`. Its patterns are events and transforms. In its purest form our tree maintains no state. We make it fall by broadcasting a `fall` event. Alas, the message falls on deaf ears! No state has changed, no evidence is left. There is no way to deduce the past by querying reality. Did the tree fall? _shrug_
 
-### Descartes and Berkeley
+## Descartes and Berkeley
 
 The object-oriented and reactive approaches give two different answers to our thought experiment because they embody two contradictory philosophies of epistemology: Rationalism, popularized by Descartes in the late 1600s, and Empiricism popularized by Berkeley in the early 1700s.
 
@@ -132,7 +133,7 @@ Berkeley called this concept *Subjective Idealism*. *Idealism* because it assert
 
 I love this quote for its self-assured audacity. Berkeley is essentially calling us crazy for thinking that houses, mountains and rivers exist. In our example, trees, air, ears and brains are false idols; the only reality is `mapFall`, `mapFrequency` and `mapStimulus`. Reality is then never consumed, as it is with objects when they retain state. Reality is merely transformed.
 
-### *Subjective Idealism* in Practice
+## Subjective Idealism in Practice
 
 In OOP we create objects that encapsulate some kind of behavior. We then construct programs which are networked relationships of these objects. Our program is structurally a *graph*.
 
@@ -146,11 +147,11 @@ Unfortunately, this is all too easy to mess up. Notice that in OOP, when two obj
 
 The bottom line is that it is not enough to encapsulate state. A well-written program will also encapsulate dependency.
 
-### Tradeoffs
+## Tradeoffs
 
 
 > “Programmers know the benefits of everything and the tradeoffs of nothing.”
-*— Rich Hickey*
+*Rich Hickey*
 
 You’d think after all this FRP praising and OOP bashing, I’d be firmly in the FRP camp. You’d be wrong! FRP is a programming pattern, and patterns serve to constrain solutions. If the ideal solution doesn’t satisfy the constraints, you’ll be wasting energy fighting against the pattern.
 
@@ -162,10 +163,8 @@ To put on my philosophical hat once more, physics may decree that reality is one
 
 I feel this is why FRP hasn’t been been wholly embraced by the programming community, even after seeing its many advantages. The best we should hope for when writing programs is to use FRP principles in places where its patterns fit the solution, and let them inspire OOP patterns where its patterns do not. To me this is a distinction between solutions that can be thought of as pipelines, and solutions that shouldn’t be.
 
-### Conclusion
+## Conclusion
 
 In philosophy the objective is not to solve our deepest problems, but to have a shared language and historical precedent to debate them. So when a new problem emerges, we don’t have to start over. Similarly for programming patterns. They are not used to decide right and wrong, as if these concepts have universal appeal. They are used to classify problems and their approaches.
 
 We should also look to other disciplines, much older than computer science, to see whether their shared language and historical precedent can inspire our own. Then we may see that the question, “*did the tree fall?*” is not answered with a *yes* or a *no*. That instead it questions a perspective. One that can frame our philosophy of epistemology or our architecture of programs. And one to which the answer lies between a state of mind, and a flow of thought!
-
-  
