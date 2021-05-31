@@ -1,18 +1,19 @@
 ---
 layout: page
-title: Photography
+title: Photos
 ---
 
-### Satlas
-[Album](https://photos.app.goo.gl/fUAKrXv3sXCWqmh36)
-
-An atlas of sits.
+## Satlas
+[<img src="/assets/img/albums/satlas.jpg">](https://photos.app.goo.gl/fUAKrXv3sXCWqmh36)
 
 ---
 
 ### Trees in Front of Houses
-[Album](https://photos.app.goo.gl/sMecs255xXW81ooX8)
+[<img src="/assets/img/albums/tree.jpg">](https://photos.app.goo.gl/sMecs255xXW81ooX8)
 
-Trees in front of houses.
+---
+
+### Doors of San Francisco
+[<img src="/assets/img/albums/door.jpg">](https://photos.app.goo.gl/C7msv3VocdBkLPUs6)
 
 ---

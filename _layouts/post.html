@@ -5,13 +5,6 @@ layout: default
 <h1>
   {{ page.title }}
 </h1>
-
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-{% endif %}
-
-{{ content }}
-
 <span class="post-date">
   {{ site.data.settings.post_date_prefix }}
   {% assign d = page.date | date: "%-d"  %}
@@ -30,7 +23,11 @@ layout: default
   {% endif %}
 </span>
 
-{% include social-sharing.html %}
+{% if page.image %}
+  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+{% endif %}
+
+{{ content }}
 
 {% include related-posts.html %}
 

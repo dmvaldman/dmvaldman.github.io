@@ -168,19 +168,6 @@ hr {
   }
 }
 
-.related {
-  padding-bottom: 2rem;
-}
-
-.related-posts {
-  padding-left: 0px;
-  list-style: none;
-}
-
-.related-posts a {
-  text-decoration: none;
-}
-
 /*
   Pagination
 */
