@@ -8,11 +8,14 @@
   <!-- Use Atom -->
   {% feed_meta %}  
   
+  {% if page.excerpt %}
+  <meta property="og:title" content="{{ page.excerpt }}" />
+  {% else %}
   <meta property="og:title" content="Writings" />
+  {% endif %}
+  
   <meta name="author" content="David Valdman" />
   <meta property="og:locale" content="en_US" />
-  <meta name="description" content="David Valdman’s personal website" />
-  <meta property="og:description" content="David Valdman’s personal website" />
   <link rel="canonical" href="https://dmvaldman.github.io/" />
   <meta property="og:url" content="https://dmvaldman.github.io/" />
   <meta property="og:site_name" content="Writings" />
@@ -36,6 +39,10 @@
 {% else %}
 <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
+
+{% if page.excerpt %}
+<meta name="twitter:description" content="{{ page.excerpt }}">
+{% endif %} -->
 
 {% if page.image %}
 <meta name="twitter:card"  content="summary_large_image">
