@@ -1,0 +1,1 @@
+```magick convert in.jpg -gravity center -crop 19:6 out.jpg```
