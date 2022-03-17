@@ -20,48 +20,25 @@
   <meta property="og:url" content="https://dmvaldman.github.io/" />
   <meta property="og:site_name" content="Writings" />
 
-  <!-- Twitter cards
+  <!-- Twitter cards -->
   <meta name="twitter:site"    content="@{{ site.twitter_username }}">
   <meta name="twitter:creator" content="@{{ site.author }}">
   <meta name="twitter:title"   content="{{ page.title }}">
 
   {% if page.excerpt %}
   <meta name="twitter:description" content="{{ page.excerpt }}">
-  {% endif %} -->
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
 
-  <!-- Twitter cards -->
-<meta name="twitter:site"    content="@{{ site.twitter_username }}">
-<meta name="twitter:creator" content="@{{ site.author }}">
-<meta name="twitter:title"   content="{{ page.title }}">
-
-{% if page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt }}">
-{% else %}
-<meta name="twitter:description" content="{{ site.description }}">
-{% endif %}
-
-{% if page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt }}">
-{% endif %} -->
-
-{% if page.image %}
-<meta name="twitter:card"  content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
-{% else %}
-<meta name="twitter:card"  content="summary">
-<meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
-{% endif %}
-<!-- end of Twitter cards -->
-
-  <!-- {% if page.image %}
-    {% if page.title != 'Writings' %}
-    <meta name="twitter:card"  content="summary_large_image">
-    {% else %}
-    <meta name="twitter:card" content="summary" />
-    {% endif %}
+  {% if page.image %}
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
+  {% else %}
+  <meta name="twitter:card"  content="summary">
   <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
   {% endif %}
-  end of Twitter cards -->
+  <!-- end of Twitter cards -->
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
