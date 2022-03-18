@@ -63,19 +63,11 @@ To counter act this feeling, I adopted a decision-making framework with the expl
 
 ## <a name="making">Making the Decision</a>
 
-My final motivation was met, and I had not sought its replacement. I was ready to leave. I had my notice of resignation as a draft in my inbox and gave myself a week to send it. I pulse-checked myself each day. I've found that your body knows before your mind, and you can feel your way through a difficult decision better than you can think your way through it. 
+My final motivation was met, and I had not sought its replacement. I was ready to leave. I had my notice of resignation as a draft in my inbox and gave myself a week to send it. I pulse-checked myself each day. I've found that your body knows before your mind, and you can feel your way through a difficult decision better than you can think your way through it. When the day came, I felt the same as the day before, and clicked "send".
 
-When my resignation became known I wrote this email to the company:
-
-![final email](assets/img/standard/final_email_redacted.png)
-
--------------------------
-
-A few weeks went by as we formalized a transition plan. There was a roller coaster of feelings as I met people one-on-one. I've always thought the best way to convey an experience is to find the fewest words that strike at its heart. There's always a top-order bit, and it's the role of the communicator to expose it. I challenged myself to find a single word to summarize how I felt. I had to look outside the English language, but I found it in the Yiddish word [naches](https://jel.jewish-languages.org/words/394), roughly defined as the pride you feel from your creation, typically your children. This was the feel I landed on last, and in the final all-hands before my departure I conveyed it in this short speech
+Several weeks went by as we formalized and enacted a transition plan. There was a roller coaster of feelings as I met people one-on-one. I've always thought the best way to convey an experience is to find the fewest words that strike at its heart. There's always a top-order bit. I challenged myself to find a single word to summarize how I felt. I had to go outside the English language to find the Yiddish word [naches](https://jel.jewish-languages.org/words/394), roughly defined as the pride you feel a creation, typically your children. This was the feel I landed on last, and in the final all-hands before my departure I conveyed it in this short speech.
 
 <audio controls="1" controlslist="nodownload nofullscreen noremoteplayback" alt="Nachas" source src="assets/img/standard/all-hands.mp3"></audio>
-
--------------------------
 
 A few days later would be my last. At 4:59pm I messaged our IT admin, Steve, for my final conversation. 
 
@@ -98,3 +90,7 @@ A few days went by before a friend showed me the I Ching, the 3000-year-old Chin
 >Wind blowing over water disperses it, dissolving it into foam and mist... The text of this hexagram resembles that of Ts'ui GATHERING TOGETHER. In the latter, the subject is the bringing together of elements that have been separated, as water collects in lakes upon the earth. Here the subject is the dispersing and dissolving of divisive egotism. DISPERSION shows the way, so to speak, that leads to gathering together.
 
 Dispersion - the transition period before a gathering together. I had found a ground again.
+
+-------------------------
+
+Thank you to all my co-workers, my other co-founders, and all who supported me over these past five years. I've learned much from all of you, and I can't wait to apply it to the next thing.
