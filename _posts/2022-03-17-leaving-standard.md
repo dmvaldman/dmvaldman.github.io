@@ -93,4 +93,4 @@ Dispersion - the transition period before a gathering together. I had found a gr
 
 -------------------------
 
-Thank you to all my co-workers, my other co-founders, and all who supported me over these past five years. For motivating and teaching me. I can't wait to apply it to the next thing.
+Thank you to all my co-workers, my other co-founders, and all who supported me over these past five years. For motivating and teaching me. I can't wait to apply these lessons to the next thing.
