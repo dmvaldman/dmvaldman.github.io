@@ -20,7 +20,7 @@ For me the hardest was the first, but they all sucked in their own special way. 
 
 ## <a name="coming">Coming to the Decision</a>
 
-When I told people I was leaving, invariably they'd ask "why?". "Why?" was a question I clearly had to come to terms with myself, so how did I? The truth is I found it more useful to reflect on the inverse question: "Why stay?". Not because I didn't have an answer, but because I had very different answers throughout the years. It surprised me that instead of a steadfast reason (perhaps an unwavering resolve grounded in the company's mission) my motivations shifted as the company evolved. Each year I seemed to have a new motivation:
+When I told people I was leaving, invariably they'd ask "why?". "Why?" was a question I clearly had to come to terms with myself, so how did I? The truth is I found it more useful to reflect on the inverse question: "Why stay?". Not because I didn't have an answer, but because I had very different answers throughout the years. It surprised me that instead of a steadfast reason (perhaps an unwavering resolve grounded in the company's mission) my motivations shifted as the company evolved.
 
 |Year | Motivation|
 | ----- | ----- |
@@ -31,7 +31,7 @@ When I told people I was leaving, invariably they'd ask "why?". "Why?" was a que
 
 ### <a name="0-2">Years 0-2</a>
 
-My primary motivation when we began was the zero-to-one romanticism of answering the question "Is this possible?" It was thrilling to start a project from scratch with talented friends where no one, ourselves included, knew if we would succeed to even make a prototype. Amazon Go hadn't yet been announced, "autonomous checkout" was outside the lexicon of society, and in early 2017 the only serious business application for deep learning was self-driving cars. I felt we were at the frontiers of the possible and in a greenfield industry. We were looking firmly out into the future. This was motivation enough for me to quit my job, move across the country and take the leap.
+My initial motivation was the zero-to-one romanticism of answering the question "Is this possible?" It was thrilling to start a project from scratch with talented friends where no one, ourselves included, knew if we would succeed to even make a prototype. Amazon Go hadn't yet been announced, "autonomous checkout" was outside the lexicon of society, and in early 2017 the only serious business application for deep learning was self-driving cars. I felt we were at the frontiers of the possible and in a greenfield industry. We were looking firmly out into the future. This was motivation enough for me to quit my job, move across the country and take the leap.
 
 **The lesson I learned** amidst this excitement is that your motivation needs to be sustained beyond the zero-to-one problem; you truly need to want your idea to blanket the Earth. In Summer of 2018 we launched the first (outside Amazon Go) autonomous-checkout store open to the public. It was a euphoric high and an affirmation of the driving question that motivated me most. I didn't realize until later, though, it was simultaneously the loss of an irreplaceable drive.
 
@@ -53,7 +53,7 @@ It was here that I realized just how many principal-agent problems there are in 
 
 ### <a name="4-5">Years 4-5</a>
 
-The company was growing more quickly now and I found myself, again, falling behind. This time, though, I had greater difficulty finding the energy to get ahead of it. My attention and motivation turned inwards rather than outwards; focused almost exclusively on the teams reporting to me instead of those around me. These were the careers I was directly responsible for. As I let myself explore thoughts of leaving, the most palpable feeling was that of betrayal toward those reporting to me. In fact, as I scanned my feelings this was pretty much the only motivation left. That's how I knew it was now a matter of time. But there was still one more major lesson to learn.
+The company was growing more quickly now and I found myself, again, falling behind. This time, though, I had greater difficulty finding the energy to get ahead of it. My attention and motivation turned inwards rather than outwards; focused almost exclusively on the teams reporting to me instead of those around me. These were the careers I was directly responsible for. As I let myself explore thoughts of leaving, the most palpable feeling was that of betrayal toward those reporting to me. In fact, as I scanned my feelings this was pretty much the only motivation left. That's how I knew it was now a matter of time. But there was still another lesson to learn.
 
 To counter act this feeling, I adopted a decision-making framework with the explicit assumption that I'd be leaving the company imminently (though it would take another nine months). Anytime I had to make a choice, I asked myself "what's the best decision if I'm no longer here?" I never tried to be a bottleneck before, but the viscerality of this framing led me to act drastically differently. I made my best decisions during this time. I set teams up to be autonomous with clear ownership, leadership and accountability, integrated them more throughout the company, and extracted myself from anything that depended on me: meetings, relationships, planning, hiring, etc. After nine months, though the external pressures were ever greater, I found myself not knowing what to do as their boss anymore. It was fantastic to observe.
 
@@ -65,17 +65,15 @@ To counter act this feeling, I adopted a decision-making framework with the expl
 
 My final motivation was met, and I had not sought its replacement. I was ready to leave. I had my notice of resignation as a draft in my inbox and gave myself a week to send it. I pulse-checked myself each day. I've found that your body knows before your mind, and you can feel your way through a difficult decision better than you can think your way through it. When the day came, I felt the same as the day before, and clicked "send".
 
-Several weeks went by as we formalized and enacted a transition plan. There was a roller coaster of feelings as I met people one-on-one. I've always thought the best way to convey an experience is to find the fewest words that strike at its heart. There's always a top-order bit. I challenged myself to find a single word to summarize how I felt. I had to go outside the English language to find the Yiddish word [naches](https://jel.jewish-languages.org/words/394), roughly defined as the pride you feel a creation, typically your children. This was the feel I landed on last, and in the final all-hands before my departure I conveyed it in this short speech.
+Several weeks went by as we formalized and enacted a transition plan. There was a roller coaster of feelings as I met people one-on-one. At the end was a feeling that lingered. I've always thought the best way to convey an experience is to find the fewest words that strike at its heart. There's always a top-order bit. So I challenged myself to find a single word to encapsulate it. I found the Yiddish word [naches](https://jel.jewish-languages.org/words/394), roughly defined as the pride you feel a creation, typically your children. This was the feel I landed on last.
 
-<audio controls="1" controlslist="nodownload nofullscreen noremoteplayback" alt="Nachas" source src="assets/img/standard/all-hands.mp3"></audio>
-
-A few days later would be my last. At 4:59pm I messaged our IT admin, Steve, for my final conversation. 
+At 4:59pm on my last day I messaged our IT admin, Steve. It was my final conversation as an employee. 
 
 "So... am I going to see a light?" I asked.
 
 "LOL. Don't let go Dave!" he replied.
 
-With the "Steve is typing..." indicator down below, the clock struck 5:00pm and the screen flashed. I found myself staring at a log-out window, very much alone in the stillness of my living room.
+With the "Steve is typing..." indicator down below, the clock struck 5:00pm and the screen flashed. I saw a light after all as I found myself staring at a log-out window, very much alone in the stillness of my living room.
 
 -------------------------
 
