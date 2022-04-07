@@ -25,6 +25,9 @@ layout: default
 
 {% if page.image %}
   <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+  {% if page.caption %}
+    <p class="image-caption">{{ page.caption }}</p>
+  {% endif %}  
 {% endif %}
 
 {{ content }}
