@@ -24,7 +24,7 @@ body {
   /* font-family: "EB Garamond"; */
   font-size: 19px;
   color: #383838;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .image-caption {
@@ -69,14 +69,14 @@ li {
 @media (max-width: 30em) {
   body {
     font-size: 15px;
-    line-height: 1.5rem;
+    line-height: 1.4;
   }
   body h1 {
     font-size: 1.5rem;
   }
   .footnotes p {
     font-size: 14px;
-    line-height: 1.2rem;
+    line-height: 1.3;
   }
   .image-caption {
     font-size: 12px;
