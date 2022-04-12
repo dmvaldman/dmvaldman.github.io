@@ -425,6 +425,7 @@ img + em {
 blockquote em {
   display: block;
   font-style: italic;  
+  text-align: right;
 }
 
 blockquote em:before {

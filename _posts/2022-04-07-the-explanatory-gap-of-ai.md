@@ -35,6 +35,9 @@ How can we fault an AI for its lack of our phenomenological experience without b
 
 A biblical allegory comes from the Hebrew interpretations of the Book of Genesis, the Bereishit Rabbah. When God created Adam and gave him language to name the animals, the Angels in Heaven could not understand this revelation.[^11] Being of Spirit, their perception was confined to the spiritual. Only a corporeal being masked by the flesh from perceiving the noumena directly, could comprehend these representations. Adam was the semantic bridge between the Heavens and the Earth. Unlike today's languages, this Adamic language is thought to be in harmony with the nature of its reference -- the semantic collapse of sign and signified.
 
+>He brought before them beast and animal and bird. He said to them: This one, what is his name? and they did not know. This one, what is his name? and they did not know. He made them pass before Adam. He said to him: This one, what is his name? Adam said: This is ox/shor, and this is donkey/chamor and this is horse/sus and this is camel/gamal.
+*Bereishit Rabbah 17:4*
+
 When we experience words, we experience them conceptually. When we experience images, we experience them visually. We are thrust into awareness upon recognition of our signs. Like the Adamic language, these representations are in direct correspondence with their reference. This is their phenomenal nature revealed to us without mediation -- the semantic collapse of sign and signified. This direct correspondence is also the noumenal quality concealed from an AI. An AI is masked from perceiving our phenomena by a computational flesh. A representation, fashioned in likeness of our own, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
 
 Does an AI understand? I would say yes, but differently: it comprehends a reality grounded in the computational, which is in itself grounded in the phenomenological, which is in itself grounded in the incomprehensible.
@@ -51,4 +54,4 @@ Does an AI understand? I would say yes, but differently: it comprehends a realit
 [^8]: McGinn, Colin (1994). The Problem of Philosophy
 [^9]: McGinn, Colin (1989). Can We Solve the Mind-Body Problem?
 [^10]: This is not to imply the AI will not know something we cannot understand. As if an AI ever has subjective experience, that would likely be unknowable to us. 
-[^11]: [Bereishit Rabbah 17:4](https://www.sefaria.org/Bereishit_Rabbah.17.4) (450 CE) "He (God) brought before them (Angels) beast and animal and bird. He said to them: This one, what is his name? and they didn’t know. He made them pass before Adam. He said to him: This one, what is his name? (Adam) said: This is ox/shor, and this is donkey/chamor and this is horse/sus and this is camel/gamal."
+[^11]: [Bereishit Rabbah 17:4](https://www.sefaria.org/Bereishit_Rabbah.17.4) (450 CE)
