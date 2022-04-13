@@ -26,7 +26,7 @@ Back to the apple. The empiricists accept that the sweetness, redness and smooth
 
 So what is a human mind lacking? One answer is we lack understanding of the noumena.
 
-Our brains receive only representations of reality. Electrical stimuli, whether through the optical nerve or ocular cilia, etc. We are hopeless to know what these stimuli are at the most fundamental level -- their nature eludes us. Our brains feast on physical reality and know it not.
+Our brains receive only representations of reality. Electrical stimuli, whether through the optical nerve or cochlear cilia, etc. We are hopeless to know what these stimuli are at the most fundamental level -- their nature eludes us. Our brains feast on physical reality and know it not.
 
 AIs receive only representations of our phenomenological experience. Word tokens for language, or RGB matrices for images, etc. AI is hopeless to know what our experience is at the most fundamental level -- their nature eludes them. AIs feast on computational reality and know it not.
 
