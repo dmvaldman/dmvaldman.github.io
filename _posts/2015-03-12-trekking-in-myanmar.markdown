@@ -15,17 +15,17 @@ I did a three day trek in the Shan hill tribes of Myanmar and it has been one of
 We left from Kyaukme, a small town 5 hours east of Mandalay. Its only listed guesthouse has notoriously poor reviews, but when my friend Ryan and I arrived we stumbled upon a recently opened one. That’s where we met Matt and Francis who were leaving that morning for a trek. Their guide, Thura, was coming by to discuss the details. On a whim, we decided to extend our motorbike rentals and tag along.
 
 ![](/assets/img/myanmar/1*aHWTQs-69hgJ0LREp3NGVg.jpeg)
-*The journey.*
+*The journey. Tea plants sprinkle the hills.*
 
-Tea plants sprinkle the hills.Myanmar has 135 different ethnic minorities, each with separate languages and traditions. The Shan migrated from China in the 10th-13th centuries and took refuge from the Mongols in the isolated hills of Burma. We would reach them by motorbiking some pretty terrible roads. Some being constructed by hand from large chunks of loose gravel for the Chinese trucks that had found coal in the region. As we made out ascent, monks showered us with water from a bush — a blessing.
+Myanmar has 135 different ethnic minorities, each with separate languages and traditions. The Shan migrated from China in the 10th-13th centuries and took refuge from the Mongols in the isolated hills of Burma. We would reach them by motorbiking some pretty terrible roads. Some being constructed by hand from large chunks of loose gravel for the Chinese trucks that had found coal in the region. As we made out ascent, monks showered us with water from a bush — a blessing.
 
 ![](/assets/img/myanmar/1*BbE2TQu_foJuGZPgF2MVCA.jpeg)
 *Making the roads by hand with large loose gravel waiting to be tarred. Everyone has a job in Myanmar.*
 
 ![](/assets/img/myanmar/1*U4pU7WpPrCW2BNK76ktl1Q.jpeg)
-*Shan hill tribe.*
+*Shan hill tribe. Power lines on the lower right.*
 
- Power lines on the lower right.These villages are almost completely autonomous. They sell the tea they grow, and their only import is rice as they do not produce enough. Otherwise, they mill their own lumber, loom their own clothes, grow their own food, construct their own septic systems, and use solar to power the little electricity they use. One of the villages near a river made its own hydroelectricity and ran a power grid servicing about 100 homes. The quality of the construction is better than in the cities. I saw no power tools; everything is sawed by hand.
+ These villages are almost completely autonomous. They sell the tea they grow, and their only import is rice as they do not produce enough. Otherwise, they mill their own lumber, loom their own clothes, grow their own food, construct their own septic systems, and use solar to power the little electricity they use. One of the villages near a river made its own hydroelectricity and ran a power grid servicing about 100 homes. The quality of the construction is better than in the cities. I saw no power tools; everything is sawed by hand.
 
 ![](/assets/img/myanmar/1*ZXRO2t3lg0kMm9lHzNLZpQ.jpeg)
 
@@ -35,12 +35,12 @@ There is no way to announce your arrival; they have no phones. You just show up.
 *Shan villager with traditional headress*
 
 ![](/assets/img/myanmar/1*PT6uKZ9z6AKFCGMqm3IGOA.jpeg)
-*A Nepalese woman.*
+*A Nepalese woman*
 
 Many Nepalese came to Myanmar during the British occupation.Wherever we trekked, we stopped in strangers homes for tea and a reprieve from the sun. We were always welcomed. Villagers would gather in the windows as we walked. We would say “May-sin-ka” (Shan for “hello”) and they would grin and look at you with a certain curiosity. Burmese is not spoken. I taught a 7 year old girl how to use my camera, and she took about 100 blurry photos, each one more amazing to her than the last. They all try to swipe the screen.
 
 ![](/assets/img/myanmar/1*YBe3f7hj4-0FvnSOCy04rg.jpeg)
-*Organizing the firewood before the horses arrive with more.*
+*Organizing the firewood before the horses arrive with more*
 
 ![](/assets/img/myanmar/1*XC7Pzsd_4Ayq-gniEeeQtw.jpeg)
 
@@ -51,7 +51,7 @@ It’s hard to explain what was special about the experience. There was no parti
 There were no distractions to keep you from noticing the small things.
 
 ![](/assets/img/myanmar/1*bZDxyWIKMfOGXipcmwwz8g.jpeg)
-*Doing dishes the way God intended.*
+*Doing dishes the way God intended*
 
 Sipping tea with a man about my father’s age and seeing his two children run around, I thought what a completely different life he must have lived. In my apartment, I would stress about buying a coffee table that goes with the TV stand. What color should it be? What material should it be made of? In the hill tribe the answer would always be brown and wood, but really the answer is they don’t have TV stands.
 
