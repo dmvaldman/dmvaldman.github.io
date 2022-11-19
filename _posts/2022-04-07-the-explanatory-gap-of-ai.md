@@ -39,14 +39,14 @@ The philosopher Colin McGinn founded the epistemological school called “Myster
 
 How can we fault an AI for its lack of our subjective experience? We are asking an AI to do what we ourselves cannot: to know what is outside its cognitive closure. A different framing would be to argue that **relative to an AI, we have transcendent knowledge**. There is an explanatory gap the AI will never bridge, but one so natural we effortlessly cross. We are able to ground the output of an AI in our own phenomena because our cognitive closure encircles its own.[^9] We are not like Sarnad's hosts with a monopoly on meaning. Rather, we are like mystics, aware of a reality beyond the comprehension of another.[^10]
 
-A biblical allegory comes from the Hebrew interpretations of the Book of Genesis, the Bereishit Rabbah. When God created Adam and gave him language to name the animals, the Angels in Heaven could not understand this revelation.[^11] Being of Spirit, their perception was confined to the spiritual. Only a corporeal being, masked by the flesh from perceiving the noumena directly, could comprehend these representations. Unlike today's languages, this Adamic language is thought to be in harmony with the nature of its reference -- the bridging of corporeal and spiritual realities, the semantic collapse of sign and signified.
+A biblical allegory comes from the Hebrew interpretations of the Book of Genesis, the Bereishit Rabbah. When God created Adam and gave him language to name the animals, the Angels in Heaven could not understand this revelation.[^11] Being of Spirit, their perception was confined to the spiritual. Only a corporeal being, masked by the flesh from perceiving the noumena directly, could comprehend these representations. Unlike today's languages, this Adamic language is thought to be in harmony with the nature of its reference -- the semantic collapse of sign and signified.
 
 >[God] brought before [the Angels] beast and animal and bird. He said to them: This one, what is his name? and they did not know. This one, what is his name? and they did not know. He made them pass before Adam. He said to him: This one, what is his name? Adam said: This is ox/shor, and this is donkey/chamor and this is horse/sus and this is camel/gamal.
 *Bereishit Rabbah 17:4*
 
 When we experience words, we experience them conceptually. When we experience images, we experience them visually. We are thrust into awareness upon recognition of our signs. Like the Adamic language, these representations are in direct correspondence with their reference. Their phenomenal nature is revealed to us without mediation -- the semantic collapse of sign and signified. This correspondence is also the noumenal quality concealed from an AI. An AI is masked from perceiving our phenomena by a computational flesh. A representation, fashioned in the likeness of our phenomena, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
 
-Does an AI understand? I would say yes, though differently: it comprehends a reality grounded in the computational, which is in itself grounded in the phenomenological, which is in itself grounded in the incomprehensible.
+Does an AI understand? I would say yes, though differently: it understands a reality grounded in the computational, which is in itself grounded in the phenomenological, which is in itself grounded in the incomprehensible.
 
 -----------------------
 
@@ -59,5 +59,5 @@ Does an AI understand? I would say yes, though differently: it comprehends a rea
 [^7]: It is an unfortunate accident of recent history that the first AI to capture our imagination of an AGI was a language model. For in a language model both the input and output are the same in representation.
 [^8]: McGinn, Colin (1989). Can We Solve the Mind-Body Problem?
 [^9]: This is not to imply the AI will not know something we cannot understand. As if an AI ever has subjective experience, that would likely be unknowable to us.
-[^10] It is a strange thing to behold an explanatory gap. Here, our comprehension straddles each side: our subjective experience and its computational representation. The collapse of this gap is manifest in the grounding of symbols between two domains.
+[^10]: It is a strange thing to behold an explanatory gap. Here, our comprehension straddles each side: our subjective experience and its computational representation. The collapse of this gap is manifest in the grounding of symbols between two domains.
 [^11]: [Bereishit Rabbah 17:4](https://www.sefaria.org/Bereishit_Rabbah.17.4) (450 CE)

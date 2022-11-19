@@ -6,7 +6,7 @@ excerpt: The words that come out of a language model are not like the ones that 
 image: semantics/penrose_16_9.jpg
 ---
 
-A definition of semantics has a storied history marked by centuries of debate. Philosophers from Putnam to ___ have argued whether meaning refers to states of our minds, or to things out in the world. Does meaning have something to do with truth, or simply degrees of belief? Even Wikipedia is at odds with itself; its article for [semantic internalism](https://en.wikipedia.org/wiki/Semantic_internalism) redirects to its article for semantic externalism. 
+A definition of semantics has a storied history marked by centuries of debate. Philosophers from Putnam to ___ have argued whether meaning refers to states of our minds, or to things out in the world. Does meaning have something to do with truth, or simply degrees of belief? Even Wikipedia is at odds with itself; its article for [semantic internalism](https://en.wikipedia.org/wiki/Semantic_internalism) redirects to its article for semantic externalism.
 
 On a definition for meaning, Noam Chomsky once said, "It's a matter of choice. You define a technical notion in context of an explanatory theory, you don't just define a technical notion out in space. So let's ask what's the explanatory theory in which we pronounce meaning... and then we'll ask whether that theory is a sensible theory."
 
@@ -18,17 +18,17 @@ A language model (LM) is an algorithm that takes a sequence of words as input an
 
 This definition can be reinterpreted to provide a definition of a **word** given a language model. By considering $w$ as a fixed parameter, we can consider the likelihood $$L_w$$ of any prompt
 
-$$L_w(w_{1},\dots ,w_{k}) = P(w \vert w_{{1}},\dots ,w_{k}).$$ 
+$$L_w(w_{1},\dots ,w_{k}) = P(w \vert w_{{1}},\dots ,w_{k}).$$
 
-For example, the word "Apple" may have a high likelihood value around the prompts "Sally took a bite out of the juicy red " or "The quarterly earnings of US tech giant ", and a low likelihood value around the prompt "The longest river in Africa is ". 
+For example, the word "Apple" may have a high likelihood value around the prompts "Sally took a bite out of the juicy red " or "The quarterly earnings of US tech giant ", and a low likelihood value around the prompt "The longest river in Africa is ".
 
-For a given language model,  $$L_{\text{apple}}$$ is some very complicated distribution in prompt space. The crucial point is that this likelihood function encodes all potential _uses_ of a word. Following Wittgenstein, the **meaning** of $w$ is $L_w$. 
+For a given language model,  $$L_{\text{apple}}$$ is some very complicated distribution in prompt space. The crucial point is that this likelihood function encodes all potential _uses_ of a word. Following Wittgenstein, the **meaning** of $w$ is $L_w$.
 
 ## A Geometry for Prompt Space
 
 We have a collection of likelihood functions $\{L_w\}_{w \in W}$ for every word $w$ in our vocabulary $W$. We can use these to compare words to each other. To do so, we first need to define a topology and metric in prompt space.
 
-One way to do this is to consider the likelihood regions 
+One way to do this is to consider the likelihood regions
 
 $$R_{w,\alpha} = \left \{(w_1, \ldots, w_k) : L_w(w_1, \ldots, w_k) > \alpha \right \}.$$
 
@@ -38,11 +38,11 @@ Since every prompt given to the LM results in some word, the collection of sets 
 
 ### Semantic Distance
 
-If the language model is deterministic (e.g., GPT with temperature 0), then the collection of likelihood regions is a disjoint set, i.e., a partition of prompt space. Here word definitions would be "disjoint"; there would be no synonyms, no abbreviations, grammatical contractions, etc. 
+If the language model is deterministic (e.g., GPT with temperature 0), then the collection of likelihood regions is a disjoint set, i.e., a partition of prompt space. Here word definitions would be "disjoint"; there would be no synonyms, no abbreviations, grammatical contractions, etc.
 
 Once a language model is non-deterministic, there will be many overlapping sets. Overlap represents ambiguity: more than one word could reasonably complete a given prompt. The greater the overlap, the more the words are semantically similar.
 
-We can define the **semantic distance** $d$ between words $w_1, w_2$ as 
+We can define the **semantic distance** $d$ between words $w_1, w_2$ as
 
 $$d(w_1, w_2) = \frac{ \|R_{w_1} \space \cap \space R_{w_2} \|}{ \|R_{w_1} \space \cup \space R_{w_2} \|}.$$
 
@@ -56,15 +56,14 @@ To interpret the mechanisms in an LM it would help to start with something seman
 
 ### Symbol Grounding and Intentionality
 
-> To me, Chinese writing is just so many meaningless squiggles. 
+> To me, Chinese writing is just so many meaningless squiggles.
 *Searle*
 
-> Each word tastes of the context and contexts in which it has lived. 
+> Each word tastes of the context and contexts in which it has lived.
 *Bhaktin*
 
-To a language model, words are represented numerically as lists of numbers. Some models start with words as one-hot encodings, others use learned embeddings. Either way, the problem of seeking semantic content can be distilled to the question: how can lists of numbers _mean_ anything? 
+To a language model, words are represented numerically as lists of numbers. Some models start with words as one-hot encodings, others use learned embeddings. Either way, the problem of seeking semantic content can be distilled to the question: how can lists of numbers _mean_ anything?
 
 I believe this dilemma hinges on a false equivalence: that the words inputted to a language model are like those it outputs; afterall, both are represented as lists of numbers. However, the output has a secondary interpretation as as likelihoods of prompts. Whereas words that are the input are meaningless symbols, the words that are the output have meaning because they have reference. Likelihoods are the referents of these lists of numbers.
 
 So though the inputs to LMs may be meaningless squiggles and squoggles, the outputs are grounded and intentional. What they are grounded in may not be what humans ground language in, but they are grounded nonetheless.
-
