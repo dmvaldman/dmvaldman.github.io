@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_nonblog
 title: Photos
 ---
 
