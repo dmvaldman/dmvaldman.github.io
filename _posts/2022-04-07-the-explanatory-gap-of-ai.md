@@ -7,7 +7,7 @@ image: explanatory_gap/as_above_so_below_16x9.jpg
 caption: Text-to-image generation by Midjourney for the caption "As above. So below."
 ---
 
-If an AI understands is a topic of debate. Seldom debated are the limits of our own understanding. We imagine our understanding as complete and establish this as a baseline for AI. Only when we accept our understanding as incomplete can we can find an analog to the understanding of an AI.
+If an AI understands is a topic of debate. Seldom debated are the limits of our own understanding. We imagine our understanding as complete and establish this as a baseline for AI. When we accept our understanding as incomplete a different story appears altogther.
 
 The fundamental issue goes like this:
 
