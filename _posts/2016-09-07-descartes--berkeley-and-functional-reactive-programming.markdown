@@ -16,20 +16,20 @@ Here’s a thought experiment we’ve all likely heard:
 There are many of ways to attack this question as ill-posed. Ignoring them for the moment, this question is poking at a fundamental aspect of reality: causality. Is existence dependent on, or independent of, observation? Let’s translate this thought experiment into code. Here’s a `tree`.
 
 ```javascript
-class Tree {   
-  constructor(){   
-    this._fell = false;   
-  }   
+class Tree {
+  constructor(){
+    this._fell = false;
+  }
 
-  set fell(state){   
-    this._fell = state;   
-  }   
+  set fell(state){
+    this._fell = state;
+  }
 
-  get fell(){   
-    return this._fell;   
-  }  
-} 
-var tree = new Tree();  
+  get fell(){
+    return this._fell;
+  }
+}
+var tree = new Tree();
 tree.fell = true;
 ```
 
@@ -38,9 +38,9 @@ To make the `tree` fall we set its fallen state to `true`. This is textbook obje
 Not so fast! Let’s look at a different approach. Here’s another `tree`:
 
 ```javascript
-class Tree extends EventEmitter {}  
-  
-var tree = new Tree();  
+class Tree extends EventEmitter {}
+
+var tree = new Tree();
 tree.emit('fall');
 ```
 
@@ -51,12 +51,14 @@ This is the _reactive_ `tree`. Its patterns are events and transforms. In its pu
 The object-oriented and reactive approaches give two different answers to our thought experiment because they embody two contradictory philosophies of epistemology: Rationalism, popularized by Descartes in the late 1600s, and Empiricism popularized by Berkeley in the early 1700s.
 
 ![](/assets/img/frp/1*6YaJYhP7N-Ue4p3CWr1cYw.png)
+*Descartes takes as a short break from writing a Java interface*
 
-Descartes takes as a short break from writing a Java interfaceDescartes, in a streak of fanatical skepticism, found he could only be sure of one thing: his own existence. He came to this conclusion because he couldn’t doubt the existence of his thoughts and concluded there must be some entity doing the thinking, thus coining the phrase, *cogito ergo sum*: I think therefore I am. In other words: by acknowledging that there is some internal state that is changing, there must be some agent for whom the state belongs. To Descartes, changes of state is proof of existence — just like our first `tree`.
+Descartes, in a streak of fanatical skepticism, found he could only be sure of one thing: his own existence. He came to this conclusion because he couldn’t doubt the existence of his thoughts and concluded there must be some entity doing the thinking, thus coining the phrase, *cogito ergo sum*: I think therefore I am. In other words: by acknowledging that there is some internal state that is changing, there must be some agent for whom the state belongs. To Descartes, changes of state is proof of existence — just like our first `tree`.
 
 ![](/assets/img/frp/1*e_9xwJkCExj4-jBsLgGJag.png)
+*Berkeley seen pondering Haskell type definitions*
 
-Berkeley seen pondering Haskell type definitionsSoon after Descartes comes George Berkeley. Berkeley denounced the realist’s view. To Berkeley, it made no sense for material objects, like trees, to have existence. Existence only comes to us through thoughts (mental as opposed to physical experience), and thoughts must assimilate in the mind to exist. Material objects are deceptions; their essence is not their physicality but their ability to transform the immaterial. If a thought is not assimilated in the mind, it has no existence. Thus he popularized the Latin phrase _esse percepi_: to be is to be perceived.
+Soon after Descartes comes George Berkeley. Berkeley denounced the realist’s view. To Berkeley, it made no sense for material objects, like trees, to have existence. Existence only comes to us through thoughts (mental as opposed to physical experience), and thoughts must assimilate in the mind to exist. Material objects are deceptions; their essence is not their physicality but their ability to transform the immaterial. If a thought is not assimilated in the mind, it has no existence. Thus he popularized the Latin phrase _esse percepi_: to be is to be perceived.
 
 Let’s translate Berkeley’s reality into code. For our second `tree` to make a sound a mind must interpret it. We will create a chain of causality, starting from the tree falling, to the air vibrating, to the ear creating an electrical stimulus, to the brain interpreting it as sound.
 
@@ -65,48 +67,48 @@ Let’s translate Berkeley’s reality into code. For our second `tree` to make 
 When the tree falls, the air vibrates.
 
 ```javascript
-class Air extends EventEmitter {  
-  constructor (){  
-    super();   
-    function mapFall (fall){...}  
- 
-    this.on('fall', (fall) => {  
-      var vibration = mapFall(fall);  
-      this.emit('vibrate', vibration);  
-    };  
-  }  
+class Air extends EventEmitter {
+  constructor (){
+    super();
+    function mapFall (fall){...}
+
+    this.on('fall', (fall) => {
+      var vibration = mapFall(fall);
+      this.emit('vibrate', vibration);
+    };
+  }
 }
 ```
 
 When the air vibrates, the ear converts it to an electrical stimulus.
 
 ```javascript
-class Ear extends EventEmitter {  
-  constructor (){   
-    super();   
-    function mapFrequency (frequency){...}  
-  
-    this.on('vibrate', (frequency) => {  
-      var stimulus = mapFrequency(frequency);  
-      this.emit('stimulus', stimulus);  
-    };  
-  }  
+class Ear extends EventEmitter {
+  constructor (){
+    super();
+    function mapFrequency (frequency){...}
+
+    this.on('vibrate', (frequency) => {
+      var stimulus = mapFrequency(frequency);
+      this.emit('stimulus', stimulus);
+    };
+  }
 }
 ```
 
 When ear creates a stimulus, the brain interprets it as sound.
 
 ```javascript
-class Brain extends EventEmitter {  
-  constructor (){  
-    super();  
-    function mapStimulus (signal){...}  
-  
-    this.on('stimulus', (signal) => {  
-      var sound = mapStimulus(signal);  
-      this.emit('sound', sound);  
-    };  
-  }  
+class Brain extends EventEmitter {
+  constructor (){
+    super();
+    function mapStimulus (signal){...}
+
+    this.on('stimulus', (signal) => {
+      var sound = mapStimulus(signal);
+      this.emit('sound', sound);
+    };
+  }
 }
 ```
 
@@ -119,9 +121,9 @@ tree.pipe(air).pipe(ear).pipe(brain);
 Now, when the tree falls it makes an impression on a mind:
 
 ```javascript
-brain.on('sound', (sound) => {  
-  // We exit the system. You have been heard!  
-  console.log(sound);   
+brain.on('sound', (sound) => {
+  // We exit the system. You have been heard!
+  console.log(sound);
 });
 tree.emit('fall', fallData);
 ```

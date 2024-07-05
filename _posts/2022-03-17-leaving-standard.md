@@ -24,34 +24,34 @@ When I told people I was leaving, invariably they'd ask "why?". "Why?" was a que
 
 |Year | Motivation|
 | ----- | ----- |
-|0-2| [The 0 to 1 Problem](#0-2)|
+|0-2| [Zero to One](#0-2)|
 |2-3| [People](#2-3) |
 |3-4| [People Problems](#3-4)|
-|4-5| [Reports](#4-5) |
+|4-5| [Team](#4-5) |
 
-### <a name="0-2">Years 0-2</a>
+### <a name="0-2">Years 0-2</a>: Zero to One
 
 My initial motivation was the zero-to-one romanticism of answering the question "Is this possible?" It was thrilling to start a project from scratch with talented friends where no one, ourselves included, knew if we would succeed to even make a prototype. Amazon Go hadn't yet been announced, "autonomous checkout" was outside the lexicon of society, and in early 2017 the only serious business application for deep learning was self-driving cars. I felt we were at the frontiers of the possible and in a greenfield industry. We were looking firmly out into the future. This was motivation enough for me to quit my job, move across the country and take the leap.
 
 **The lesson I learned** amidst this excitement is that your motivation needs to be sustained beyond the zero-to-one problem; you truly need to want your idea to blanket the Earth. In Summer of 2018 we launched the first (outside Amazon Go) autonomous-checkout store open to the public. It was a euphoric high and an affirmation of the driving question that motivated me most. I didn't realize until later, though, it was simultaneously the loss of an irreplaceable drive.
 
-### <a name="2-3">Years 2-3</a>
+### <a name="2-3">Years 2-3</a>: People
 
-After the first demonstration of autonomous checkout, there were plenty of audacious challenges yet before us. Over the next few years we would launch our first retailer retrofit, and later our first large-format convenience store retrofit. Each took a year of sweat and tears to push our product further than it had ever been. These new challenges, though, were met with another reality: the need to transition from building the product, to building the company that builds the product. 
+After the first demonstration of autonomous checkout, there were plenty of audacious challenges yet before us. Over the next few years we would launch our first retailer retrofit, and later our first large-format convenience store retrofit. Each took a year of sweat and tears to push our product further than it had ever been. These new challenges, though, were met with another reality: the need to transition from building the product, to building the company that builds the product.
 
 This maxim can be bittersweet for those motivated by being hands-on. You hire others not to tell them what to do, but to give them ownership so they can apply their own energy and become creators themselves. In doing so, you move further from the product yourself. The motivation of building shifted to the motivation of inspiring. Sounds lovely, but it was simultaneously a loss. I let go of the technical and hands-on and moved toward the social: working alongside others, strengthening relationships and being motivated by motivating others.
 
 **The lesson I learned** is that you need to be motivated most by building the company over building the product. I liked to code, I liked to be in the details, and I had a firm vision of the result. All of these I had to let go of, and each was painful. I found that to make a product succeed, you needed to love it less. At least, I needed to be not so particular in my love.
 
-### <a name="3-4">Years 3-4</a>
+### <a name="3-4">Years 3-4</a>: People Problems
 
-As Standard grew, I noticed the company was growing faster than I was. I worked alongside many people, but they were carefully chosen: they were the ones that gave me energy. I gravitated towards the engineers and researchers. Suddenly, I realized this group was but a fraction of our headcount. I learned that to support the things I cared about, I needed to spend time equally across the company. This sounds obvious, but what it means in practice is that you force yourself into that which doesn't energize you. I had to invest in relationships and build empathy with the problems of others. I had to work with finance, legal, HR, marketing, BD and work less with the people whose problems I would think about for fun. 
+As Standard grew, I noticed the company was growing faster than I was. I worked alongside many people, but they were carefully chosen: they were the ones that gave me energy. I gravitated towards the engineers and researchers. Suddenly, I realized this group was but a fraction of our headcount. I learned that to support the things I cared about, I needed to spend time equally across the company. This sounds obvious, but what it means in practice is that you force yourself into that which doesn't energize you. I had to invest in relationships and build empathy with the problems of others. I had to work with finance, legal, HR, marketing, BD and work less with the people whose problems I would think about for fun.
 
 It was here that I realized just how many principal-agent problems there are in a company. Natural tensions across so many departments. Technical problems were in my rear-view mirror; now my life was people problems. I learned and grew the most in this time as I forced myself to lean into all that which drained my energy: conflict, misalignment, frustration. I learned to listen and sympathize especially when I disagreed. I actually found it incredibly motivating to move the ball forward in these situations. I thought to myself, "where else except at a company I founded would I be at the center of such problems?" To my surprise, this was my new inspiration.
 
 **The lesson I learned** is that you will end up spending a lot of time in conflict and discomfort, and you will constantly need to lean into these situations rather than away. It's critical that there be a higher calling that sustains you, and that for me was beginning to wane.
 
-### <a name="4-5">Years 4-5</a>
+### <a name="4-5">Years 4-5</a>: Team
 
 The company was growing more quickly now and I found myself, again, falling behind. This time, though, I had greater difficulty finding the energy to get ahead of it. My attention and motivation turned inwards rather than outwards; focused almost exclusively on the teams reporting to me instead of those around me. These were the careers I was directly responsible for. As I let myself explore thoughts of leaving, the most palpable feeling was that of betrayal toward those reporting to me. In fact, as I scanned my feelings this was pretty much the only motivation left. That's how I knew it was now a matter of time. But there was still another lesson to learn.
 
@@ -67,19 +67,19 @@ My final motivation was met, and I had not sought its replacement. I was ready t
 
 Several weeks went by as we formalized and enacted a transition plan. There was a roller coaster of feelings as I met people one-on-one. At the end was a feeling that lingered. I've always thought the best way to convey an experience is to find the fewest words that strike at its heart. There's always a top-order bit. So I challenged myself to find a single word to encapsulate it. I found the Yiddish word [naches](https://jel.jewish-languages.org/words/394), roughly defined as the pride you feel a creation, typically your children. This was the feel I landed on last.
 
-At 4:59pm on my last day I messaged our IT admin, Steve. It was my final conversation as an employee. 
+At 4:59pm on my last day I messaged our IT admin, Steve. It was my final conversation as an employee.
 
 "So... am I going to see a light?" I asked.
 
 "LOL. Don't let go Dave!" he replied.
 
-With the "Steve is typing..." indicator down below, the clock struck 5:00pm and the screen flashed. I saw a light after all as I found myself staring at a log-out window, very much alone in the stillness of my living room.
+With the "Steve is typing..." indicator down below, the clock struck 5:00pm and the screen flashed white. I saw a light after all as I found myself staring at a light-mode themed log-out window, very much alone in the stillness of my living room.
 
 -------------------------
 
 ## <a name="living">Living with the Decision</a>
 
-In the days after what I felt was absence, longing, an overwhelming retraction of connection. The visual that came to mind was a tuft of hair singed and recoiled against a flame. I had invested in so many relationships over so much time. I knew the names of just about everyone. I knew their motivations, their concerns, what plans they had for the weekend. For some I was directly responsible for, and emotionally invested in, their careers. 
+In the days after what I felt was absence, longing, an overwhelming retraction of connection. The visual that came to mind was a tuft of hair singed and recoiled against a flame. I had invested in so many relationships over so much time. I knew the names of just about everyone. I knew their motivations, their concerns, what plans they had for the weekend. For some I was directly responsible for, and emotionally invested in, their careers.
 
 Over five years I made sure to feel everything in the company and not turn away. I felt births, I felt death, I felt loss and despair, hope and optimism, tragedy and comedy. I visited people in hospitals. I popped bottles of champaign. We shared the depths of the trenches and the heights of celebration. It was my job to feel. You can't lead if you don't feel. And overnight and in the days that followed, all that feeling was replaced by an overwhelming stillness. I had to let myself feel that, too.
 

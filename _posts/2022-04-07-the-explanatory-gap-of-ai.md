@@ -4,7 +4,7 @@ title: The Explanatory Gap of AI
 date: 2022-04-07
 excerpt: A mystic's guide to whether an AI can understand.
 image: explanatory_gap/as_above_so_below_16x9.jpg
-caption: Text-to-image generation by Midjourney for the caption "As above. So below."
+caption: Text-to-image of "As above, so below" by Midjourney
 ---
 
 If an AI understands is a topic of debate. Seldom debated, however, are the limits of our own understanding. We conceptualize our understanding as complete and establish this as a baseline for AI's. When we consider our understanding as incomplete a different story emerges altogether.
@@ -13,16 +13,16 @@ The fundamental issue goes like this:
 
 An AI may describe an apple as "sweet" though it has never tasted one, "red" though it has never seen one, and "smooth" though it has never felt one. So while an AI may skillfully describe an apple and use the word appropriately in context, in what way, if any, can we say it understands “apple"?
 
-Steven Sarnad coined this the “symbol grounding problem." He reasoned that symbols we use as references must be grounded, or referent, in phenomena to be meaningful. After all, the word “apple” when written in a book has no meaning on its own. It's only when the word is read, and the reference and referent linked in a mind, that it takes on meaning. He writes that meaning of symbols is “parasitic on the meanings in our heads”.[^1] To Sarnad an AI doesn’t understand because it does not ground symbols in their referents; only minds host meaning.
+Steven Sarnad coined this the *symbol grounding problem*. He reasoned that symbols we use as references must be grounded, or referent, in phenomena to be meaningful. After all, the word “apple” when written in a book has no meaning on its own. It's only when the word is read, and the reference and referent linked in a mind, that it takes on meaning. He writes that the meaning of symbols is “parasitic on the meanings in our heads”.[^1] To Sarnad an AI doesn’t understand because it does not ground symbols in their referents; only minds host meaning.
 
-Yet now we have AIs like OpenAI's Dall-E that seem to ground text in images[^2]. Is Sarnad wrong? Do these AIs understand something previous ones did not? Predating Sarnad, John Searle addressed the issue. In Minds, Brains and Programs, Searle fashions then refutes the “Robot Reply” argument. He describes an AI that would “have a television camera attached to it that enabled it to 'see' it would have arms and legs that enabled it to 'act' and all of this would be controlled by its computer 'brain’.”[^3] Yet to Searle, this “adds nothing” to the argument. We are simply introducing more symbols, and to exploit correlations of symbols between modalities is no different than exploiting correlations within one. To Searle, grounding was neither the problem, nor the solution, to semantics emerging from syntax.
+Yet now we have AIs like OpenAI's Dall-E that seem to ground text in images[^2]. Is Sarnad wrong? Do these AIs understand something previous ones did not? Predating Sarnad, John Searle addressed the issue. In his paper Minds, Brains and Programs, Searle fashions then refutes the *Robot Reply* argument. He describes an AI that would “have a television camera attached to it that enabled it to 'see' it would have arms and legs that enabled it to 'act' and all of this would be controlled by its computer 'brain’.”[^3] Yet to Searle, this “adds nothing” to the argument. We are simply introducing more symbols, and to exploit correlations of symbols between modalities is no different than exploiting correlations within one. To Searle, grounding was neither the problem, nor the solution, to semantics emerging from syntax.
 
 > The computer understanding is not just...partial or incomplete; it is zero.
 *John Searle - Minds, Brains, and Programs*
 
 So just what is a grounded AI lacking? On this question, Sarnad and Searle are silent. Less silent, though, were the empiricists predating them. We attempt to get at our question by asking what they asked: what are human minds lacking?
 
-The empiricists accept that the sweetness, redness and smoothness of an apple -- the phenomona of apple -- is a manifestation of our minds. Outside the mind, apples have no taste, color or texture. To know what an “apple” is outside the mind is to know what Kant called the noumena of an apple: the apple “in itself.” Kant acknowledged that this noumenal reality can only be “accepted on faith” and famously called this the “scandal to philosophy.”[^4] Many philosophers grappled with this dilemma over time. Hume considered our belief in external objects a “gross absurdity”.[^5] Berkeley denied not only our knowledge of external reality, but its very existence.[^6] Several centuries later and the issue is far from settled.
+The empiricists accept that the sweetness, redness and smoothness of an apple -- the phenomena of apple -- is a manifestation of our minds. Outside the mind, apples have no taste, color or texture. To know what an “apple” is outside the mind is to know what Kant called the noumena of an apple: the apple “in itself.” Kant acknowledged that this noumenal reality can only be “accepted on faith” and famously called this the “scandal to philosophy.”[^4] Many philosophers grappled with this dilemma over time. Hume considered our belief in external objects a “gross absurdity”.[^5] Berkeley denied not only our knowledge of external reality, but its very existence.[^6] Several centuries later and the issue is far from settled.
 
 So what is a human mind lacking? To the empiricists one answer is we lack understanding of the noumena.
 
@@ -30,9 +30,9 @@ After all, our brains receive only representations of external reality: electric
 
 Similarly, AIs receive only representations of our phenomenological experience: word tokens for language, RGB matrices for images, etc. AIs are hopeless to know what our experience is at its most fundamental level -- its nature eludes them. AIs feast on computational reality and know its referent not.
 
-What makes reasoning about AI semantics confusing is this a compositional nature to the problem. The input to an AI is a representation of our output. Its syntax is our phenomena cast into bits. An image of an apple, after all, is a representation of our visual experience. The word "apple" is a representation of our semantic concept. Our realities are not adjacent; they are nested. **Our phenomena is the AI’s noumena.**
+What makes reasoning about AI semantics confusing is its compositional nature. The input to an AI is a representation of our output. Its syntax is our phenomena cast into bits. An image of an apple, after all, is a representation of our visual experience. The word "apple" is a representation of our semantic concept. Our realities are not adjacent; they are nested. **Our phenomena is the AI’s noumena.**
 
-The philosopher Colin McGinn, founder of the epistemological school of “Mysterianism”, posited that certain properties can both exist and be fundamentally unknowable to a mind. A mind's "cognitive closure" is all that can be knowable to it, but other minds may not be so limited. McGinn argues the noumenal/phenomenal correspondence as one example lying outside our own cognitive closure; perhaps knowable, just not by us.[^7]
+The philosopher Colin McGinn, founder of the epistemological school of *Mysterianism*, posited that certain properties can both exist and be fundamentally unknowable to a mind. A mind's *cognitive closure* is all that can be knowable to it, but other minds may not be so limited. McGinn argues the noumenal/phenomenal correspondence as one example lying outside our own cognitive closure; perhaps knowable, just not by us.[^7]
 
 >What is noumenal for us may not be miraculous itself. We should therefore be alert to the possibility that a problem that strikes us as deeply intractable...may arise from an area of cognitive closure in our way of representing the world.
 *Colin McGinn - The Problem of Philosophy*
@@ -47,7 +47,7 @@ A biblical allegory comes from the Hebrew interpretations of the Book of Genesis
 When we experience words, we experience them conceptually. When we experience images, we experience them visually. Like the Angels, we are thrust into this awareness -- their phenomenal nature revealed sans mediation. An AI is masked from this perception by a computational flesh. A representation, fashioned in the likeness of our phenomena, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
 
 ![Apple](assets/img/explanatory_gap/apple.png)
-*The word "apple" according to an AI (OpenAI's tokenizer)*
+*The word "apple" according to an AI*
 
 Does an AI understand? I answer: it understands a reality grounded in the computational, which is itself grounded in the phenomenological, which is itself grounded in the incomprehensible.
 
