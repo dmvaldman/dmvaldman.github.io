@@ -472,5 +472,7 @@ blockquote em:before {
   opacity:0.15;
   z-index:99;
   font-size: 100px;
+  right: 0;
+  left: 0;
   /* rotate: 20deg; */
 }
