@@ -44,7 +44,7 @@ $$
 \begin{align*}
 P(c|e) &= \frac{P(c) P(e|c)}{P(e)} \\
         &= \frac{P(c) P(e|c)}{P(e|c) P(c) + P(e|\bar{c}) P(\bar{c})} \\
-        &> \frac{P(c) P(e|c)}{P(e|c) P(c) + P(e|c) P(\bar{c})} \\
+        &< \frac{P(c) P(e|c)}{P(e|c) P(c) + P(e|c) P(\bar{c})} \\
         &= \frac{P(c)}{P(c) + P(\bar{c})} \\
         &= P(c)
 \end{align*}
