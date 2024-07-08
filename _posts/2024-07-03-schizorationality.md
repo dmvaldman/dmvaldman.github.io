@@ -16,7 +16,7 @@ It's important to state that Schizorationality is perfectly consistent with Baye
 
 ## How I Stopped Worrying and Embraced Schizorationality
 
-My journey to Schizorationality started, like many, from an errant belief. I used to think that a rational person, upon seeing evidence counter to their beliefs, should change their mind somewhat. I think many of us think this way; it is so core to the rationalist mindset. Yet often we are me with counterevidence. Rationalists dismiss such behavior as irrational and thumb through a rolodex of cognitive biases to explain it away: motivated reasoning, confirmation bias, group think. *Sigh*, just more errant beliefs to me now.
+My journey to Schizorationality started, like many, from an errant belief. I used to think that a rational person, upon seeing evidence counter to their beliefs, should change their mind somewhat. I think many of us think this way; it is so core to the rationalist mindset. Yet often we are met with counterevidence. Rationalists dismiss such behavior as irrational and thumb through a rolodex of cognitive biases to explain it away: motivated reasoning, confirmation bias, group think. *Sigh*, just more errant beliefs to me now.
 
 But how can two people of opposing views see the same piece of evidence and further entrench themselves in their initial positions? It's as if, taken as a whole, they embrace contradiction and, taken separately, at least one of them doesn't care if their beliefs map onto reality at all! If you're nodding your head in agreement, you may be as surprised as I was to discover this behavior is perfectly accounted for by Bayes' rule.
 
