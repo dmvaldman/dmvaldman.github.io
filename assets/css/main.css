@@ -463,3 +463,13 @@ blockquote em:before {
   display: block;
   color: rgb(94, 94, 230);
 }
+
+#draft{
+  position:fixed;
+  top:50%;
+  right:0px;
+  opacity:0.1;
+  z-index:99;
+  font-size: 100px;
+  rotate: 90deg;
+}

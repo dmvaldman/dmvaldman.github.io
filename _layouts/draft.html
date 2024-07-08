@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+<body>
+  <div class="container">
+    <div class="post-container">
+        <h1>
+            {{ page.title }}
+            <span id="draft">Draft</span>
+          </h1>
+
+          {% if page.image %}
+            <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+            {% if page.caption %}
+              <p class="image-caption">{{ page.caption }}</p>
+            {% endif %}
+          {% endif %}
+
+          {{ content }}
+    </div>
+  </div>
+</body>
+</html>
