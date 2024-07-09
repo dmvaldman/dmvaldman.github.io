@@ -4,6 +4,7 @@ title: Schizorationality
 date: 2024-07-03
 excerpt: Rationality is not the cure, it is the disease.
 image: schizorational/schizorational.webp
+caption: Drawing taken from <a href=https://www.reddit.com/r/Weird/comments/1cjh912/woman_with_schizophrenia_draws_what_she_sees_on/ style="color:gray">Reddit</a>
 ---
 
 I'm not rational or irrational, but a secret third thing. I'm calling it Schizorationality---split rationality. Schizorationality is the simultaneous maintaining of entire subsystems of belief in uncollapsed form. I claim that when you embrace rationality to its fullest you are led to Schizorationality out of necessity.
