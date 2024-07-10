@@ -1,7 +1,7 @@
 ---
-layout: draft
+layout: post
 title: Schizorationality
-date: 2024-07-03
+date: 2024-07-10
 excerpt: Rationality is not the cure, it is the disease.
 image: schizorational/schizorational.webp
 caption: Drawing taken from <a href=https://www.reddit.com/r/Weird/comments/1cjh912/woman_with_schizophrenia_draws_what_she_sees_on/ style="color:gray">Reddit</a>
@@ -67,7 +67,7 @@ At some point a Schizorationalist has to make a decision for herself. She is met
 
 Here, there are several schools of Schizorationalty (many-worlds, pilot-wave, I don't have time to go into them all). The one I ascribe to is a nod to modern AI training. A Schizorationalist, in her purest form, is like a base language model. She contains all knowledge in existence and internally forms representations of any possible person. When you run such a model, all you get is unvarnished schizoid output. But now we do an [RLHF](https://www.anthropic.com/news/claudes-constitution) training step against a constitution---the principles we define externally and quite arbitrarily. Slowly the schizotic episodes become more stable and relatable---an identity emerges. The multitude of internal selves are still present, but are now accessed in an opinionated way. Streams of personas are rolled out, and from this frenzy of contradiction, a reward model plucks out "Who am I now?".
 
-This is quite a departure from the behavior of rationalists. A rationalist has evolved from inside out. He starts from tabula rasa beliefs, and is led, experience by experience, to occupy a niche of thought. A society of rationalists, doing this in parallel against a diversity of experience, forms a landscape of incoherent ideologies, each laying claim on truth. A Schizorationalist inverts this model; she has evolved from outside in. Rather than starting tabula rasa, she starts from the landscape. Rather than being led to action via Bayes' rule, she chooses a Bayesian who acts. Rather than referring to her beliefs she's convinced are truths, she refers to her principles she sees as arbitrary.
+This is quite a departure from the behavior of rationalists. A rationalist has evolved from inside out. He starts from tabula rasa beliefs, and is led, experience by experience, to occupy a niche of thought. A society of rationalists, doing this in parallel against a diversity of experience, forms a landscape of incoherent ideologies, each laying claim on truth. A Schizorationalist inverts this model; she has evolved from outside in. Rather than starting tabula rasa, she starts from the landscape. Rather than being led to action via Bayes' rule, she chooses a Bayesian who acts. Rather than referring to beliefs taken as truths, she refers to principles taken as arbitrary.
 
 ----------
 
