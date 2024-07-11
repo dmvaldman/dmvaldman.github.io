@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Schizorationality
-date: 2024-07-10
+date: 2024-07-11
 excerpt: Rationality is not the cure, it is the disease.
 image: schizorational/schizorational.webp
 caption: Drawing taken from <a href=https://www.reddit.com/r/Weird/comments/1cjh912/woman_with_schizophrenia_draws_what_she_sees_on/ style="color:gray">Reddit</a>
@@ -35,7 +35,7 @@ Let's take a more relevant example. How about a study from a prestigious institu
 
 I'm going to show how Bayes' rule can lead to confirmation bias, but feel free to skip if you don't have the requisite background. To acquire such background, I recommend [this book](https://www.amazon.com/Probability-Theory-Science-T-Jaynes/dp/0521592712).
 
-Let $c$ be some claim, for example, $c = $ "Global warming is caused by human activity" and let $\bar{c}$ be its opposite. You are met with some new evidence $e =$ "A study from Harvard supporting $c$". However, you distrust the evidence's conclusion and have an alternate hypothesis "Academics have a liberal bias" that accounts for the evidence but supports $\bar{c}$ rather than $c$. Moreover, you believe in this alternate hypothesis more than you do that $e$ accounts for $c$
+Let $c$ be some claim, for example, $c = $ "Global warming is caused by human activity" and let $\bar{c}$ be its opposite. You are met with some new evidence $e =$ "A study from Harvard linking global warming to human activity". However, you distrust the evidence and have an alternate hypothesis "Academics have a liberal bias" that accounts for the evidence but supports $\bar{c}$. Moreover, you believe in this alternate hypothesis more than you do that $e$ accounts for $c$
 
 $$P(e|\bar{c}) > P(e|c)$$
 
