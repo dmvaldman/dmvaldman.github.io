@@ -437,7 +437,6 @@ blockquote em:before {
   height: 40px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-top: 1px dashed gray;
 }
 
 .mug {
@@ -446,7 +445,6 @@ blockquote em:before {
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
-  display: inline-block;
   float:left;
   margin-right: 16px;
 }
@@ -454,14 +452,19 @@ blockquote em:before {
 .author-blurb {
   line-height: 20px;
   font-size: 1rem;
-  display: inline-block;
   float:left;
-  width: calc(100% - 58px);
+  /* width: calc(100% - 58px); */
 }
 
 .author-blurb a{
-  display: block;
-  color: rgb(94, 94, 230);
+  /* display: block; */
+  /* color: rgb(94, 94, 230); */
+}
+
+.getintouch {
+  line-height: 20px;
+  font-size: 1rem;
+  border-top: 1px dashed gray;
 }
 
 #draft{
