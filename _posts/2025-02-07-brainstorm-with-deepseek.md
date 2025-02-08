@@ -3,7 +3,7 @@ layout: draft
 title: Brainstorming with DeepSeek
 date: 2025-02-07
 excerpt: The best AI brainstorming partner?
-image:
+permalink: /drafts/:title
 ---
 
 DeepSeek is the first model I've found to be an effective brainstorming partner. I felt like it met me where I was and then would take me further. It was unafraid to make bold claims, saying things like "let’s flirt with heresy" or ominously provoke "The Unasked Question" or warn me it's about to "throw speculative grenades." It spoke in rich analogies, wrote poetically, went down diverse branches of thought and speculation. All in all, it inspired my own thinking.
