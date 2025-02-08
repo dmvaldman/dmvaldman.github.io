@@ -417,7 +417,7 @@ blockquote em:before {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  border-top: 2px dashed rgb(182, 182, 182);
+  /* border-top: 2px dashed rgb(182, 182, 182); */
 }
 
 .author-blurb {
