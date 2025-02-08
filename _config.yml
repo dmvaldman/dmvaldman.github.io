@@ -28,3 +28,11 @@ twitter_username:    'dmvaldman'
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+
+defaults:
+  - scope:
+      path: ""      # empty string means all files in the project
+      type: "posts" # limit to posts
+      layout: "draft"   # only apply to posts with layout: draft
+    values:
+      permalink: "/drafts/:title"
