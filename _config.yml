@@ -19,10 +19,6 @@ highlighter:         rouge
 permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Kramdown configuration
-kramdown:
-  input: MyParser
-
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Writings'
 description:	       ''
