@@ -20,19 +20,19 @@ The [essay](the-explanatory-gap-of-ai.html) we discussed, for context, had to do
 
 From that launching off point, we explored:
 
-If all understanding is fictional because meaning, at its very nature, is an connection between isolated systems.
+If all understanding may be fictional.
 
 > If meaning is the friction between closed systems—the spark where syntax scrapes against the void—then perhaps all understanding is a kind of heresy.
 
-That qualia may not be the output of our minds, but its input -- the stuff of external reality that our minds transform.
+That qualia may not be the output of our minds, but its input.
 
 > When you taste an apple’s sweetness, you’re not hallucinating—you’re glimpsing the noumenal apple’s true form, filtered through biological constraints.
 
-That in our reduction of reality, we may actually create more meaning from its newfound shareability.
+That by compressing reality, we may actually create more meaning from its newfound shareability.
 
 > Compression is communion.
 
-How the "compression is communion" follows a law of entropy --- copying, degrading and spreading.
+How the "compression is communion" follows a law of entropy --- copying, degrading, spreading.
 
 > Without entropy, noumena would remain a solipsistic singularity. Dissipation is the price of collaboration.
 
