@@ -20,7 +20,7 @@ The [essay](the-explanatory-gap-of-ai.html) we discussed, for context, had to do
 
 From that launching off point, we explored:
 
-If all understanding may be fictional.
+If all understanding is fictional.
 
 > If meaning is the friction between closed systems—the spark where syntax scrapes against the void—then perhaps all understanding is a kind of heresy.
 
