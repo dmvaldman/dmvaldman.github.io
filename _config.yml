@@ -16,7 +16,7 @@ paginate:            6
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
-permalink:           none
+permalink:           /:categories/:year/:month/:day/:title:output_ext
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
@@ -35,4 +35,9 @@ defaults:
       type: "posts" # limit to posts
       layout: "draft"   # only apply to posts with layout: draft
     values:
-      permalink: "/drafts/:title"
+      permalink: "/drafts/:title/"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/:title/"
