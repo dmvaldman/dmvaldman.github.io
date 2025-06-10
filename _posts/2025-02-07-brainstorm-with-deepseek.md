@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 title: Brainstorming with DeepSeek
 date: 2025-02-10
 excerpt: The best AI brainstorming partner?
