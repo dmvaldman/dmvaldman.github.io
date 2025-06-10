@@ -31,13 +31,13 @@ twitter_username:    'dmvaldman'
 
 defaults:
   - scope:
-      path: ""      # empty string means all files in the project
-      type: "posts" # limit to posts
-      layout: "draft"   # only apply to posts with layout: draft
-    values:
-      permalink: "/drafts/:title/"
-  - scope:
       path: ""
       type: "posts"
     values:
       permalink: "/:title/"
+  - scope:
+      path: ""
+      type: "posts"
+      layout: "draft"
+    values:
+      permalink: "/drafts/:title/"
