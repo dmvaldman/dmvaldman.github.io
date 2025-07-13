@@ -46,7 +46,7 @@ A biblical allegory comes from the Hebrew interpretations of the Book of Genesis
 
 When we experience words, we experience them conceptually. When we experience images, we experience them visually. Like the Angels, we are thrust into this awareness -- their phenomenal nature revealed sans mediation. An AI is masked from this perception by a computational flesh. A representation, fashioned in the likeness of our phenomena, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
 
-![Apple](assets/img/explanatory_gap/apple.png)
+![Apple](/assets/img/explanatory_gap/apple.png)
 *The word "apple" according to an AI*
 
 Does an AI understand? I answer: it understands a reality grounded in the computational, which is itself grounded in the phenomenological, which is itself grounded in the incomprehensible.
