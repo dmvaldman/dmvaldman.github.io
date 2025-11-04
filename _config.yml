@@ -35,9 +35,3 @@ defaults:
       type: "posts"
     values:
       permalink: "/:title/"
-  - scope:
-      path: ""
-      type: "posts"
-      layout: "draft"
-    values:
-      permalink: "/drafts/:title/"
