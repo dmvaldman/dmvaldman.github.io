@@ -1,6 +1,7 @@
 ---
 layout: page_nonblog
 title: Photos
+permalink: /photos/
 ---
 
 <p class="photo-intro">Long-lived albums I update every now and again.</p>

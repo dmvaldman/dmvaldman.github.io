@@ -1,6 +1,7 @@
 ---
 layout: page_nonblog
 title: Projects
+permalink: /projects/
 ---
 
 <p class="projects-intro">Things I've built and am building.</p>
