@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% for item in page.items %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ item.url }}">
+    <div class="meta">
+      <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+      {% if item.collection == 'projects' %}
+        <span class="item-type">Project</span>
+      {% else %}
+        <span class="item-type">Writing</span>
+      {% endif %}
+    </div>
+    <div class="content">
+      <h2 class="title">{{ item.title }}</h2>
+      {% if item.excerpt %}
+        <p class="subtitle">{{ item.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+{% if page.total_pages > 1 %}
+<div class="pagination">
+  {% assign next_page = page.page_num | plus: 1 %}
+  {% if next_page <= page.total_pages %}
+    <a class="pagination-button pagination-active next" href="{{ site.github.url }}/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
+  {% endif %}
+
+  {% if page.page_num > 1 %}
+    {% assign prev_page = page.page_num | minus: 1 %}
+    {% if prev_page == 1 %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/">{{ site.data.settings.pagination.next_page }}</a>
+    {% else %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
+    {% endif %}
+  {% endif %}
+</div>
+{% endif %}

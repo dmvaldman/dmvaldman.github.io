@@ -2,21 +2,22 @@
 layout: default
 ---
 
-<p class="projects-intro">Things I've built and am building.</p>
-
-<div class="projects-list">
 {% for project in page.projects %}
-<div class="project-item">
-  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-  {% if project.data.excerpt %}
-    <p class="project-excerpt">{{ project.data.excerpt }}</p>
-  {% endif %}
-  {% if project.data.link %}
-    <a href="{{ project.data.link }}" class="project-link">View Project →</a>
-  {% endif %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ project.url }}">
+    <div class="meta">
+      <span class="date">{{ project.date | date: "%Y" }} · {{ project.date | date: "%m" }}</span>
+      <span class="item-type">Project</span>
+    </div>
+    <div class="content">
+      <h2 class="title">{{ project.title }}</h2>
+      {% if project.excerpt %}
+        <p class="subtitle">{{ project.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
 </div>
 {% endfor %}
-</div>
 
 <!-- Pagination links -->
 {% if page.total_pages > 1 %}

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% for post in page.posts %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ post.url }}">
+    <div class="meta">
+      <span class="date">{{ post.date | date: "%Y" }} · {{ post.date | date: "%m" }}</span>
+      <span class="item-type">Writing</span>
+    </div>
+    <div class="content">
+      <h2 class="title">{{ post.title }}</h2>
+      {% if post.excerpt %}
+        <p class="subtitle">{{ post.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+{% if page.total_pages > 1 %}
+<div class="pagination">
+  {% assign next_page = page.page_num | plus: 1 %}
+  {% if next_page <= page.total_pages %}
+    <a class="pagination-button pagination-active next" href="{{ site.github.url }}/writing/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
+  {% endif %}
+
+  {% if page.page_num > 1 %}
+    {% assign prev_page = page.page_num | minus: 1 %}
+    {% if prev_page == 1 %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/writing/">{{ site.data.settings.pagination.next_page }}</a>
+    {% else %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/writing/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
+    {% endif %}
+  {% endif %}
+</div>
+{% endif %}

@@ -6,7 +6,8 @@ disqus:
 google-ID: 'UA-27168505-1'
 
 menu:
-- {name: 'Writing', url: '/'}
+- {name: 'Home', url: '/'}
+- {name: 'Writing', url: '/writing/'}
 - {name: 'Projects', url: '/projects/'}
 - {name: 'Photos', url: '/photos/'}
 - {name: 'About', url: '/about/'}

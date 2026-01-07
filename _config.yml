@@ -11,7 +11,7 @@
 #   sort_reverse: true
 
 # jekyll-paginate configuration
-paginate:            20
+paginate:            10
 
 # Collections
 collections:
