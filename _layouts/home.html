@@ -3,30 +3,23 @@ layout: default
 title: Home
 ---
 
-<h1 class="section-header">Projects</h1>
+{% assign all_items = paginator.posts | concat: site.projects | sort: 'date' | reverse %}
 
-<div class="home-projects">
-{% assign sorted_projects = site.projects | sort: 'order' | limit: 3 %}
-{% for project in sorted_projects %}
-<div class="home-project-item">
-  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-  {% if project.excerpt %}
-    <p class="project-excerpt">{{ project.excerpt }}</p>
-  {% endif %}
-</div>
-{% endfor %}
-</div>
-
-<h1 class="section-header">Writing</h1>
-
-{% for post in paginator.posts %}
-<div class="post">
-  <a href="{{ site.github.url }}{{ post.url }}">
-    <span class="date">{{ post.date | date: "%Y" }} · {{ post.date | date: "%m" }}</span>
+{% for item in all_items %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ item.url }}">
+    <div class="meta">
+      <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+      {% if item.collection == 'projects' %}
+        <span class="item-type">Project</span>
+      {% else %}
+        <span class="item-type">Writing</span>
+      {% endif %}
+    </div>
     <div class="content">
-      <h2 class="title">{{ post.title }}</h2>
-      {% if post.excerpt %}
-        <p class="subtitle">{{ post.excerpt | strip_html }}</p>
+      <h2 class="title">{{ item.title }}</h2>
+      {% if item.excerpt %}
+        <p class="subtitle">{{ item.excerpt | strip_html }}</p>
       {% endif %}
     </div>
   </a>

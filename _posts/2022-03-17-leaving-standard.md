@@ -2,7 +2,7 @@
 layout: post
 title: Leaving the Company I Co-founded
 date: 2022-03-17
-excerpt: Five years ago I co-founded a company and last month I quit.
+excerpt: Five years ago I co-founded a company and last month I quit
 image: standard/leaving_wide4.jpg
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Is Traveling an Escape?"
 date: 2015-01-14
-excerpt: "By paying attention to what you miss, you'll know what you want."
+excerpt: "By paying attention to what you miss, you'll know what you want"
 image: escape/escape_banner_16_9.jpg
 tags: [travel]
 ---
@@ -31,4 +31,3 @@ People want me to come home. But my goal is to come home when I know what it is 
 
 Yesterday marked two months of traveling. Here’s to missing the things that matter most. And to finding purpose, rather than running from it.
 
-  

@@ -2,7 +2,7 @@
 layout: post
 title: Schizorationality
 date: 2024-07-11
-excerpt: Rationality is not the cure, it is the disease.
+excerpt: Rationality is not the cure, it is the disease
 image: schizorational/schizorational.webp
 caption: Drawing taken from <a href=https://www.reddit.com/r/Weird/comments/1cjh912/woman_with_schizophrenia_draws_what_she_sees_on/ style="color:gray">Reddit</a>
 ---

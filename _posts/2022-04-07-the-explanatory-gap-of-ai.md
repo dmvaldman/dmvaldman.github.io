@@ -2,7 +2,7 @@
 layout: post
 title: The Explanatory Gap of AI
 date: 2022-04-07
-excerpt: A mystic's guide to whether an AI can understand.
+excerpt: A mystic's guide to whether AI can understand
 image: explanatory_gap/as_above_so_below_16x9.jpg
 caption: Text-to-image of "As above, so below" by Midjourney
 ---

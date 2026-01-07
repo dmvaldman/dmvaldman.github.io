@@ -2,7 +2,7 @@
 layout: post
 title: "A Month in Vietnam"
 date: 2014-12-24
-excerpt: "To see the future being created by following the present, rather than planning for it."
+excerpt: "To see the future being created by following the present, rather than planning for it"
 image: vietnam/1*6uWNLuE8sIWt8OF5boFWAg.jpeg
 tags: [travel]
 ---
@@ -33,7 +33,7 @@ The traffic in the cities is an experience. There are rarely stop lights, and of
 
 ![](/assets/img/vietnam/1*CqTrOrXVGobKtZCDMTkiBw.jpeg)
 *Saigon traffic*
-  
+
 One thing a fellow traveller pointed out is that he’s never seen a driver get upset, and neither had I. Road rage is as foreign as McDonalds. You could say “they’re just used to it; it’s how things are”. But traffic is how things are in the states, and no one is used to it. It was explained to me that it’s more of a Buddhist thing; that to become frustrated is to lose face. It’s one of the many little observables that surfaces from a deeper cultural shift.
 
 The Vietnamese are incredibly social. Everyone’s out at night, drinking and eating. Shops set up tiny stools smaller than kindergarten seats, and they flood the sidewalks. In the narrow streets of Hanoi, the overflow of chairs from one side of the street nearly kisses the other. It seemed to me that whether you were rich or poor, you ate at the same places, drank in the same company, and lived in the same neighborhoods. You’d often see a beautifully restored French Colonial house (that puts the Victorians in San Francisco to shame) next to a falling apart shack. Once I was in the market in Saigon eating my favorite morning food — banh be hue — with a woman that was clearly well off, and she told me she loves going here and having lunch for $1. A lack of envy is another cultural shift.
@@ -48,4 +48,3 @@ Vietnam, you are a lovely place and people. You may try to get me to pay 2–4x 
 
 In this month I learned how to let go. How to not worry about taking the public bus you don’t know how to get to, to a city where you don’t know where you’ll sleep. I learned that for me to feel more alive, it helps to be out of my comfort zone. To see the future being created by following the present, rather than planning for it. To realize that there are many trajectories passing through each point in time, and you can jump from one to another on nothing more than a whim if it suits you better; there is an adventure and good times at the end of many of them.
 
-  

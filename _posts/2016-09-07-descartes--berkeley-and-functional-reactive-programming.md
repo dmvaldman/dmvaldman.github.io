@@ -2,7 +2,7 @@
 layout: post
 title: "Descartes, Berkeley and Functional Reactive Programming"
 date:	2016-09-07
-excerpt: "Beneath the concepts of functional reactive program is a deeper principle."
+excerpt: "The choice between OOP and FRP comes down to epistemology"
 image: frp/frp_banner_16_9.png
 tags: [philosophy, software]
 ---
