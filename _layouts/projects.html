@@ -10,7 +10,16 @@ layout: default
       <span class="item-type">Project</span>
     </div>
     <div class="content">
-      <h2 class="title">{{ project.title }}</h2>
+      <h2 class="title">
+        {{ project.title }}
+        {% if project.tags and project.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in project.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
       {% if project.excerpt %}
         <p class="subtitle">{{ project.excerpt | strip_html }}</p>
       {% endif %}

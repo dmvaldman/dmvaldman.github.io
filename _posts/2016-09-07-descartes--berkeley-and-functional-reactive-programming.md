@@ -4,7 +4,6 @@ title: "Descartes, Berkeley and Functional Reactive Programming"
 date:	2016-09-07
 excerpt: "The choice between OOP and FRP comes down to epistemology"
 image: frp/frp_banner_16_9.png
-tags: [philosophy, software]
 ---
 
 Functional reactive programming is laden with unfamiliar terminology to the newcomer: pure functions, immutability, monads, etc. But beneath these concepts is a deeper principle — one debated long before Charles Babbage and the first computers. <!--more-->I argue the difference between object-oriented programming (OOP) and functional reactive programming (FRP) is as much about interpretations of reality as it is about structures of programs.

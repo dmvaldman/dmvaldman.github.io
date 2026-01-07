@@ -4,7 +4,6 @@ title: "A Space for the Unfamiliar"
 date: 2019-03-04
 excerpt: It was made as if to create separation from this world
 image: unfamiliar/unfamiliar_banner_16_9.jpg
-tags: [travel]
 ---
 
 “Where are you going camping?” a friend asked. “North.” I said.

@@ -14,7 +14,16 @@ layout: default
       {% endif %}
     </div>
     <div class="content">
-      <h2 class="title">{{ item.title }}</h2>
+      <h2 class="title">
+        {{ item.title }}
+        {% if item.tags and item.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in item.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
       {% if item.excerpt %}
         <p class="subtitle">{{ item.excerpt | strip_html }}</p>
       {% endif %}

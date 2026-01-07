@@ -4,7 +4,6 @@ title: "Trekking in Myanmar"
 date: 2015-03-12
 excerpt: "A three-day trek in the Shan hill tribes of Myanmar"
 image: myanmar/myanmar_banner_16_9.jpg
-tags: [travel]
 ---
 
 I did a three day trek in the Shan hill tribes of Myanmar and it has been one of most different and authentic experiences of my life. I find myself processing it still.

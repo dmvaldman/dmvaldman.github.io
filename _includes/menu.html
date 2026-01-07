@@ -1,7 +1,15 @@
 <div class="menu">
   <nav class="menu-content">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      {% assign is_active = false %}
+      {% if page.url == item.url %}
+        {% assign is_active = true %}
+      {% elsif item.url == '/writing/' and page.url contains '/writing/' %}
+        {% assign is_active = true %}
+      {% elsif item.url == '/projects/' and page.url contains '/projects/' %}
+        {% assign is_active = true %}
+      {% endif %}
+      <a href="{{ site.github.url }}{{ item.url }}" {% if is_active %}class="active"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
   <nav class="social-icons">

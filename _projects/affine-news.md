@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Affine News (web)"
-excerpt: "Explore bias in the news"
-date: 2025-10-30
+title: "Showerthoughts"
+excerpt: "Training an LLM for reasoning"
+date: 2024-05-29
 image: /assets/img/project-image.jpg
-link: https://affine.news
+link: https://github.com/dmvaldman/Showerthoughts
+tags: ["LLM"]
 ---
 

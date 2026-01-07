@@ -10,7 +10,16 @@ layout: default
       <span class="item-type">Writing</span>
     </div>
     <div class="content">
-      <h2 class="title">{{ post.title }}</h2>
+      <h2 class="title">
+        {{ post.title }}
+        {% if post.tags and post.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
       {% if post.excerpt %}
         <p class="subtitle">{{ post.excerpt | strip_html }}</p>
       {% endif %}
