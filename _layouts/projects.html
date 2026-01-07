@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<p class="projects-intro">Things I've built and am building.</p>
+
+<div class="projects-list">
+{% for project in page.projects %}
+<div class="project-item">
+  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+  {% if project.data.excerpt %}
+    <p class="project-excerpt">{{ project.data.excerpt }}</p>
+  {% endif %}
+  {% if project.data.link %}
+    <a href="{{ project.data.link }}" class="project-link">View Project →</a>
+  {% endif %}
+</div>
+{% endfor %}
+</div>
+
+<!-- Pagination links -->
+{% if page.total_pages > 1 %}
+<div class="pagination">
+  {% assign next_page = page.page_num | plus: 1 %}
+  {% if next_page <= page.total_pages %}
+    <a class="pagination-button pagination-active next" href="{{ site.github.url }}/projects/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
+  {% endif %}
+
+  {% if page.page_num > 1 %}
+    {% assign prev_page = page.page_num | minus: 1 %}
+    {% if prev_page == 1 %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/projects/">{{ site.data.settings.pagination.next_page }}</a>
+    {% else %}
+      <a class="pagination-button pagination-active" href="{{ site.github.url }}/projects/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
+    {% endif %}
+  {% endif %}
+</div>
+{% endif %}
