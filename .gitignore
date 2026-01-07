@@ -6,3 +6,5 @@ Gemfile.lock
 .jekyll-cache/
 .DS_Store
 node_modules
+CLAUDE.md
+.claude/

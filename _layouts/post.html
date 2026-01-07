@@ -2,35 +2,23 @@
 layout: default
 ---
 
-<h1>
-  {{ page.title }}
-</h1>
-<span class="post-date">
-  {{ site.data.settings.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st
-    {% when '2' or '22' %}{{ d }}nd
-    {% when '3' or '23' %}{{ d }}rd
-    {% else %}{{ d }}th{% endcase %},
-  {{ page.date | date: "%Y" }}
-  by
-  {% if page.author %}
-    {{ page.author }}
-  {% else %}
-    {{ site.author }}
-  {% endif %}
-</span>
-
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-  {% if page.caption %}
-    <p class="image-caption">{{ page.caption }}</p>
-  {% endif %}  
-{% endif %}
+<div class="post-header">
+  <h1>
+    {{ page.title }}
+  </h1>
+  <span class="post-date">
+    {{ page.date | date: "%Y" }} · {{ page.date | date: "%B %-d" }} · {% include read-time.html %}
+  </span>
+</div>
 
 {{ content }}
+
+<div class="author">
+  <img class="mug" src="/assets/img/mug.png"></img>
+  <div class="author-blurb">Have a comment or response? <a href="mailto:dmvaldman@gmail.com>">Email me</a>
+    <br>Like the writing? <a href="https://x.com/dmvaldman" class="author-social">Follow me on X</a>
+  </div>
+</div>
 
 {% include related-posts.html %}
 
