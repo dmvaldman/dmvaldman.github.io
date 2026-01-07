@@ -13,6 +13,12 @@
 # jekyll-paginate configuration
 paginate:            20
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 # Build settings
 markdown:            kramdown
 highlighter:         rouge

@@ -3,7 +3,21 @@ layout: default
 title: Home
 ---
 
-<h1 class="writing-header">Writing</h1>
+<h1 class="section-header">Projects</h1>
+
+<div class="home-projects">
+{% assign sorted_projects = site.projects | sort: 'order' | limit: 3 %}
+{% for project in sorted_projects %}
+<div class="home-project-item">
+  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+  {% if project.excerpt %}
+    <p class="project-excerpt">{{ project.excerpt }}</p>
+  {% endif %}
+</div>
+{% endfor %}
+</div>
+
+<h1 class="section-header">Writing</h1>
 
 {% for post in paginator.posts %}
 <div class="post">
