@@ -229,9 +229,7 @@ hr {
   color: var(--color-text-muted);
   font-size: var(--font-size-xl);
   font-weight: 500;
-  margin: var(--spacing-lg) 0 var(--spacing-sm) 0;
-  padding-bottom: var(--spacing-sm);
-  border-bottom: 1px solid var(--color-text-faint);
+  margin: var(--spacing-lg) 0 0 0;
 }
 
 /*

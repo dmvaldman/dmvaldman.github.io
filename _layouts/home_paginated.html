@@ -3,12 +3,17 @@ layout: default
 ---
 
 <h1 class="section-header">Timeline</h1>
+<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
 
 {% for item in page.items %}
 <div class="feed-item">
   <a href="{{ site.github.url }}{{ item.url }}">
     <div class="meta">
-      <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+      {% if item.status == 'current' %}
+        <span class="date">Current</span>
+      {% else %}
+        <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+      {% endif %}
       {% if item.collection == 'projects' %}
         <span class="item-type">Project</span>
       {% else %}
@@ -32,6 +37,12 @@ layout: default
     </div>
   </a>
 </div>
+
+{% assign index = forloop.index %}
+{% if page.current_count > 0 and index == page.current_count %}
+<hr style="margin: var(--spacing-xl) 0;">
+{% endif %}
+
 {% endfor %}
 
 <!-- Pagination links -->

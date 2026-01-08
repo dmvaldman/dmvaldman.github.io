@@ -3,12 +3,17 @@ layout: default
 ---
 
 <h1 class="section-header">Projects</h1>
+<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
 
 {% for project in page.projects %}
 <div class="feed-item">
   <a href="{{ site.github.url }}{{ project.url }}">
     <div class="meta">
-      <span class="date">{{ project.date | date: "%Y" }} · {{ project.date | date: "%m" }}</span>
+      {% if project.status == 'current' %}
+        <span class="date">Current</span>
+      {% else %}
+        <span class="date">{{ project.date | date: "%Y" }} · {{ project.date | date: "%m" }}</span>
+      {% endif %}
       <span class="item-type">Project</span>
     </div>
     <div class="content">
@@ -28,6 +33,12 @@ layout: default
     </div>
   </a>
 </div>
+
+{% assign index = forloop.index %}
+{% if page.current_count > 0 and index == page.current_count %}
+<hr style="margin: var(--spacing-xl) 0;">
+{% endif %}
+
 {% endfor %}
 
 <!-- Pagination links -->
