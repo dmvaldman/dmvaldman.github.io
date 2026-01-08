@@ -4,12 +4,15 @@
 
 :root {
   /* Colors */
-  --color-bg: #100F0F;
   --color-text: #CECDC3;
   --color-text-muted: #878580;
   --color-text-faint: #575653;
   --color-link: #CECDC3;
   --color-link-hover: #E6E4D9;
+  --color-black: #100F0F;
+  --color-dark-gray: #202020;
+  --color-gray: #575653;
+  --color-light-gray: #878580;
 
   /* Typography */
   --font-content: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
@@ -39,7 +42,7 @@ html {
 body {
   font-family: var(--font-content);
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-black);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -310,15 +313,19 @@ hr {
   font-size: var(--font-size-md);
 }
 
-.feed-item a,
-.post a {
+.feed-item a {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 80px auto;
   column-gap: var(--spacing-sm);
   row-gap: 0.1em;
   align-items: baseline;
   text-decoration: none;
   width: fit-content;
+}
+
+.post a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .feed-item .meta {
@@ -337,6 +344,8 @@ hr {
   grid-row: 1;
   white-space: nowrap;
   color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
 }
 
 .feed-item .title,
@@ -373,6 +382,8 @@ hr {
   color: var(--color-text-faint);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
 }
 
 .feed-item .subtitle,
@@ -385,14 +396,15 @@ hr {
   width: fit-content;
 }
 
-.post-container h1 {
+.post h1 {
   font-size: var(--font-size-xl);
 }
 
-.post-container img {
+.post img {
   max-height: 600px;
   object-fit: contain;
 }
+
 
 .post-header {
   margin-bottom: var(--spacing-lg);
@@ -525,8 +537,8 @@ pre {
 code {
   padding: 0.2em 0.4em;
   font-size: 90%;
-  background-color: var(--color-text-faint);
   border-radius: 3px;
+  background-color: var(--color-dark-gray);
   color: var(--color-text);
 }
 
@@ -537,7 +549,7 @@ pre {
   font-size: var(--font-size-sm);
   white-space: pre-wrap;
   word-break: break-all;
-  background-color: var(--color-text-faint);
+  background-color: var(--color-dark-gray);
   border-radius: 4px;
   overflow-x: auto;
 }
@@ -545,7 +557,7 @@ pre {
 pre code {
   padding: 0;
   font-size: 100%;
-  color: inherit;
+  color: var(--color-text-muted);
   background-color: transparent;
 }
 
@@ -553,6 +565,14 @@ pre code {
 pre.highlight {
   white-space: pre;
   overflow-x: auto;
+  background-color: var(--color-dark-gray);
+}
+
+/* Word wrap for markdown code blocks */
+.language-markdown pre.highlight {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: visible;
 }
 
 /* Gist via GitHub Pages */

@@ -2,9 +2,9 @@
 layout: post
 title: "Showerthoughts"
 excerpt: "Train an LLM to reason"
-date: 2025-11-05
+date: 2024-05-29
 image: /assets/img/project-image.jpg
-link: https://satlas.earth
+link: https://github.com/dmvaldman/Showerthoughts
 tags: [LLM]
 ---
 
