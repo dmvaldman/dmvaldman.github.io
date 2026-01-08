@@ -26,7 +26,7 @@
   --spacing-sm: 1em;
   --spacing-md: 1.5em;
   --spacing-lg: 2em;
-  --spacing-xl: 3em;
+  --spacing-xl: 2.5em;
 }
 
 html {
@@ -126,7 +126,6 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
   display: block;
   margin: var(--spacing-lg) auto;
 }
@@ -193,7 +192,8 @@ hr {
   border: 0;
   height: 1px;
   background: var(--color-text-faint);
-  margin: var(--spacing-xl) 0;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 /*
@@ -216,7 +216,6 @@ hr {
   width: 100%;
   max-height: 400px;
   overflow: hidden;
-  border-radius: 5px;
   object-fit: cover;
 }
 
@@ -390,6 +389,11 @@ hr {
   font-size: var(--font-size-xl);
 }
 
+.post-container img {
+  max-height: 600px;
+  object-fit: contain;
+}
+
 .post-header {
   margin-bottom: var(--spacing-lg);
 }
@@ -399,6 +403,17 @@ hr {
   color: var(--color-text-muted);
   display: block;
   margin-top: calc(-0.9 * var(--spacing-lg));
+}
+
+.banner {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 /*
@@ -466,11 +481,27 @@ hr {
   margin-bottom: 20px;
 }
 
+.menu-content {
+  display: flex;
+}
+
 .menu-content a {
   color: var(--color-link);
   margin-right: 20px;
   font-size: var(--font-size-lg);
   font-weight: 300;
+  display: inline-block;
+}
+
+.menu-content a::after {
+  content: attr(data-text);
+  font-weight: 500;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  display: block;
 }
 
 .menu-content a:hover {

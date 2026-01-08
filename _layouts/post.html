@@ -11,6 +11,15 @@ layout: default
   </span>
 </div>
 
+{% if page.image %}
+<div class="banner">
+  <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+  {% if page.caption %}
+    <p class="image-caption">{{ page.caption }}</p>
+  {% endif %}
+</div>
+{% endif %}
+
 {{ content }}
 
 <div class="author">

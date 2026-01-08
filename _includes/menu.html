@@ -9,7 +9,7 @@
       {% elsif item.url == '/projects/' and page.url contains '/projects/' %}
         {% assign is_active = true %}
       {% endif %}
-      <a href="{{ site.github.url }}{{ item.url }}" {% if is_active %}class="active"{% endif %}>{{ item.name }}</a>
+      <a href="{{ site.github.url }}{{ item.url }}" data-text="{{ item.name }}" {% if is_active %}class="active"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
   <nav class="social-icons">
