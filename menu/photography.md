@@ -4,7 +4,7 @@ title: Photos
 permalink: /photos/
 ---
 
-<p class="photo-intro">Long-lived albums I update every now and again.</p>
+<h1 class="section-header">Photos</h1>
 
 <div class="photo-albums">
 
