@@ -131,16 +131,17 @@ img {
 }
 
 .photo-intro {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   color: var(--color-text-muted);
   margin: var(--spacing-lg) 0 var(--spacing-sm) 0;
-  padding-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-md);
   border-bottom: 1px solid var(--color-text-faint);
 }
 
 .photo-albums {
   column-count: 3;
   column-gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
 }
 
 .album-item {
@@ -354,6 +355,7 @@ hr {
   height: 100%;
   margin-left: 0.5em;
   vertical-align: middle;
+  cursor: default;
 }
 
 .tag {
