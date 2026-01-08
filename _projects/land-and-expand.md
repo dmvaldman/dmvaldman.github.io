@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Land and Expand"
-excerpt: "Read Nick Land's Meltdown with the help of AI"
+excerpt: "AI annotates Meltdown by Nick Land"
 date: 2025-10-07
 image: land-and-expand/landandexpand.jpeg
 link: https://dmvaldman.github.io/LandAndExpand/
