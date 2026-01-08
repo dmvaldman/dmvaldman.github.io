@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1 class="section-header">Photos</h1>
+
+<div class="photo-albums">
+{% for album in page.albums %}
+<div class="album-item">
+  <h2>{{ album.title }}</h2>
+  <a href="{{ album.link }}">
+    <img src="{{ album.image }}" alt="{{ album.title }}">
+  </a>
+</div>
+{% endfor %}
+</div>

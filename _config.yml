@@ -18,6 +18,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  photography:
+    output: false
 
 # Build settings
 markdown:            kramdown
