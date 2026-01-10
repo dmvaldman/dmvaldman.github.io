@@ -12,7 +12,7 @@ layout: default
       {% if project.status == 'current' %}
         <span class="date">Current</span>
       {% else %}
-        <span class="date">{{ project.date | date: "%Y" }} · {{ project.date | date: "%m" }}</span>
+        <span class="date">{{ project.date | date: "%b %Y" }}</span>
       {% endif %}
       <span class="item-type">Project</span>
     </div>

@@ -9,7 +9,7 @@ title: Home
 <div class="feed-item">
   <a href="{{ site.github.url }}{{ item.url }}">
     <div class="meta">
-      <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+      <span class="date">{{ item.date | date: "%b %Y" }}</span>
       {% if item.collection == 'projects' %}
         <span class="item-type">Project</span>
       {% else %}

@@ -12,7 +12,7 @@ layout: default
       {% if item.status == 'current' %}
         <span class="date">Current</span>
       {% else %}
-        <span class="date">{{ item.date | date: "%Y" }} · {{ item.date | date: "%m" }}</span>
+        <span class="date">{{ item.date | date: "%b %Y" }}</span>
       {% endif %}
       {% if item.collection == 'projects' %}
         <span class="item-type">Project</span>
