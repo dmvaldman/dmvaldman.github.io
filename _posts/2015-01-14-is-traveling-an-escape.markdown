@@ -2,7 +2,7 @@
 layout: post
 title: "Is Traveling an Escape?"
 date: 2015-01-14
-excerpt: "By paying attention to what you miss, you'll know what you want"
+excerpt: "You'll discover what you want by paying attention to what you miss"
 image: escape/escape_banner_16_9.jpg
 ---
 

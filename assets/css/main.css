@@ -4,7 +4,7 @@
   --color-text-muted: #878580;
   --color-text-faint: #575653;
   --color-link: #CECDC3;
-  --color-link-hover: #E6E4D9;
+  --color-link-active: #efeee5;
   --color-black: #100F0F;
   --color-dark-gray: #202020;
   --color-gray: #575653;
@@ -13,7 +13,7 @@
   /* Typography */
   --font-content: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
   --font-mono: Menlo, "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-code: ui-monospace, SFMono-Regular, "Cascadia Code", "IBM Plex Mono";
+  --font-code: Menlo, ui-monospace, SFMono-Regular, "Cascadia Code", "IBM Plex Mono";
 
   /* Font sizes */
   --font-size-xs: 11px;
@@ -77,12 +77,7 @@ body {
 }
 
 .footnotes a {
-  color: var(--color-link);
   text-decoration: underline;
-}
-
-.footnotes a:hover {
-  color: var(--color-link-hover);
 }
 
 sup {
@@ -124,7 +119,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
+}
+
+a:active {
+  color: var(--color-link-active);
 }
 
 img {
@@ -245,10 +244,6 @@ hr {
   margin-bottom: 40px;
 }
 
-.masthead a:hover {
-  color: var(--color-link-hover);
-}
-
 /*
   Thumbnail
 */
@@ -301,7 +296,7 @@ hr {
 }
 
 .project-item h2 a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
 }
 
 .project-excerpt {
@@ -316,7 +311,7 @@ hr {
 }
 
 .project-link:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
 }
 
 .home-projects {
@@ -337,7 +332,7 @@ hr {
 }
 
 .home-project-item h2 a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
 }
 
 /*
@@ -355,7 +350,7 @@ hr {
   grid-template-columns: 80px auto;
   column-gap: var(--spacing-sm);
   row-gap: 0.1em;
-  align-items: center;
+  align-items: baseline;
   text-decoration: none;
   width: fit-content;
 }
@@ -382,7 +377,7 @@ hr {
   white-space: nowrap;
   color: var(--color-text-muted);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-end;
 }
 
@@ -393,16 +388,18 @@ hr {
   margin: 0;
   width: fit-content;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .tags {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   margin-left: 0.5em;
-  vertical-align: middle;
+  align-self: baseline;
   cursor: default;
   line-height: 1;
+  top: -2px;
+  position:relative;
 }
 
 .tag {
@@ -419,11 +416,12 @@ hr {
   grid-column: 1;
   grid-row: 2;
   font-size: var(--font-size-xs);
+  font-weight: 500;
   color: var(--color-text-faint);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-end;
   font-family: var(--font-content);
 }
@@ -436,6 +434,8 @@ hr {
   color: var(--color-text-muted);
   font-size: var(--font-size-sm);
   width: fit-content;
+  display: flex;
+  align-items: baseline;
 }
 
 .post h1 {
@@ -485,7 +485,7 @@ hr {
 }
 
 .pagination a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
 }
 
 .pagination-button {
@@ -520,8 +520,8 @@ hr {
   text-decoration: none;
 }
 
-.footer a:hover {
-  color: var(--color-link-hover);
+a:hover {
+  color: var(--color-link-active);
 }
 
 /*
@@ -540,7 +540,6 @@ hr {
 }
 
 .menu-content a {
-  color: var(--color-link);
   margin-right: 20px;
   font-size: var(--font-size-lg);
   font-weight: 300;
@@ -558,12 +557,8 @@ hr {
   display: block;
 }
 
-.menu-content a:hover {
-  color: var(--color-link-hover);
-}
-
 .menu-content a.active {
-  color: var(--color-link-hover);
+  color: var(--color-link-active);
   font-weight: 500;
 }
 
@@ -589,8 +584,8 @@ pre {
   margin: var(--spacing-md) 0;
   padding: 15px;
   font-size: var(--font-size-sm);
-  white-space: pre-wrap;
-  word-break: break-all;
+  white-space: pre;
+  word-break: normal;
   background-color: var(--color-dark-gray);
   border-radius: 4px;
   overflow-x: auto;
@@ -676,10 +671,6 @@ th, td {
   margin-left: 0;
 }
 
-.social-icon:hover {
-  color: var(--color-link-hover);
-}
-
 .social-icon svg {
   display: block;
   width: 18px;
@@ -695,6 +686,7 @@ img + em {
   display: block;
   text-align: center;
   color: var(--color-text-muted);
+  margin-top: -20px;
 }
 
 blockquote em {
@@ -730,11 +722,6 @@ blockquote em:before {
 
 .author a {
   text-decoration: underline;
-  color: var(--color-link);
-}
-
-.author a:hover {
-  color: var(--color-link-hover);
 }
 
 #draft{
@@ -884,4 +871,34 @@ blockquote em:before {
   .photo-albums {
     column-count: 1;
   }
+}
+
+/*
+  Scrollbars
+*/
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray) var(--color-black);
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray);
+  border-radius: 6px;
+  border: 2px solid var(--color-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-gray);
 }
