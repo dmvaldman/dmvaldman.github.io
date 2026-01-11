@@ -1,7 +1,3 @@
-# Change 'comments' to true for Disqus comments
-disqus:
-  comments: false
-
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-27168505-1'
 
