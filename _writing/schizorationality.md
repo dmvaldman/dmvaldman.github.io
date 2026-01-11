@@ -31,7 +31,7 @@ Let's take a more relevant example. How about a study from a prestigious institu
 
 --------------------
 
-#### Math Interlude (optional)
+### Math Interlude (optional)
 
 In more mathematical detail I will show how Bayes' rule leads to confirmation bias, but feel free to skip if you don't have the requisite background. To acquire such background, I recommend [this book](https://www.amazon.com/Probability-Theory-Science-T-Jaynes/dp/0521592712).
 
