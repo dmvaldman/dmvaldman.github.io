@@ -277,7 +277,7 @@ hr.section-divider {
 .writing-header {
   color: var(--color-text-muted);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-thin);
   margin: var(--spacing-lg) 0 0 0;
 }
 
@@ -393,6 +393,7 @@ hr.section-divider {
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
+  font-weight: var(--font-thin);
 }
 
 .feed-item .title,
@@ -813,7 +814,6 @@ blockquote em:before {
 
   .feed-item .date {
     font-size: var(--font-size-sm);
-    /* display: none; */
   }
 
   .feed-item .subtitle {
