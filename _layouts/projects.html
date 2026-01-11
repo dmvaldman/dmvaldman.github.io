@@ -45,14 +45,14 @@ layout: default
 <div class="pagination">
   {% assign next_page = page.page_num | plus: 1 %}
   {% if next_page <= page.total_pages %}
-    <a class="pagination-button next" href="{{ site.github.url }}/projects/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
+    <a class="pagination-button next" href="{{ site.github.url }}/projects/page/{{ next_page }}/">{{ site.pagination.previous_page }}</a>
   {% endif %}
 
   {% if page.page_num > 2 %}
     {% assign prev_page = page.page_num | minus: 1 %}
-    <a class="pagination-button" href="{{ site.github.url }}/projects/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
+    <a class="pagination-button" href="{{ site.github.url }}/projects/page/{{ prev_page }}/">{{ site.pagination.next_page }}</a>
   {% elsif page.page_num == 2 %}
-    <a class="pagination-button" href="{{ site.github.url }}/">{{ site.data.settings.pagination.next_page }}</a>
+    <a class="pagination-button" href="{{ site.github.url }}/">{{ site.pagination.next_page }}</a>
   {% endif %}
 </div>
 {% endif %}

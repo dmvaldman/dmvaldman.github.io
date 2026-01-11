@@ -1,9 +1,26 @@
-# Site Build Settings
+# Google Analytics
+google-ID: 'UA-27168505-1'
+
+# Menu items
+menu:
+- {name: 'Home', url: '/'}
+- {name: 'Photos', url: '/photos/'}
+- {name: 'About', url: '/about/'}
+
+# Social icons
+social:
+- {icon: 'twitter', link: 'https://twitter.com/dmvaldman'}
+- {icon: 'github', link: 'https://www.github.com/dmvaldman'}
 
 # Pagination settings
 pagination:
   projects: 5
   writing: 5
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+# Post date prefix
+post_date_prefix: 'Written on'
 
 # Collections
 collections:

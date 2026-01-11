@@ -1,6 +1,6 @@
 <div class="menu">
   <nav class="menu-content">
-    {% for item in site.data.settings.menu %}
+    {% for item in site.menu %}
       {% assign is_active = false %}
       {% if page.url == item.url %}
         {% assign is_active = true %}

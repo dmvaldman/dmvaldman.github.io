@@ -41,7 +41,7 @@ layout: default
 <!-- Projects Pagination -->
 {% if page.page_num < page.projects_total_pages %}
 <div class="pagination">
-  <a class="pagination-button next" href="{{ site.github.url }}/projects/page/2/">{{ site.data.settings.pagination.previous_page }}</a>
+  <a class="pagination-button next" href="{{ site.github.url }}/projects/page/2/">{{ site.pagination.previous_page }}</a>
 </div>
 {% endif %}
 {% endif %}
@@ -79,7 +79,7 @@ layout: default
 <!-- Writing Pagination -->
 {% if page.page_num < page.writing_total_pages %}
 <div class="pagination">
-  <a class="pagination-button next" href="{{ site.github.url }}/writing/page/2/">{{ site.data.settings.pagination.previous_page }}</a>
+  <a class="pagination-button next" href="{{ site.github.url }}/writing/page/2/">{{ site.pagination.previous_page }}</a>
 </div>
 {% endif %}
 {% endif %}
