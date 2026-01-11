@@ -3,7 +3,7 @@ layout: post
 title: "Satlas"
 excerpt: "Find and share beautiful places to sit"
 date: 2025-11-05
-image: satlas/satlas.png
+image: satlas/satlas.jpg
 link: https://satlas.earth?sitId=vUrLFpGOQNMIc3YjAej5
 tags: [iOS, Android, Web]
 ---
@@ -16,8 +16,8 @@ After a few years of casual exploration, I thought I had a pretty solid mental b
 
 <div class="image-grid">
 <a href="https://satlas.earth?sitId=H0Qc0waqHlAEVPf2uhA1" target="_blank"><img src="/assets/img/satlas/sit1.jpg" alt="sit"></a>
-<a href="https://satlas.earth?sitId=GWf9ky7v9oWIz5OB7ddK" target="_blank"><img src="/assets/img/satlas/sit2.jpg" alt="sit"></a>
-<a href="https://satlas.earth?sitId=MKRS2gdVjGLnN4SWYsCt" target="_blank"><img src="/assets/img/satlas/sit3.png" alt="sit"></a>
+<a href="https://satlas.earth?sitId=MKRS2gdVjGLnN4SWYsCt" target="_blank"><img src="/assets/img/satlas/sit2.jpg" alt="sit"></a>
+<a href="https://satlas.earth?sitId=GWf9ky7v9oWIz5OB7ddK" target="_blank"><img src="/assets/img/satlas/sit3.jpg" alt="sit"></a>
 </div>
 *Some favorite sits in the Bay Area*
 
