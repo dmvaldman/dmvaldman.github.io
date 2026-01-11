@@ -4,7 +4,7 @@ title: "Satlas"
 excerpt: "Find and share beautiful places to sit"
 date: 2025-11-05
 image: satlas/satlas.png
-link: https://satlas.earth
+link: https://satlas.earth?sitId=vUrLFpGOQNMIc3YjAej5
 tags: [iOS, Android, Web]
 ---
 

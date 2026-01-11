@@ -814,6 +814,10 @@ blockquote em:before {
     font-size: var(--font-size-lg);
   }
 
+  .feed-item {
+    margin-bottom: var(--spacing-md)
+  }
+
   /* Feed items */
   .feed-item a {
     grid-template-columns: 65px auto;

@@ -14,7 +14,13 @@ layout: default
 
 {% if page.image %}
 <div class="banner">
-  <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+  {% if page.link %}
+    <a href="{{ page.link }}" target="_blank">
+      <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+    </a>
+  {% else %}
+    <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+  {% endif %}
   {% if page.caption %}
     <p class="image-caption">{{ page.caption }}</p>
   {% endif %}

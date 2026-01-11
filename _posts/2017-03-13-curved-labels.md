@@ -2,7 +2,7 @@
 layout: post
 title: "The Twists and Turns of Curved Labels"
 date:	2017-03-13
-excerpt: "Explorations in right-to-left text processing part 2"
+excerpt: "Explorations in right-to-left text processing part two"
 ---
 
 *This was originally written for Mapzen's blog [here](https://www.mapzen.com/blog/curved-labels/)*
