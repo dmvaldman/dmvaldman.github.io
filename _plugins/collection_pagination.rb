@@ -116,11 +116,22 @@ module Jekyll
     end
 
     def create_page(site, dir, layout, data)
-      page = Page.new(site, site.source, dir, 'index.html')
-      page.process('index.html')
-      page.read_yaml(File.join(site.source, '_layouts'), layout)
-      data.each { |key, value| page.data[key] = value }
+      page = PaginationPage.new(site, site.source, dir, layout, data)
       page
+    end
+  end
+
+  class PaginationPage < Page
+    def initialize(site, base, dir, layout, data)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = 'index.html'
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), layout)
+
+      data.each { |key, value| self.data[key] = value }
     end
   end
 end
