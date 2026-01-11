@@ -867,29 +867,6 @@ blockquote em:before {
 }
 
 /*
-  Social Icons Mobile
-*/
-
-.social-icons-mobile {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .social-icons-mobile {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: var(--spacing-xl);
-    padding-top: var(--spacing-lg);
-    border-top: 1px solid var(--color-text-faint);
-  }
-
-  .social-icons-mobile .social-icon {
-    margin: 0;
-  }
-}
-
-/*
   Scrollbars
 */
 

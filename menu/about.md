@@ -1,5 +1,5 @@
 ---
-layout: page_nonblog
+layout: page
 title: About
 permalink: /about/
 ---

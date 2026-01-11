@@ -1,9 +1,18 @@
----
-layout: page_nonblog
----
+<!doctype html>
+<html>
 
-<h1>
-  {{ page.title }}
-</h1>
+{% include head.html %}
 
-{{ content }}
+<body>
+
+  <div class="container">
+    {% include header.html %}
+
+    <div class="post-container">
+      {{ content }}
+    </div>
+
+  </div>
+
+</body>
+</html>
