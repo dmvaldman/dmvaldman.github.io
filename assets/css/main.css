@@ -11,8 +11,8 @@
   --color-light-gray: #878580;
 
   /* Typography */
-  --font-content: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial, sans-serif;
-  --font-mono: Menlo, "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-content: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Inter", Segoe UI, Helvetica, Arial, sans-serif;
+  --font-mono: Menlo, "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Monaco, "Consolas", "Source Code Pro", monospace;
   --font-code: Menlo, ui-monospace, SFMono-Regular, "Cascadia Code", "IBM Plex Mono";
 
   /* Font sizes */
@@ -51,7 +51,7 @@ body {
   font-family: var(--font-content);
   color: var(--color-text);
   background-color: var(--color-black);
-  line-height: 1.5;
+  line-height: 1.5em;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
   text-rendering: optimizeLegibility;
@@ -84,11 +84,12 @@ body {
 }
 
 .footnotes p {
-  margin: var(--spacing-xs) 0;
+  margin: 0;
 }
 
 .footnotes a {
   text-decoration: underline;
+  color: var(--color-text-muted);
 }
 
 sup {
@@ -100,9 +101,7 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--color-text);
   margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
-  line-height: 1.3;
   font-weight: var(--font-bold);
 }
 
@@ -112,10 +111,12 @@ h1 {
 
 h2 {
   font-size: var(--font-size-lg);
+  font-weight: var(--font-bolder);
 }
 
 h3 {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-bold);
 }
 
 h4 {
@@ -140,14 +141,6 @@ img {
   height: auto;
   display: block;
   margin: var(--spacing-lg) auto;
-}
-
-.photo-intro {
-  font-size: var(--font-size-md);
-  color: var(--color-text-muted);
-  margin: var(--spacing-lg) 0 var(--spacing-sm) 0;
-  padding-bottom: var(--spacing-md);
-  border-bottom: 1px solid var(--color-text-faint);
 }
 
 .photo-albums {
@@ -259,17 +252,6 @@ hr.section-divider {
 }
 
 /*
-  Thumbnail
-*/
-
-.thumbnail-container {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-/*
   Section Headers
 */
 
@@ -339,6 +321,7 @@ hr.section-divider {
   width: fit-content;
   display: flex;
   align-items: baseline;
+  line-height: 1.2em;
 }
 
 .tags {
@@ -366,6 +349,13 @@ hr.section-divider {
 .post a {
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.post sup a{
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+  color: var(--color-text-muted);
+  margin-left: 1px;
 }
 
 .post h1 {
@@ -429,26 +419,6 @@ hr.section-divider {
 
 .pagination-button:hover {
   border-color: var(--color-text);
-}
-
-/*
-  Footer
-*/
-
-.footer {
-  color: var(--color-text-muted);
-  text-align: center;
-  margin: 40px 0 20px 0;
-}
-
-.footer a {
-  color: var(--color-link);
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-link-active);
 }
 
 /*
@@ -651,19 +621,6 @@ blockquote em:before {
 
 .author a:hover {
   color: var(--color-link);
-}
-
-#draft{
-  position:fixed;
-  bottom:50px;
-  /* top: 50px; */
-  text-align: center;
-  opacity:0.15;
-  z-index:99;
-  font-size: 100px;
-  right: 0;
-  left: 0;
-  /* rotate: 20deg; */
 }
 
 .highlight {
