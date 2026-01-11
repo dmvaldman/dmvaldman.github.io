@@ -947,3 +947,12 @@ blockquote em:before {
   left: 0;
   pointer-events: none;
 }
+
+/*
+  About Page
+*/
+
+.about-page a {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
