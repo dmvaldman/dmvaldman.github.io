@@ -18,6 +18,9 @@ collections:
   projects:
     output: true
     permalink: /:name/
+  drafts:
+    output: true
+    permalink: /drafts/:name/
   photography:
     output: false
 
@@ -43,3 +46,8 @@ defaults:
       type: "posts"
     values:
       permalink: "/:title/"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "draft"

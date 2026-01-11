@@ -3,26 +3,32 @@ layout: default
 title: Drafts
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.layout == "draft" %}
-      <h1>
-        <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-      {% if post.image %}
-      <div class="thumbnail-container">
-        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
-      </div>
-      {% endif %}
-      <p>
-        {% if post.excerpt %}
-          {{ post.excerpt }}
-        {% else %}
-          {{ post.content | strip_html | truncate: 350 }}
+<h1 class="section-header">Drafts</h1>
+<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
+
+{% assign sorted_drafts = site.drafts | sort: 'date' | reverse %}
+{% for draft in sorted_drafts %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ draft.url }}">
+    <div class="meta">
+      <span class="date">{{ draft.date | date: "%b %Y" }}</span>
+      <span class="item-type">Draft</span>
+    </div>
+    <div class="content">
+      <h2 class="title">
+        {{ draft.title }}
+        {% if draft.tags and draft.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in draft.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
         {% endif %}
-        <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-        <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
-      </p>
-    {% endif %}
-  {% endfor %}
+      </h2>
+      {% if draft.excerpt %}
+        <p class="subtitle">{{ draft.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
 </div>
+{% endfor %}

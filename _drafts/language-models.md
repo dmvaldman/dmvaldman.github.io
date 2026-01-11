@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: draft
 title: Wittgenstein and the Semantics of Language Models
-date: 2030-05-01
+date: 2010-05-01
 excerpt: The words that come out of a language model are not like the ones that go in.
 image: semantics/penrose_16_9.jpg
 ---

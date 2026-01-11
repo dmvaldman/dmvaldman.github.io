@@ -931,3 +931,19 @@ blockquote em:before {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-light-gray);
 }
+
+/*
+  Draft Watermark
+*/
+
+#draft {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+  opacity: 0.15;
+  z-index: 99;
+  font-size: 100px;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 title: "RookLift"
 excerpt: "Predict the variance of your intelligence from sleep & fitness metrics"
 date: 2025-07-29
@@ -8,3 +8,4 @@ link: https://github.com/dmvaldman/rooklift
 tags: [Garmin Watch]
 ---
 
+RookLift

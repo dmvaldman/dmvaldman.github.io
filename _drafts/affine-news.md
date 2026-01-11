@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 title: "Affine News"
 excerpt: "Discovering bias in the news"
 date: 2025-9-28
@@ -8,3 +8,4 @@ link: https://affine.news
 tags: ["Web"]
 ---
 
+stub

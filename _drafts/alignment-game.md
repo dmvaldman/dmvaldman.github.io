@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 title: "The Alignment Game"
 excerpt: "Get everyone on the same page by playing a game"
 date: 2023-09-08
@@ -8,3 +8,4 @@ link: https://docs.google.com/spreadsheets/d/1BYh9ZtEv4k7xoSXmtf1qCP8bYHBCZLEuTV
 tags: ["Google Sheet"]
 ---
 
+stub
