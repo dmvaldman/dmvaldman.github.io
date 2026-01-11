@@ -679,10 +679,6 @@ th, td {
   height: 18px;
 }
 
-.sharing-icons a {
-  padding-right: 10px;
-}
-
 img + em {
   font-size: var(--font-size-sm);
   display: block;

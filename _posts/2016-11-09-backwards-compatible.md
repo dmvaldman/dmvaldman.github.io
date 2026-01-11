@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to make your code backwards (and compatible)"
+title: "How to Make Your Code Backwards (and Compatible)"
 date:	2016-11-09
 excerpt: "Explorations in right-to-left text processing"
 image:
