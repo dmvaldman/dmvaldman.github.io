@@ -542,23 +542,30 @@ a:hover {
   margin-right: 20px;
   font-size: var(--font-size-lg);
   font-weight: var(--font-thin);
-  display: inline-block;
+  display: inline-grid;
+  width: fit-content;
+  color: transparent;
+}
+
+.menu-content a::before,
+.menu-content a::after {
+  content: attr(data-text);
+  grid-area: 1 / 1;
+}
+
+.menu-content a::before {
+  font-weight: var(--font-bolder);
+  visibility: hidden;
 }
 
 .menu-content a::after {
-  content: attr(data-text);
-  font-weight: var(--font-bolder);
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-  display: block;
+  font-weight: var(--font-thin);
+  color: var(--color-text);
 }
 
-.menu-content a.active {
-  color: var(--color-link-active);
+.menu-content a.active::after {
   font-weight: var(--font-bolder);
+  color: var(--color-link-active);
 }
 
 /*
