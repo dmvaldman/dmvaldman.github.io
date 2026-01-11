@@ -17,7 +17,7 @@ paginate:            10
 collections:
   projects:
     output: true
-    permalink: /projects/:name/
+    permalink: /:name/
   photography:
     output: false
 
