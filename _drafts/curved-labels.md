@@ -9,7 +9,7 @@ excerpt: "Explorations in right-to-left text processing part two"
 
 >We turn the cube and it twists us. <br>
 > <br>
->— Ernő Rubik
+*Ernő Rubik*
 
 [Tangram JS v0.12](https://github.com/tangrams/tangram/releases/tag/v0.12.0) introduces curved labels, a feature that allows labels to curve along a road and smoothly animate when zoomed.
 
@@ -48,7 +48,7 @@ For languages with text-shaping we are forced to disable the label curving featu
 
 >In theory there’s no difference between practice and theory. In practice there is. <br>
 > <br>
->— Yogi Berra
+*Yogi Berra*
 
 So far we’ve been detailing the JavaScript implementation for curved labels. Tangram ES, our native implementation for iOS, Android and other platforms, takes a different route for the same feature. This stems from important platform differences between web and native.
 

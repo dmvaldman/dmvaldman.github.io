@@ -4,10 +4,10 @@ title: The Explanatory Gap of AI
 date: 2022-04-07
 excerpt: A mystic's guide to whether AI can understand
 image: explanatory_gap/as_above_so_below_16x9.jpg
-caption: Text-to-image of "As above, so below" by Midjourney
+caption: '"As above, so below" by Midjourney V1'
 ---
 
-If an AI understands is a topic of debate. Seldom debated, though, are the limits of our own understanding. We conceive our understanding to be complete and establish this as a baseline for AI. When we consider our understanding as incomplete a different story emerges altogether.
+If an AI understands is a topic of debate. Seldom debated, though, are the limits of our own understanding. We conceive of our understanding as complete and establish this as a baseline for AI. When we consider our understanding as incomplete a different story emerges altogether.
 
 The fundamental issue goes like this:
 
@@ -22,15 +22,15 @@ Yet now we have AIs like OpenAI's Dall-E that seem to ground text in images.[^2]
 
 So just what is a grounded AI lacking? On this question, Harnad and Searle are silent. Less silent, though, were the empiricists predating them. We attempt to get at our answer by asking what they asked: what are human minds lacking?
 
-The empiricists accept that the sweetness, redness and smoothness of an apple -- the phenomena of apple -- is a manifestation of our minds. Outside the mind, apples have no taste, color or texture. To know what an “apple” is outside the mind is to know what Kant called the noumena of an apple: the apple “in itself.” Kant acknowledged that this noumenal reality can only be “accepted on faith” and famously called this the “scandal to philosophy.”[^4] Many philosophers grappled with this dilemma over time. Hume considered our belief in external objects a “gross absurdity”.[^5] Berkeley denied not only our knowledge of external reality, but its very existence.[^6] Several centuries later and the issue is far from settled.
+The empiricists accept that the sweetness, redness and smoothness of an apple---the phenomena of apple---is a manifestation of our minds. Outside the mind, apples have no taste, color or texture. To know what an “apple” is outside the mind is to know what Kant called the *noumena* of an apple: the apple “in itself.” Kant acknowledged that this noumenal reality can only be “accepted on faith” and famously called this the “scandal to philosophy.”[^4] Many philosophers grappled with this dilemma over time. Hume considered our belief in external objects a “gross absurdity”.[^5] Berkeley denied not only our knowledge of external reality, but its very existence.[^6] Several centuries later and the issue is far from settled.
 
 So what is a human mind lacking? To the empiricists one answer is we lack understanding of the noumena.
 
-After all, our brains receive only representations of external reality: electrical stimuli, whether through the optical, cochlear, etc. nerves. We are hopeless to know what these stimuli are at their most fundamental level -- their nature eludes us. Our brains feast on physical reality and know its referent not.
+After all, our brains receive only representations of external reality: electrical stimuli, whether through the optical, cochlear, etc. nerves. We are hopeless to know what these stimuli are at their most fundamental level---their nature eludes us. Our brains feast on physical reality and know its referent not.
 
-Similarly, AIs receive only representations of our phenomenological experience: word tokens for language, RGB matrices for images, etc. AIs are hopeless to know what our experience is at its most fundamental level -- its nature eludes them. AIs feast on computational reality and know its referent not.
+Similarly, AIs receive only representations of our phenomenological experience: word tokens for language, RGB matrices for images, etc. AIs are hopeless to know what our experience is at its most fundamental level---its nature eludes them. AIs feast on computational reality and know its referent not.
 
-What makes reasoning about AI semantics confusing is its compositional nature: the input to an AI is a representation of our output. Its syntax is our phenomena cast into bits. An image of an apple, after all, is a representation of our visual experience. The word "apple" is a representation of our semantic concept. Our realities are not adjacent; they are nested. **Our phenomena is the AI’s noumena.**
+What makes reasoning about AI semantics confusing is its compositional nature: the input to an AI is a representation of our output. An image of an apple, after all, is a representation of our visual experience. The word "apple" is a representation of our semantic concept. Its syntax is our phenomena cast into bits. Our realities are not adjacent; they are nested. **Our phenomena is the AI’s noumena.**
 
 The philosopher Colin McGinn, founder of the epistemological school of *Mysterianism*, posited that certain properties can both exist and be fundamentally unknowable to a mind. He defines a mind's *cognitive closure* as all that can be knowable to it, and leaves open the possibility that other minds may not be so limited. McGinn argues the noumenal/phenomenal correspondence as one example lying outside our own cognitive closure; perhaps knowable, just not by us.[^7]
 
@@ -44,7 +44,7 @@ A biblical allegory comes from the Hebrew interpretations of the Book of Genesis
 >[God] brought before [the Angels] beast and animal and bird. He said to them: This one, what is his name? and they did not know. This one, what is his name? and they did not know. He made them pass before Adam. He said to him: This one, what is his name? Adam said: This is ox/shor, and this is donkey/chamor and this is horse/sus and this is camel/gamal.
 *Bereishit Rabbah 17:4*
 
-When we experience words, we experience them conceptually. When we experience images, we experience them visually. Like the Angels, we are thrust into this awareness -- their phenomenal nature revealed sans mediation. An AI is masked from this perception by a computational flesh. A representation, fashioned in the likeness of our phenomena, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
+When we experience words, we experience them conceptually. When we experience images, we experience them visually. Like the Angels, we are thrust into this awareness---their phenomenal nature revealed sans mediation. An AI is masked from this perception by a computational flesh. A representation, fashioned in the likeness of our phenomena, is needed. Like the Angels, we are baffled by these representations, unable to grasp their significance.
 
 ![Apple](/assets/img/explanatory_gap/apple.png)
 *The word "apple" according to an AI*
