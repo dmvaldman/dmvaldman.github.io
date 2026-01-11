@@ -453,7 +453,7 @@ hr {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   display: block;
-  margin-top: calc(-0.9 * var(--spacing-lg));
+  margin-top: calc(-1 * var(--spacing-md));
 }
 
 .banner {
@@ -832,7 +832,7 @@ blockquote em:before {
 
   .post-date {
     font-size: var(--font-size-sm);
-    margin-top: calc(-0.5 * var(--spacing-md));
+    margin-top: calc(-0.75 * var(--spacing-md));
   }
 
   .pagination-button {

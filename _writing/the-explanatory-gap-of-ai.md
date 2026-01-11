@@ -18,7 +18,7 @@ Stevan Harnad coined this the *symbol grounding problem*. He reasoned that symbo
 Yet now we have AIs like OpenAI's Dall-E that seem to ground text in images.[^2] Is Harnad wrong? Do these AIs understand something previous ones did not? Predating Harnad, John Searle addressed this issue. In his paper Minds, Brains and Programs, Searle fashions then refutes the *Robot Reply* argument. He describes an AI that would “have a television camera attached to it that enabled it to 'see' it would have arms and legs that enabled it to 'act' and all of this would be controlled by its computer 'brain’.”[^3] Yet to Searle this “adds nothing” to the argument. We are simply introducing more symbols, and to exploit correlations of symbols between modalities is no different than exploiting correlations within one. To Searle, grounding was neither the problem, nor the solution, to semantics emerging from syntax.
 
 > The computer understanding is not just...partial or incomplete; it is zero.
-*John Searle - Minds, Brains, and Programs*
+*John Searle*
 
 So just what is a grounded AI lacking? On this question, Harnad and Searle are silent. Less silent, though, were the empiricists predating them. We attempt to get at our answer by asking what they asked: what are human minds lacking?
 
@@ -35,7 +35,7 @@ What makes reasoning about AI semantics confusing is its compositional nature: t
 The philosopher Colin McGinn, founder of the epistemological school of *Mysterianism*, posited that certain properties can both exist and be fundamentally unknowable to a mind. He defines a mind's *cognitive closure* as all that can be knowable to it, and leaves open the possibility that other minds may not be so limited. McGinn argues the noumenal/phenomenal correspondence as one example lying outside our own cognitive closure; perhaps knowable, just not by us.[^7]
 
 >What is noumenal for us may not be miraculous itself. We should therefore be alert to the possibility that a problem that strikes us as deeply intractable...may arise from an area of cognitive closure in our way of representing the world.
-*Colin McGinn - The Problem of Philosophy*
+*Colin McGinn*
 
 How, then, can we fault an AI for its lack of our subjective experience? We are asking it to do what we ourselves cannot: to know what is outside its cognitive closure. A different framing would be to argue that **relative to an AI, we have transcendent knowledge**. There is an explanatory gap the AI will never bridge, but one so natural we effortlessly cross. We are able to ground the output of an AI in our own phenomena because our cognitive closure encircles its own.[^8] We are not like Harnad's hosts with a monopoly on meaning. Rather, we are like mystics, aware of a reality beyond the comprehension of another.[^9]
 
