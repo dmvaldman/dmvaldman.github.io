@@ -19,13 +19,14 @@
   --font-size-xs: 11px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
-  --font-size-lg: 22px;
-  --font-size-xl: 26px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
 
   /* Font weights */
   --font-bolder: 800;
   --font-bold: 600;
   --font-regular: 500;
+  --font-thin: 400;
 
   /* Spacing */
   --spacing-sm: 1em;
@@ -34,7 +35,7 @@
   --spacing-xl: 2.5em;
 
   /* Layout */
-  --width-content: 860px;
+  --width-content: 820px;
 }
 
 html {
@@ -422,20 +423,6 @@ hr {
   line-height: 1;
 }
 
-.item-type {
-  grid-column: 1;
-  grid-row: 2;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-regular);
-  color: var(--color-text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
-  font-family: var(--font-content);
-}
-
 .feed-item .subtitle,
 .post .subtitle {
   grid-column: 2;
@@ -496,23 +483,19 @@ hr {
 }
 
 .pagination a:hover {
-  color: var(--color-link-active);
+  color: var(--color-text);
 }
 
 .pagination-button {
-  color: var(--color-text-faint);
+  color: var(--color-text);
   border: 1px solid var(--color-text-faint);
   padding: 6px 14px;
   display: inline-block;
   font-size: var(--font-size-md);
 }
 
-.pagination-active {
-  color: var(--color-text);
-}
-
-.pagination-active:hover {
-  background-color: var(--color-text-faint);
+.pagination-button:hover {
+  border-color: var(--color-text);
 }
 
 /*
@@ -542,7 +525,7 @@ a:hover {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 20px;
 }
 
@@ -553,7 +536,7 @@ a:hover {
 .menu-content a {
   margin-right: 20px;
   font-size: var(--font-size-lg);
-  font-weight: 300;
+  font-weight: var(--font-thin);
   display: inline-block;
 }
 
@@ -668,14 +651,19 @@ th, td {
   Social media icons
 */
 
+.social-icons {
+  display: flex;
+  align-items: baseline;
+}
+
 .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   margin-left: 16px;
   color: var(--color-text-muted);
   text-decoration: none;
   transition: color 0.2s ease;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 .social-icon:first-child {
@@ -683,9 +671,10 @@ th, td {
 }
 
 .social-icon svg {
-  display: block;
+  display: inline-block;
   width: 18px;
   height: 18px;
+  vertical-align: text-bottom;
 }
 
 img + em {
@@ -781,6 +770,10 @@ blockquote em:before {
     padding: 16px;
   }
 
+  .menu-content a {
+    margin-right: 14px;
+  }
+
   hr {
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
@@ -797,25 +790,9 @@ blockquote em:before {
 
   /* Navigation */
   .menu {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
-  }
-
-  .menu-content {
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .menu-content a {
-    font-size: clamp(var(--font-size-sm), 5vw, var(--font-size-lg));
-    margin-right: 0;
-  }
-
-  .social-icons {
-    display: none;
   }
 
   .image-grid a {
@@ -826,6 +803,7 @@ blockquote em:before {
   .section-header,
   .writing-header {
     font-size: var(--font-size-lg);
+    margin-top: var(--spacing-md);
   }
 
   .feed-item {
@@ -846,11 +824,6 @@ blockquote em:before {
   .feed-item .subtitle {
     font-size: var(--font-size-sm);
     line-height: 1.4em;
-  }
-
-  .item-type {
-    font-size: var(--font-size-xs);
-    display: none;
   }
 
   .tags {
