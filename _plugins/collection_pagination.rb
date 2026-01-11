@@ -40,7 +40,7 @@ module Jekyll
         dir = page_num == 1 ? '' : File.join('page', page_num.to_s)
         permalink = page_num == 1 ? '/' : "/page/#{page_num}/"
 
-        page = create_page(site, dir, 'home_paginated.html', {
+        page = create_page(site, dir, 'home.html', {
           'projects' => paginated_projects,
           'posts' => paginated_posts,
           'page_num' => page_num,

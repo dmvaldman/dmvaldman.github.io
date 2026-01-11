@@ -1,38 +1,85 @@
 ---
 layout: default
-title: Home
 ---
 
-{% assign all_items = paginator.posts | concat: site.projects | sort: 'date' | reverse %}
+<!-- Projects Section -->
+{% if page.projects.size > 0 %}
+<h1 class="section-header">Projects</h1>
+<hr class="section-divider">
 
-{% for item in all_items %}
+{% for project in page.projects %}
 <div class="feed-item">
-  <a href="{{ site.github.url }}{{ item.url }}">
+  <a href="{{ site.github.url }}{{ project.url }}">
     <div class="meta">
-      <span class="date">{{ item.date | date: "%b %Y" }}</span>
-      {% if item.collection == 'projects' %}
-        <span class="item-type">Project</span>
+      {% if project.status == 'current' %}
+        <span class="date">Current</span>
       {% else %}
-        <span class="item-type">Writing</span>
+        <span class="date">{{ project.date | date: "%b %Y" }}</span>
       {% endif %}
     </div>
     <div class="content">
-      <h2 class="title">{{ item.title }}</h2>
-      {% if item.excerpt %}
-        <p class="subtitle">{{ item.excerpt | strip_html }}</p>
+      <h2 class="title">
+        {{ project.title }}
+        {% if project.tags and project.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in project.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
+      {% if project.excerpt %}
+        <p class="subtitle">{{ project.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
+</div>
+
+{% assign index = forloop.index %}
+{% endfor %}
+
+<!-- Projects Pagination -->
+{% if page.page_num < page.projects_total_pages %}
+<div class="pagination">
+  <a class="pagination-button next" href="{{ site.github.url }}/projects/page/2/">More</a>
+</div>
+{% endif %}
+{% endif %}
+
+<!-- Writing Section -->
+{% if page.posts.size > 0 %}
+<h1 class="section-header">Writing</h1>
+<hr class="section-divider">
+
+{% for post in page.posts %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ post.url }}">
+    <div class="meta">
+      <span class="date">{{ post.date | date: "%b %Y" }}</span>
+    </div>
+    <div class="content">
+      <h2 class="title">
+        {{ post.title }}
+        {% if post.tags and post.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
+      {% if post.excerpt %}
+        <p class="subtitle">{{ post.excerpt | strip_html }}</p>
       {% endif %}
     </div>
   </a>
 </div>
 {% endfor %}
 
-<!-- Pagination links -->
+<!-- Writing Pagination -->
+{% if page.page_num < page.writing_total_pages %}
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
-  {% endif %}
-
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
-  {% endif %}
+  <a class="pagination-button next" href="{{ site.github.url }}/writing/page/2/">More</a>
 </div>
+{% endif %}
+{% endif %}

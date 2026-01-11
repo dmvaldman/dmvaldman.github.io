@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1 class="section-header">Projects</h1>
-<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
+<hr class="section-divider">
 
 {% for project in page.projects %}
 <div class="feed-item">
@@ -35,7 +35,7 @@ layout: default
 
 {% assign index = forloop.index %}
 {% if page.current_count > 0 and index == page.current_count %}
-<hr style="margin: var(--spacing-xl) 0;">
+<hr class="section-divider">
 {% endif %}
 
 {% endfor %}

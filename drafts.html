@@ -5,7 +5,7 @@ permalink: /drafts/
 ---
 
 <h1 class="section-header">Drafts</h1>
-<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
+<hr class="section-divider">
 
 {% assign sorted_drafts = site.drafts | sort: 'date' | reverse %}
 {% for draft in sorted_drafts %}
@@ -13,7 +13,6 @@ permalink: /drafts/
   <a href="{{ site.github.url }}{{ draft.url }}">
     <div class="meta">
       <span class="date">{{ draft.date | date: "%b %Y" }}</span>
-      <span class="item-type">Draft</span>
     </div>
     <div class="content">
       <h2 class="title">
