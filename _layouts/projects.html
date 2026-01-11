@@ -49,13 +49,11 @@ layout: default
     <a class="pagination-button pagination-active next" href="{{ site.github.url }}/projects/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
   {% endif %}
 
-  {% if page.page_num > 1 %}
+  {% if page.page_num > 2 %}
     {% assign prev_page = page.page_num | minus: 1 %}
-    {% if prev_page == 1 %}
-      <a class="pagination-button pagination-active" href="{{ site.github.url }}/projects/">{{ site.data.settings.pagination.next_page }}</a>
-    {% else %}
-      <a class="pagination-button pagination-active" href="{{ site.github.url }}/projects/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
-    {% endif %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}/projects/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
+  {% elsif page.page_num == 2 %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}/">{{ site.data.settings.pagination.next_page }}</a>
   {% endif %}
 </div>
 {% endif %}

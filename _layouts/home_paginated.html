@@ -2,64 +2,84 @@
 layout: default
 ---
 
-<h1 class="section-header">Projects & Writing</h1>
+<!-- Projects Section -->
+{% if page.projects.size > 0 %}
+<h1 class="section-header">Projects</h1>
 <hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
 
-{% for item in page.items %}
+{% for project in page.projects %}
 <div class="feed-item">
-  <a href="{{ site.github.url }}{{ item.url }}">
+  <a href="{{ site.github.url }}{{ project.url }}">
     <div class="meta">
-      {% if item.status == 'current' %}
+      {% if project.status == 'current' %}
         <span class="date">Current</span>
       {% else %}
-        <span class="date">{{ item.date | date: "%b %Y" }}</span>
-      {% endif %}
-      {% if item.collection == 'projects' %}
-        <span class="item-type">Project</span>
-      {% else %}
-        <span class="item-type">Writing</span>
+        <span class="date">{{ project.date | date: "%b %Y" }}</span>
       {% endif %}
     </div>
     <div class="content">
       <h2 class="title">
-        {{ item.title }}
-        {% if item.tags and item.tags.size > 0 %}
+        {{ project.title }}
+        {% if project.tags and project.tags.size > 0 %}
           <span class="tags">
-            {% for tag in item.tags %}
+            {% for tag in project.tags %}
               <span class="tag">{{ tag }}</span>
             {% endfor %}
           </span>
         {% endif %}
       </h2>
-      {% if item.excerpt %}
-        <p class="subtitle">{{ item.excerpt | strip_html }}</p>
+      {% if project.excerpt %}
+        <p class="subtitle">{{ project.excerpt | strip_html }}</p>
       {% endif %}
     </div>
   </a>
 </div>
 
 {% assign index = forloop.index %}
-{% if page.current_count > 0 and index == page.current_count %}
-<hr style="margin: var(--spacing-xl) 0;">
-{% endif %}
-
 {% endfor %}
 
-<!-- Pagination links -->
-{% if page.total_pages > 1 %}
+<!-- Projects Pagination -->
+{% if page.page_num < page.projects_total_pages %}
 <div class="pagination">
-  {% assign next_page = page.page_num | plus: 1 %}
-  {% if next_page <= page.total_pages %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}/page/{{ next_page }}/">{{ site.data.settings.pagination.previous_page }}</a>
-  {% endif %}
-
-  {% if page.page_num > 1 %}
-    {% assign prev_page = page.page_num | minus: 1 %}
-    {% if prev_page == 1 %}
-      <a class="pagination-button pagination-active" href="{{ site.github.url }}/">{{ site.data.settings.pagination.next_page }}</a>
-    {% else %}
-      <a class="pagination-button pagination-active" href="{{ site.github.url }}/page/{{ prev_page }}/">{{ site.data.settings.pagination.next_page }}</a>
-    {% endif %}
-  {% endif %}
+  <a class="pagination-button pagination-active next" href="{{ site.github.url }}/projects/page/2/">More</a>
 </div>
+{% endif %}
+{% endif %}
+
+<!-- Writing Section -->
+{% if page.posts.size > 0 %}
+<h1 class="section-header">Writing</h1>
+<hr style="margin: var(--spacing-sm) 0 var(--spacing-xl) 0;">
+
+{% for post in page.posts %}
+<div class="feed-item">
+  <a href="{{ site.github.url }}{{ post.url }}">
+    <div class="meta">
+      <span class="date">{{ post.date | date: "%b %Y" }}</span>
+    </div>
+    <div class="content">
+      <h2 class="title">
+        {{ post.title }}
+        {% if post.tags and post.tags.size > 0 %}
+          <span class="tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </h2>
+      {% if post.excerpt %}
+        <p class="subtitle">{{ post.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+  </a>
+</div>
+{% endfor %}
+
+<!-- Writing Pagination -->
+{% if page.page_num < page.writing_total_pages %}
+<div class="pagination">
+  <a class="pagination-button pagination-active next" href="{{ site.github.url }}/writing/page/2/">More</a>
+</div>
+{% endif %}
 {% endif %}

@@ -21,31 +21,33 @@ module Jekyll
 
     def generate_home_pages(site)
       current_projects = site.collections['projects'].docs.select { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['order'] || 0 }
-      archived_projects = site.collections['projects'].docs.reject { |p| p.data['status'] == 'current' }
+      archived_projects = site.collections['projects'].docs.reject { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['date'] || Time.now }.reverse
+      all_projects = current_projects + archived_projects
 
-      posts = site.collections['writing'].docs
-      all_items = (posts + current_projects + archived_projects).sort_by do |i|
-        if i.data['status'] == 'current'
-          Time.new(9999, 1, 1)
-        else
-          i.data['date'] || Time.now
-        end
-      end.reverse
+      posts = site.collections['writing'].docs.sort_by { |p| p.data['date'] || Time.now }.reverse
 
-      per_page = site.config['paginate'] || 10
-      total_pages = (all_items.size.to_f / per_page).ceil
-      current_count = [current_projects.size, per_page].min
+      projects_per_page = site.config.dig('pagination', 'projects') || 10
+      writing_per_page = site.config.dig('pagination', 'writing') || 10
+
+      projects_total_pages = (all_projects.size.to_f / projects_per_page).ceil
+      writing_total_pages = (posts.size.to_f / writing_per_page).ceil
+      total_pages = [projects_total_pages, writing_total_pages].max
 
       (1..total_pages).each do |page_num|
-        paginated_items = all_items.slice((page_num - 1) * per_page, per_page)
+        paginated_projects = all_projects.slice((page_num - 1) * projects_per_page, projects_per_page) || []
+        paginated_posts = posts.slice((page_num - 1) * writing_per_page, writing_per_page) || []
+
         dir = page_num == 1 ? '' : File.join('page', page_num.to_s)
         permalink = page_num == 1 ? '/' : "/page/#{page_num}/"
 
         page = create_page(site, dir, 'home_paginated.html', {
-          'items' => paginated_items,
+          'projects' => paginated_projects,
+          'posts' => paginated_posts,
           'page_num' => page_num,
           'total_pages' => total_pages,
-          'current_count' => page_num == 1 ? current_count : 0,
+          'projects_total_pages' => projects_total_pages,
+          'writing_total_pages' => writing_total_pages,
+          'current_count' => page_num == 1 ? current_projects.size : 0,
           'title' => 'Home',
           'permalink' => permalink
         })
@@ -57,7 +59,7 @@ module Jekyll
 
     def generate_writing_pages(site)
       posts = site.collections['writing'].docs.sort_by { |p| p.data['date'] || Time.now }.reverse
-      per_page = 20
+      per_page = site.config.dig('pagination', 'writing') || 10
       total_pages = (posts.size.to_f / per_page).ceil
 
       (1..total_pages).each do |page_num|
@@ -82,7 +84,7 @@ module Jekyll
       archived_projects = all_projects.reject { |p| p.data['status'] == 'current' }.sort_by { |p| p.date }.reverse
 
       projects = current_projects + archived_projects
-      per_page = 20
+      per_page = site.config.dig('pagination', 'projects') || 10
       total_pages = (projects.size.to_f / per_page).ceil
 
       (1..total_pages).each do |page_num|
