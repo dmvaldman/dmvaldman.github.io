@@ -542,28 +542,16 @@ a:hover {
   margin-right: 20px;
   font-size: var(--font-size-lg);
   font-weight: var(--font-thin);
-  display: inline-grid;
-  width: fit-content;
-  color: transparent;
+  display: inline-block;
+  min-width: 55px;
+  text-align: center;
 }
 
-.menu-content a::before,
-.menu-content a::after {
-  content: attr(data-text);
-  grid-area: 1 / 1;
-}
+.menu-content a:nth-child(1) { min-width: 58px; }  /* Home */
+.menu-content a:nth-child(2) { min-width: 63px; }  /* Photos */
+.menu-content a:nth-child(3) { min-width: 55px; }  /* About */
 
-.menu-content a::before {
-  font-weight: var(--font-bolder);
-  visibility: hidden;
-}
-
-.menu-content a::after {
-  font-weight: var(--font-thin);
-  color: var(--color-text);
-}
-
-.menu-content a.active::after {
+.menu-content a.active {
   font-weight: var(--font-bolder);
   color: var(--color-link-active);
 }
