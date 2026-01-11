@@ -252,7 +252,7 @@ hr {
 */
 
 .masthead {
-  margin-bottom: 40px;
+  margin-bottom: var(--spacing-xl);
 }
 
 /*
@@ -474,7 +474,7 @@ hr {
 
 .pagination {
   text-align: center;
-  margin: 40px 0;
+  margin: var(--spacing-lg) 0;
 }
 
 .pagination a {
@@ -779,20 +779,15 @@ blockquote em:before {
     margin-bottom: var(--spacing-md);
   }
 
-  /* Typography */
-  h1 {
-    font-size: var(--font-size-lg);
-  }
-
-  h2 {
-    font-size: var(--font-size-md);
-  }
-
   /* Navigation */
   .menu {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: var(--font-size-md);
   }
 
   .image-grid a {
@@ -837,7 +832,7 @@ blockquote em:before {
 
   .post-date {
     font-size: var(--font-size-sm);
-    margin-top: calc(-0.9 * var(--spacing-md));
+    margin-top: calc(-0.5 * var(--spacing-md));
   }
 
   .pagination-button {

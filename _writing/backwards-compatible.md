@@ -84,10 +84,6 @@ Now we can explain why our minified source code was backwards. One of the unicod
 
 ## You, too, can write code backwards
 
-> Humpty Dumpty took the book, and looked at it carefully. “That seems to be done right—” he began.
->
-> “You’re holding it upside down!” Alice interrupted.
-
 We thought this was so cool that we made an [npm script](https://github.com/dmvaldman/elba) for it. You can install it with
 
 ```
