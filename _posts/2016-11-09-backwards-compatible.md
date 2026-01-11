@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to make your code backwards (and compatible)"
-date:	2016-09-07
+date:	2016-11-09
 excerpt: "Explorations in right-to-left text processing"
 image:
 ---
