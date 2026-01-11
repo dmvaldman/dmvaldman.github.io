@@ -1,7 +1,7 @@
 module Jekyll
   class CollectionPaginationGenerator < Generator
     safe true
-    priority :lowest
+    priority :low
 
     def generate(site)
       # Home page with mixed posts and projects
@@ -23,11 +23,12 @@ module Jekyll
       current_projects = site.collections['projects'].docs.select { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['order'] || 0 }
       archived_projects = site.collections['projects'].docs.reject { |p| p.data['status'] == 'current' }
 
-      all_items = (site.posts.docs + current_projects + archived_projects).sort_by do |i|
+      posts = site.collections['writing'].docs
+      all_items = (posts + current_projects + archived_projects).sort_by do |i|
         if i.data['status'] == 'current'
           Time.new(9999, 1, 1)
         else
-          i.date
+          i.data['date'] || Time.now
         end
       end.reverse
 
@@ -55,7 +56,7 @@ module Jekyll
     end
 
     def generate_writing_pages(site)
-      posts = site.posts.docs.sort_by { |p| p.date }.reverse
+      posts = site.collections['writing'].docs.sort_by { |p| p.data['date'] || Time.now }.reverse
       per_page = 20
       total_pages = (posts.size.to_f / per_page).ceil
 

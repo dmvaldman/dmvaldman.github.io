@@ -10,11 +10,11 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
-# jekyll-paginate configuration
-paginate:            10
-
 # Collections
 collections:
+  writing:
+    output: true
+    permalink: /:title/
   projects:
     output: true
     permalink: /:name/
@@ -27,8 +27,7 @@ collections:
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
-permalink:           /:categories/:year/:month/:day/:title:output_ext
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Writings'
@@ -36,16 +35,17 @@ description:	       ''
 author:              'David Valdman'
 twitter_username:    'dmvaldman'
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+# Configure jekyll-feed to use writing collection
+feed:
+  collections:
+    - writing
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "writing"
     values:
-      permalink: "/:title/"
+      layout: "post"
   - scope:
       path: ""
       type: "drafts"
