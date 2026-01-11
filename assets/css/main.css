@@ -22,11 +22,19 @@
   --font-size-lg: 22px;
   --font-size-xl: 26px;
 
+  /* Font weights */
+  --font-bolder: 800;
+  --font-bold: 600;
+  --font-regular: 500;
+
   /* Spacing */
   --spacing-sm: 1em;
   --spacing-md: 1.5em;
   --spacing-lg: 2em;
   --spacing-xl: 2.5em;
+
+  /* Layout */
+  --width-content: 860px;
 }
 
 html {
@@ -50,7 +58,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: var(--width-content);
   margin: 0 auto;
   padding: 20px 20px 20px 20px; /* adjusted for scrollbar */
 }
@@ -92,27 +100,27 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
   margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
   line-height: 1.3;
-  font-weight: 500;
+  font-weight: var(--font-regular);
 }
 
 h1 {
   font-size: var(--font-size-xl);
-  font-weight: 800;
+  font-weight: var(--font-bold);
 }
 
 h2 {
   font-size: var(--font-size-lg);
-  font-weight: 600;
+  font-weight: var(--font-bold);
 }
 
 h3 {
   font-size: var(--font-size-md);
-  font-weight: 600;
+  font-weight: var(--font-bold);
 }
 
 h4 {
   font-size: var(--font-size-sm);
-  font-weight: 600;
+  font-weight: var(--font-bold);
 }
 
 a {
@@ -265,7 +273,7 @@ hr {
 .writing-header {
   color: var(--color-text-muted);
   font-size: var(--font-size-xl);
-  font-weight: 500;
+  font-weight: var(--font-regular);
   margin: var(--spacing-lg) 0 0 0;
 }
 
@@ -418,7 +426,7 @@ hr {
   grid-column: 1;
   grid-row: 2;
   font-size: var(--font-size-xs);
-  font-weight: 500;
+  font-weight: var(--font-regular);
   color: var(--color-text-faint);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -470,6 +478,7 @@ hr {
   width: 100%;
   display: block;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 /*
@@ -550,7 +559,7 @@ a:hover {
 
 .menu-content a::after {
   content: attr(data-text);
-  font-weight: 500;
+  font-weight: var(--font-regular);
   height: 0;
   visibility: hidden;
   overflow: hidden;
@@ -561,7 +570,7 @@ a:hover {
 
 .menu-content a.active {
   color: var(--color-link-active);
-  font-weight: 600;
+  font-weight: var(--font-bold);
 }
 
 /*
@@ -719,7 +728,12 @@ blockquote em:before {
 }
 
 .author a {
+  color: var(--color-text-muted);
   text-decoration: underline;
+}
+
+.author a:hover {
+  color: var(--color-link);
 }
 
 #draft{
