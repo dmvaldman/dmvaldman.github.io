@@ -207,12 +207,15 @@ img {
   margin: 0;
 }
 
-.image-grid + p {
+.image-grid + p > em:only-child {
   font-size: var(--font-size-sm);
+  display: block;
   text-align: center;
   color: var(--color-text-muted);
+}
+
+.image-grid + p:has(> em:only-child) {
   margin: 0;
-  font-style: italic;
 }
 
 p {
@@ -649,6 +652,7 @@ blockquote em:before {
   /* Base layout */
   body {
     font-size: var(--font-size-md);
+    line-height: 1.45em;
   }
 
   .container {
@@ -708,11 +712,6 @@ blockquote em:before {
 
   .tags {
     display: none;
-  }
-
-  /* Posts */
-  .post h1 {
-    font-size: var(--font-size-lg);
   }
 
   .post-date {
