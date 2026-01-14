@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RookLift"
-excerpt: "Measuring mental clarity by correlating Chess ELO to my Garmin watch"
+excerpt: Training my smartwatch to track intelligence
 date: 2024-04-25
 tags: [Garmin]
 ---
@@ -14,7 +14,7 @@ There's another signal I was using to track the mind, which is chess. I play alm
 
 ## Building a Model
 
-I downloaded my chess data (`date`, `ΔELO`) from Lichess, and my Garmin data (about 1.5 years of cross-referenced signal) and put on my data science hat. I was tracking ~20 signals related to exercise and sleep and from them built various statistical models to predict my daily [ELO](https://en.wikipedia.org/wiki/Elo_rating_system) fluctuations. What worked best was also the simplest: tried and true logistic regression. I could predict winning/losing with about 60% accuracy (and confirmed that number through cross-validation). 60% seemed pretty good: absent any signal, the chance of winning should be about 50% because chess apps pair you with like-ELO players.
+I downloaded my chess data (`date`, `start ELO`, `ΔELO`) from Lichess, and my Garmin data (about 1.5 years of cross-referenced signal) and put on my data science hat. I was tracking ~20 signals related to exercise and sleep and from them built various statistical models to predict my daily [ELO](https://en.wikipedia.org/wiki/Elo_rating_system) fluctuations. What worked best was also the simplest: tried and true logistic regression. I could predict winning/losing with about 60% accuracy (and confirmed that number through cross-validation). 60% seemed pretty good: absent any signal, the chance of winning should be about 50% because chess apps pair you with like-ELO players.
 
 That I could do better than chance wasn't too surprising. A lot of cognition depends on how well you sleep and exercise. But what exactly does it mean to sleep and exercise well? Which of the signals were actually important? Using a sparse logistic regression solver is a straightforward method to show which features have little (or redundant) predictive power, and I was pretty surprised by the results. Here's a sample of independent signals from most positively correlated to most negatively correlated
 
