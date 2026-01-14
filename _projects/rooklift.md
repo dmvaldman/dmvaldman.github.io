@@ -1,10 +1,12 @@
 ---
-layout: draft
+layout: post
 title: "RookLift"
 excerpt: "Measuring mental clarity by correlating Chess ELO to my Garmin watch"
 date: 2024-04-25
-tags: [Garmin Watch]
+tags: [Garmin]
 ---
+
+![](/assets/img/rooklift/logo.png)
 
 Some mornings I'd wake up feeling ready for the world---I'd be alert, clear-headed, present. Other days, I'd retrace my steps 20 times to find my keys and prepare for the long day ahead. My sleep was erratic and I didn't know why. I had invested in a Garmin watch to uncover trends, and it was helping, but it was also missing something. Though great at tracking the body, it was mediocre at tracking the mind.
 
@@ -36,11 +38,11 @@ REM sleep was out on top, which isn't much of a surprise. But apparently ***it h
 
 ***Stress Made Me Smarter*** -- As inverse HRV, Garmin's stress signal really measures your sympathetic nervous system, which is also heightened during alertness and engagement, not just anxiety. According to the [Yerkes-Dodson law](https://en.wikipedia.org/wiki/Yerkes%E2%80%93Dodson_law), moderate arousal improves performance on complex tasks. For your mind to be clear, you actually don't want to be very relaxed.
 
-The takeaway is that near-term mental clarity and long-term health aren't that aligned. This is I think why Garmin's sleep metrics can often be miscalibrated with mental performance. To Garmin, for example, stress is always bad.
+The takeaway is that near-term mental clarity and long-term health aren't that aligned. This is I think why Garmin's sleep metrics can often be miscalibrated with mental performance. To Garmin, for example, stress is always bad. Moreover, this was a model built custom for my data, and I wasn't fitting into some aggregated thing of Garmin's design.
 
 ## Building a Garmin App
 
-With a better model in hand, I decided to make a better model on my hand. I was going to make an app for my Garmin that would tell me day how smart or dumb I'd be each morning. I'd use the previous day and night's metrics to predict the current days mental performance. The model would also update weekly with the new data and I'd be able to verify if the same features were consistently predictive (which by and large they were).
+With a better model in hand, I decided to make a better model on my hand. I was going to make an app for my Garmin that would tell me day how smart or dumb I'd be each morning. It would turn the previous day and night's metrics into the probability my ELO would go up that day. The model would also update weekly with the new data and I'd be able to verify if the same features were consistently predictive (which by and large they were).
 
 <div class="image-grid">
 <img src="/assets/img/rooklift/watch2.jpg" alt="glance view">
@@ -50,15 +52,13 @@ With a better model in hand, I decided to make a better model on my hand. I was 
 
 If curious about the code, here's what [builds the model and runs daily cron jobs](https://github.com/dmvaldman/rooklift) and here's the [frontend for the watch UI](https://github.com/dmvaldman/rooklift-frontend)
 
-## Reflecting on Use
+## Reflections on Use
 
-I've been using the app for several months now. It's definitely predictive not only of my chess aptitude but other cognitively demanding tasks, at times contradicting Garmin's "morning review". Sometimes it would contradict how I was internally feeling, too. I'd wake up feeling rested, see my stats are low, and play a game of chess out of algorithmic rebellion, then actually feel my mind up against a barrier and handedly lose. I've now been taking its predictions more seriously and scheduling less demandingly cognitive tasks when my metrics are low, adopting a "we'll get em next time" strategy.
+I've been using the app for several months now. It's definitely predictive not only of my chess aptitude but other cognitively demanding tasks, at times contradicting Garmin's "morning review". Often, it would contradict how I was internally feeling, too. I'd wake up feeling rested, see my stats are low, and play a game of chess out of algorithmic rebellion, only to feel my mind up against a barrier and handedly lose. I've now been taking its predictions more seriously and scheduling less demandingly cognitive tasks when my metrics are low, adopting a "we'll get em next time" strategy.
 
-I've also made some behavior changes. I've invested much more into getting enough REM sleep. What's helped the most has been cutting down alcohol. I'll totally avoid the "have one glass of wine to relax" thing. Even a glass of wine at night, would disporportionaley impare REM sleep[^4].
+I've also made some behavior changes. I've invested much more into getting enough REM sleep. What's helped the most has been cutting down alcohol. I'll avoid the "have one glass of wine to relax" thing. Even a glass of wine at night, would disproportionately impare REM sleep.[^4] Getting a weighted blanket has also helped me be in both REM and deep sleep more and not wake up at 5am for no reason.
 
 I'd like to put this app into the Garmin marketplace, but because Garmin [doesn't provide](https://forums.garmin.com/developer/connect-iq/i/bug-reports/feature-request-add-sleep-data-to-the-sdk) sleep data on device and is also very [restrictive](https://stackoverflow.com/questions/53454382/can-i-get-access-to-the-garmin-health-api-as-a-hobbyist) on hobby projects that need Health API access, it can only be a personal tool. Hope that changes at some point! Do reach out if you'd actually want it for yourself.
-
-![](/assets/img/rooklift/logo.png)
 
 -------
 
