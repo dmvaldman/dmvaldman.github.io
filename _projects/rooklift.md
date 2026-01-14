@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RookLift"
-excerpt: Training my smartwatch to track intelligence
+excerpt: Training my Smartwatch to Track Intelligence
 date: 2024-04-25
 tags: [Garmin]
 ---
