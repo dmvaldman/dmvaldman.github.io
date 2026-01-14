@@ -8,7 +8,7 @@ tags: [Garmin]
 
 ![](/assets/img/rooklift/logo.png)
 
-Some mornings I'd wake ready for the world---I'd be alert, clear-headed, present. Other days, I'd retrace my steps 20 times to find my keys, dreading the long day ahead. My sleep was erratic and I didn't know why. I had invested in a Garmin watch to clarify trends, and it was helping, but it was also missing something. Though great at tracking the body, it was mediocre at tracking the mind.
+Some mornings I'd wake ready for the world---I'd feel alert, clear-headed, present. Other days, I'd retrace my steps 20 times to find my keys, dreading the long day ahead. My sleep was erratic and I didn't know why. I had invested in a Garmin watch to clarify trends, and it was helping, but it was also missing something. Though great at tracking the body, it was mediocre at tracking the mind.
 
 There's another signal I was using to track the mind, which is chess. I play almost daily, and I found winning or losing to be a good proxy for mental clarity. Chess was the signal absent from my Garmin that I hoped could bridge body to mind. Time to verify if I was right.
 
