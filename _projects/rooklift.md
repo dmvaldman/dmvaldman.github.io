@@ -50,7 +50,7 @@ With a better model in hand, I decided to make a better model on my hand. I was 
 </div>
 *Glance view and Fullscreen view*
 
-If curious about the code, here's what [builds the model and runs daily cron jobs](https://github.com/dmvaldman/rooklift) and here's the [frontend for the watch UI](https://github.com/dmvaldman/rooklift-frontend).
+If curious about the code, here's what [builds the model](https://github.com/dmvaldman/rooklift) and here's the [frontend for the watch UI](https://github.com/dmvaldman/rooklift-frontend).
 
 ## Reflections on Use
 

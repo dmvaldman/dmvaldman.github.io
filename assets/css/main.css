@@ -227,6 +227,10 @@ p {
   margin: var(--spacing-md) 0;
 }
 
+.post p {
+  margin: var(--spacing-lg) 0;
+}
+
 blockquote {
   margin: var(--spacing-md) 0;
   padding: 0 var(--spacing-md);
