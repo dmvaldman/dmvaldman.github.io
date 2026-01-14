@@ -23,6 +23,7 @@
   --font-size-xl: 24px;
 
   /* Font weights */
+  --font-boldest: 600;
   --font-bolder: 500;
   --font-bold: 400;
   --font-regular: 300;
@@ -100,6 +101,10 @@ li {
   margin: 0.3em 0;
 }
 
+strong {
+  font-weight: var(--font-boldest);
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
   font-weight: var(--font-bold);
@@ -115,8 +120,8 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-bold);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-bolder);
 }
 
 h4 {
@@ -576,6 +581,14 @@ th, td {
   width: 18px;
   height: 18px;
   vertical-align: text-bottom;
+}
+
+table + p em {
+  display: block;
+  font-size: var(--font-size-sm);
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-top: -10px;
 }
 
 img + em {
