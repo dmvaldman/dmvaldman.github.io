@@ -19,8 +19,9 @@
   --font-size-xs: 11px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
-  --font-size-lg: 22px;
-  --font-size-xl: 24px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 24px;
 
   /* Font weights */
   --font-boldest: 600;
@@ -111,21 +112,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
 }
 
 h2 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-bolder);
 }
 
 h3 {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-bolder);
 }
 
 h4 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
 }
 
 a {
@@ -142,7 +143,13 @@ a:active {
 }
 
 .post h2 {
-  color: var(--color-text-muted)
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.post h3 {
+  color: var(--color-text-muted);
+  margin: 0;
 }
 
 img {
@@ -177,7 +184,6 @@ img {
 
 .album-title {
   text-align: center;
-  font-size: var(--font-size-md);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -232,7 +238,7 @@ p {
 }
 
 .post p {
-  margin: var(--spacing-lg) 0;
+  margin: var(--spacing-md) 0;
 }
 
 blockquote {
@@ -273,7 +279,7 @@ hr.section-divider {
 
 .section-header {
   color: var(--color-text-muted);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   font-weight: var(--font-thin);
   margin: var(--spacing-lg) 0 0 0;
 }
@@ -284,7 +290,6 @@ hr.section-divider {
 
 .feed-item {
   margin-bottom: var(--spacing-sm);
-  font-size: var(--font-size-md);
 }
 
 .feed-item a {
@@ -352,14 +357,14 @@ hr.section-divider {
 }
 
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-size: var(--font-size-xs);
   color: var(--color-text-faint);
   margin-right: 0.5em;
   padding: 2px 4px;
   border: 1px solid var(--color-text-faint);
   line-height: 1;
-  transform: translateZ(0);
 }
 
 .post a {
@@ -375,7 +380,7 @@ hr.section-divider {
 }
 
 .post h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
 }
 
 .post img {
@@ -430,7 +435,6 @@ hr.section-divider {
   border: 1px solid var(--color-text-faint);
   padding: 6px 14px;
   display: inline-block;
-  font-size: var(--font-size-md);
 }
 
 .pagination-button:hover {
@@ -454,7 +458,7 @@ hr.section-divider {
 
 .menu-content a {
   margin-right: 20px;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-thin);
   display: inline-block;
   min-width: 55px;

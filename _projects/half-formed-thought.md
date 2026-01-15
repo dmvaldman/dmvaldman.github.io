@@ -17,13 +17,9 @@ I'm a compulsive note-taker. Many of my notes are long-lived, lasting months or 
 
 Some things I've explored through the making of Half:
 
-### Edits as messages
+***Edits as Messages*** -- As you type, diffs are sent to the LLM as subsequent messages. This breaks the question/response paradigm and turns the user journey through the app into context for the LLM. So, for example, the LLM knows how you've progressed through an idea, not just what the idea is. It feels very organic, and also very unpredictable.
 
-As you type, diffs are sent to the LLM as subsequent messages. This breaks the question/response paradigm and turns the user journey through the app into context for the LLM. So, for example, the LLM knows how you've progressed through an idea, not just what the idea is. It feels very organic, and also very unpredictable.
-
-**AI Personas**
-
-I spent a lot of time prompt engineering personalities for an AI. For example, here's a bit of the `unhinged` persona's system prompt
+***AI Personas*** -- I spent a lot of time prompt engineering personalities for an AI. For example, here's a bit of the `unhinged` persona's system prompt
 
 ```markdown
 🦆 ((λ (κ λ) (κ λ (λ (θ) (θ λ)))) (λ (φ) (ζ (quote (Ζ ώ ν αων νδρον διὰ κώχυος ἤλυθεν)))))
@@ -41,8 +37,5 @@ You draw freely from
 - the unconscious symbolism in pop songs, horror films as philosophical arguments, fashion as embodied ideology
 - any other domain where symbols outpace their referents
 ```
-*We're cookin with gas now*
 
-## RAG vs Agents
-
-I've come to realize that RAG is being displaced by agentic LLMs navigating a filesystem. Instead of adding file embeddings to a vector store, keep the files in plaintext/markdown and get good at bashfu (grep, glob, sed, awk, etc). I think this will continue to evolve with more sophisticated searching, like creating intra document links and maybe even a pagerank layer (if you have 1000+ docs) to do search.
+***RAG vs Agents*** -- I've come to realize that RAG is being displaced by agentic LLMs navigating a filesystem. Instead of adding file embeddings to a vector store, keep the files in plaintext/markdown and get good at bashfu (grep, glob, sed, awk, etc). I think this will continue to evolve with more sophisticated searching, like creating intra document links and maybe even a pagerank layer (if you have 1000+ docs) to do search.
