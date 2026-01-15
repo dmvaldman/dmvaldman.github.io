@@ -3,6 +3,7 @@ layout: post
 title: "The Alignment Game"
 excerpt: A game to align people and priorities
 date: 2023-09-08
+image: alignment-game/athens.jpg
 link: https://docs.google.com/spreadsheets/d/1BYh9ZtEv4k7xoSXmtf1qCP8bYHBCZLEuTVHsTDPQM1M/edit?gid=2033972304#gid=2033972304
 tags: ["Google Sheet"]
 ---
@@ -19,11 +20,11 @@ In my situation, we had a half dozen stack ranked lists of priorities and we wan
 
 ## Kemeny Ranking
 
-The [Kemeny-Young method](https://en.wikipedia.org/wiki/Kemeny_method) is a ranking algorithm that finds the ordering which minimizes total disagreement across all voters. A disagreement is any time one voter chooses A over B and another chooses B over A. One of the voters would need to swap their preferences in order to align, and the Kemeny Young method finds the ordering requiring the fewest pairwise swaps across all voters.
+The [Kemeny-Young method](https://en.wikipedia.org/wiki/Kemeny_method) is a ranking algorithm that finds the ordering which minimizes total disagreement across all voters. A disagreement is any time one voter chooses A over B and another chooses B over A. One of the voters would need to swap their preferences in order to align, and the Kemeny Young method finds the ordering requiring the fewest swaps across all voters.
 
 The downsides of the Kemeny Young method come down to it being the "compromise solution". Half of people may think A is most important and B least, and another half would invert that, and the Kemeny Young method would put it in the middle and upset everyone. Something to be cognizant of. The important bit is not to use the ordering it gives you as marching orders, but to use it as a tool for conversation.
 
-The benefits of Kemeny Young lies in its interpretability. Because it works by counting pairwise disagreements, you get a natural measure of which items are contentious and which aren't and which voters are misaligned and which aren't. It can be said of any two people: "You have X disagreements", "You need to change your mind on X things to align with one another".
+The benefits of Kemeny Young lies in its interpretability. Because it works by counting pairwise disagreements, you get a natural measure of which items are contentious and which aren't, as well as which voters are misaligned and which aren't. It can be said of any two people: "You need to change your mind on X things to align with one another" and between any two priorities: "X voters disagreed on this prioritization." This makes it easy to identify where consensus already exists versus what we need to debate.
 
 ## Playing the Game
 
