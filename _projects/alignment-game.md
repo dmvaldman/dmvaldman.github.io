@@ -1,7 +1,7 @@
 ---
-layout: draft
+layout: post
 title: "The Alignment Game"
-excerpt: A Game to Align People and Priorities
+excerpt: A game to align people and priorities
 date: 2023-09-08
 link: https://docs.google.com/spreadsheets/d/1BYh9ZtEv4k7xoSXmtf1qCP8bYHBCZLEuTVHsTDPQM1M/edit?gid=2033972304#gid=2033972304
 tags: ["Google Sheet"]
