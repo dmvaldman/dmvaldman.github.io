@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A CNCed Fractal Headboard"
-excerpt: A game to align people and priorities
+title: "CNCed Fractal Headboard"
+excerpt: My woodworking project featured on Instructables
 date: 2014-09-16
 image: headboard/headboard.jpeg
 tags: ["Woodworking"]
