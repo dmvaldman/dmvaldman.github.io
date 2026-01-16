@@ -6,8 +6,6 @@ date: 2024-04-25
 tags: [Garmin]
 ---
 
-![](/assets/img/rooklift/logo.png)
-
 Some mornings I'd wake ready for the world---I'd feel alert, clear-headed, present. Other days, I'd retrace my steps 20 times to find my keys, dreading the long day ahead. My sleep was erratic and I didn't know why. I had invested in a Garmin watch to clarify trends, and it was helping, but it was also missing something. Though great at tracking the body, it was mediocre at tracking the mind.
 
 There's another signal I was using to track the mind, which is chess. I play almost daily, and I found winning or losing to be a good proxy for mental clarity. Chess was the signal absent from my Garmin that I hoped could bridge body to mind. Time to verify if I was right.
@@ -59,6 +57,8 @@ I've been using the app for several months now. It's definitely predictive not o
 I've also made some behavior changes. I've invested much more into getting enough REM sleep. What's helped the most has been cutting down alcohol. I'll avoid the "have a glass of wine to relax" thing. Even a single serving of alcohol disproportionately impares REM sleep.[^4] Begrudgingly, I've adopted another west-coast trope. Getting a weighted blanket has also helped me be get more REM and deep sleep and fewer 5am wakeups for no reason.
 
 I'd like to put this app into the Garmin marketplace, but unfortunately Garmin [doesn't provide](https://forums.garmin.com/developer/connect-iq/i/bug-reports/feature-request-add-sleep-data-to-the-sdk) sleep data on device and is also very [restrictive](https://stackoverflow.com/questions/53454382/can-i-get-access-to-the-garmin-health-api-as-a-hobbyist) on hobby projects that need Health API access. For now it can only be a personal tool. Hope that changes at some point! Do reach out if you want one for yourself and I can help you set up a local version.
+
+![](/assets/img/rooklift/logo.png)
 
 -------
 

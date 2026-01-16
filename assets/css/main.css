@@ -86,7 +86,7 @@ body {
 }
 
 .footnotes p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .footnotes a {
