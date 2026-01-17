@@ -5,6 +5,8 @@ date: 2012-03-27
 excerpt: "Dealing with being wrong 99% of the time"
 ---
 
+[*Comments on this article on (Hacker News)[https://news.ycombinator.com/item?id=3763781]*]
+
 The thing about hard problems is that there are many difficulties and few solutions. Sounds obvious, but what’s often overlooked is the psychological component to this asymmetry. There’s a simple reason why tackling a hard problem can lead to depressive symptoms: you’re necessarily wrong 99% of the time.
 
 I’m getting my PhD in math, and developing a web app/startup on the side. I can tell you that one thing from my PhD research that I can carry over to my entrepreneurial ambitions is that you only have to be right 1% of the time. The hard part is, you need to be psychologically prepared to be wrong all other times.
