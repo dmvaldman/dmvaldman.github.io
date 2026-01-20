@@ -6,7 +6,7 @@ date: 2024-04-25
 tags: [Garmin]
 ---
 
-[*Comments on this article on [HackerNews](https://news.ycombinator.com/item?id=46624563)*]
+[*Commentary on [Hacker News](https://news.ycombinator.com/item?id=46624563)*]
 
 Some mornings I'd wake ready for the world---I'd feel alert, clear-headed, present. Other days, I'd retrace my steps 20 times to find my keys, dreading the long day ahead. My sleep was erratic and I didn't know why. I had invested in a Garmin watch to clarify trends, and it was helping, but it was also missing something. Though great at tracking the body, it was mediocre at tracking the mind.
 
