@@ -13,7 +13,7 @@ I'm not rational or irrational, but a secret third thing. I call it Schizoration
 
 Where rational people go astray is they think Bayes' rule leads to truth. Their mistake is to confuse a process for a destination. A careful reading of Bayes' rule will show it leads not to truth, but to discord! The polarization and incoherence we see in the world is not despite people's training in rational deduction, but because of it. Rationality is not the cure, you see, it is the disease.
 
-Schizorationality offers a different persepective. It is perfectly consistent with Bayes' rule, but departs from rationality in its interpretation. Schizorationality is not interested in the convergence of belief to truth. Many behaviors ascribed as irrational by the rationalist become expected behavior to the Schizorationalist. A Schizorationalist is rarely surprised by the incoherence of the world. Paradoxically, rejecting truth may lead to a better model of reality (if only that was something they cared about).
+Schizorationality offers a different perspective. It is perfectly consistent with Bayes' rule, but departs from rationality in its interpretation. Schizorationality is not interested in the convergence of belief to truth. Many behaviors ascribed as irrational by the rationalist become expected behavior to the Schizorationalist. A Schizorationalist is rarely surprised by the incoherence of the world. Paradoxically, rejecting truth may lead to a better model of reality (if only that was something they cared about).
 
 ## How I Stopped Worrying and Embraced Schizorationality
 
