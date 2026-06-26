@@ -20,7 +20,7 @@
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
-  --font-size-xl: 22px;
+  --font-size-xl: 24px;
   --font-size-xxl: 26px;
 
   /* Font weights */
@@ -31,6 +31,7 @@
   --font-thin: 200;
 
   /* Spacing */
+  --spacing-xs: .5em;
   --spacing-sm: 1em;
   --spacing-md: 1.5em;
   --spacing-lg: 2em;
@@ -72,7 +73,7 @@ body {
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
-  margin: var(--spacing-sm) 0;
+  margin: var(--spacing-xs) 0;
 }
 
 .footnotes {
@@ -121,13 +122,25 @@ h2 {
   font-weight: var(--font-bolder);
 }
 
+.post h2 {
+  margin: var(--spacing-md) 0 var(--spacing-md) 0 !important;
+}
+
 h3 {
   font-size: var(--font-size-lg);
   font-weight: var(--font-bolder);
 }
 
+.post h3 {
+  margin: var(--spacing-md) 0 var(--spacing-md) 0 !important;
+}
+
 h4 {
   font-size: var(--font-size-md);
+}
+
+.post h4 {
+  margin: var(--spacing-md) 0 var(--spacing-md) 0 !important;
 }
 
 a {
