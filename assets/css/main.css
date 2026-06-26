@@ -97,6 +97,10 @@ body {
 
 sup {
   font-size: var(--font-size-xs);
+  line-height: 0;
+  position: relative;
+  top: -0.45em;
+  vertical-align: baseline;
 }
 
 li {
@@ -386,11 +390,26 @@ hr.section-divider {
   text-underline-offset: 2px;
 }
 
-.post sup a{
+.post a.footnote {
   font-size: var(--font-size-xs);
+  line-height: 0;
+  position: relative;
+  top: -0.45em;
   text-decoration: none;
   color: var(--color-text-muted);
   margin-left: 1px;
+}
+
+.post sup a {
+  font-size: inherit;
+  line-height: 0;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  margin-left: 1px;
+}
+
+.post sup a.footnote {
+  position: static;
 }
 
 .post h1 {
