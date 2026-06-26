@@ -65,4 +65,14 @@ $$
 
 This is the precise sense in which TableStakes evens out: as you keep playing, the amount you are ahead or behind becomes vanishingly small compared to the total amount you owe.
 
+## Real Usage
+
+I've been using TableStakes anytime someone is willing to entertain the idea. Here's been my
+
+<div class="image-grid">
+<img src="/assets/img/tablestakes/luck_time.png" alt="luck over time">
+<img src="/assets/img/tablestakes/luck_current.png" alt="current luck">
+</div>
+*Luck over time with error decaying like $\frac{1}{\sqrt n}$*
+
 Something else to notice about $\sigma^2$ is that the bill's totals $T_i$ enter in quadratically, so larger bills dominate the variance. So if you get stuck paying a bill five times larger than normal, you should expect it to take roughly twenty-five normal meals before that meal is washed out.
