@@ -74,6 +74,7 @@ body {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   margin: var(--spacing-xs) 0;
+  font-style: italic;
 }
 
 .footnotes {
@@ -237,17 +238,6 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0;
-}
-
-.image-grid + p > em:only-child {
-  font-size: var(--font-size-sm);
-  display: block;
-  text-align: center;
-  color: var(--color-text-muted);
-}
-
-.image-grid + p:has(> em:only-child) {
   margin: 0;
 }
 
@@ -634,14 +624,6 @@ table + p em {
   text-align: center;
   color: var(--color-text-muted);
   margin-top: -10px;
-}
-
-img + em {
-  font-size: var(--font-size-sm);
-  display: block;
-  text-align: center;
-  color: var(--color-text-muted);
-  margin-top: -20px;
 }
 
 blockquote em {
