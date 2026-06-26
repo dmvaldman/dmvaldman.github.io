@@ -20,8 +20,9 @@ module Jekyll
     private
 
     def generate_home_pages(site)
-      current_projects = site.collections['projects'].docs.select { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['order'] || 0 }
-      archived_projects = site.collections['projects'].docs.reject { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['date'] || Time.now }.reverse
+      projects = listed_projects(site)
+      current_projects = projects.select { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['order'] || 0 }
+      archived_projects = projects.reject { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['date'] || Time.now }.reverse
       all_projects = current_projects + archived_projects
 
       posts = site.collections['writing'].docs.sort_by { |p| p.data['date'] || Time.now }.reverse
@@ -79,7 +80,7 @@ module Jekyll
     end
 
     def generate_projects_pages(site)
-      all_projects = site.collections['projects'].docs
+      all_projects = listed_projects(site)
       current_projects = all_projects.select { |p| p.data['status'] == 'current' }.sort_by { |p| p.data['order'] || 0 }
       archived_projects = all_projects.reject { |p| p.data['status'] == 'current' }.sort_by { |p| p.date }.reverse
 
@@ -116,6 +117,10 @@ module Jekyll
         'permalink' => '/photos/'
       })
       site.pages << page
+    end
+
+    def listed_projects(site)
+      site.collections['projects'].docs.reject { |p| p.data['layout'] == 'draft' }
     end
 
     def create_page(site, dir, layout, data)

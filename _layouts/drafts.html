@@ -5,7 +5,9 @@ layout: default
 <h1 class="section-header">Drafts</h1>
 <hr class="section-divider">
 
-{% assign sorted_drafts = site.drafts | sort: 'date' | reverse %}
+{% assign project_drafts = site.projects | where: 'layout', 'draft' %}
+{% assign all_drafts = site.drafts | concat: project_drafts %}
+{% assign sorted_drafts = all_drafts | sort: 'date' | reverse %}
 {% for draft in sorted_drafts %}
 <div class="feed-item">
   <a href="{{ site.github.url }}{{ draft.url }}">
