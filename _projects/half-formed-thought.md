@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: draft
 title: "Half Formed Thought"
 excerpt: "A note-taking app for brainstorming"
 date: 2026-01-07
-status: current
 image: half-formed-thought/banner.png
 link: https://half-formed-thought.com
 tags: ["Web"]
