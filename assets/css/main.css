@@ -11,7 +11,7 @@
   --color-light-gray: #878580;
 
   /* Typography */
-  --font-content: "IBM Plex Sans", BlinkMacSystemFont, -apple-system, "Inter", Segoe UI, Helvetica, Arial, sans-serif;
+  --font-content: -apple-system, "IBM Plex Sans", BlinkMacSystemFont, "Inter", Segoe UI, Helvetica, Arial, sans-serif;
   --font-mono: Menlo, "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Monaco, "Consolas", "Source Code Pro", monospace;
   --font-code: Menlo, ui-monospace, SFMono-Regular, "Cascadia Code", "IBM Plex Mono";
 
@@ -21,7 +21,7 @@
   --font-size-md: 16px;
   --font-size-lg: 18px;
   --font-size-xl: 24px;
-  --font-size-xxl: 26px;
+  --font-size-xxl: 28px;
 
   /* Font weights */
   --font-boldest: 600;

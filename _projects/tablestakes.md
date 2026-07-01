@@ -13,7 +13,7 @@ Years ago I came across a [fascinating article](https://messymatters.com/expecto
 
 In their formulation one person pays the bill, but that person is chosen probabilistically based on the meal. If you keep paying this way, on average you will pay what you owe. And there's no way to cheat! A helpful mental frame is that though in reality you never actually pay what you owe, you are always paying what you owe "in expectation". That is, the chance you pay the bill is equal to your share of it. You operate calmly inside an uncollapsed platonic universe of probabilities, meanwhile violent collapse is happening all around you.
 
-Here's how it works, and it's quite simple, albeit counterintuitive. Imagine the bill as a pie, and each item is a wedge whose area equals their item's percent of the total. Now, throw a dart at the pie. Whoever's item the dart lands on pays for the meal. That's it! It's straightforward to see that the probability the dart lands on one of your items is exactly your share of the bill. Notice though, we don't need to keep record of who bought what, we just need to ask who bought the item the dart landed on. By choosing an item weighted by its cost, you're encapsulating all the information you need to choose the person fairly.
+Here's how it works, and it's quite simple, albeit counterintuitive. Imagine the bill as a pie, and each item is a wedge whose area equals that item's fraction of the total. Now, throw a dart at the pie. Whoever's item the dart lands on pays for the meal. That's it! It's straightforward to see that the probability the dart lands on one of your items is exactly your share of the bill. Notice though, we don't need to keep record of who bought what, we just need to ask who bought the item the dart landed on. By choosing an item weighted by its cost, you're encapsulating all the information you need to choose the person fairly.
 
 Of course, it's not that straightforward to select an item weighted by its costs in your head, so I made a web app [tablestakes.cc](tablestakes.cc) for that. For each meal, take a picture of the receipt and the app selects an item according to the above process, whoever bought that item pays!
 
@@ -63,21 +63,13 @@ L &\sim N(0, \sigma^2) \\
 \end{aligned}
 $$
 
-So though your expected luck is 0, the variance of your luck accumulates. What's important to consider is not just how lucky you are at any time, but your luck as a percentage of what you owe $S = \sum_i s_i$, ie the percent error of what you pay vs what you owe. $S$ grows linearly with the number of meals, while $L$ grows like its standard deviation, which scales like the square root of the number of meals. So for $n$ meals,
-
-$$
-\frac{L}{S} \sim \frac{\sqrt n}{n} \to 0
-$$
-
-In this sense the payments work out: as you keep playing, the amount you are ahead or behind becomes vanishingly small compared to the total amount you owe.
-
 ### How can I get a sense of my payouts over time vs what I should have spent?
 
 Though we don't record what you actually spent, we can estimate it. The app does gather how many people are dining together, $k_i$, so let's assume what you owe is an even split of the meal, $s_i = \frac{T_i}{k_i}$. Then $p_i = \frac{1}{k_i}$ and
 
 $$
 \begin{align}
-L = & \sum_i \frac{T_i}{k_i} - X_i \\
+L = & \sum_i \big(\frac{T_i}{k_i} - X_i\big) \\
 \sigma^2 = & \sum_i T_i^2 \frac{1}{k_i} \left(1 - \frac{1}{k_i}\right)
 \end{align}
 $$
@@ -86,23 +78,22 @@ which we can calculate.
 
 A measure of how lucky/unlucky you are is how many standard deviations out your luck is, $\frac{L}{\sigma} \sim N(0, 1)$. A positive score means you're on the lucky side of things, a negative score means you're on the unlucky side of things. We show this score in the app.
 
-It turns out we can even relax the assumption that what you owe is an even split of the meal. We only need to assume that on average you actually owe an even split of the meal and the math works out to the same functional form. It's only if you consistently over- or under-order does this measure become biased.
+It turns out we can even relax the assumption that what you owe is an even split of the meal. We only need to assume that on average you actually owe an even split of the meal and the math works out to the same functional form. It's only if you consistently over- or under-order that this measure become biased.
 
 ### How many times do I need to play before things "even out"?
 
-Say you're particularly lucky or unlucky and $\lvert \frac{L}{\sigma} \rvert > \alpha$ where $\alpha > 1$. How much more do we need to play this game before we return to normalcy with $\lvert \frac{L}{\sigma} \rvert \leq 1$ again?
-
-Since variance accumulates one meal at a time, $\sigma$ grows like the square root of the number of meals, so after $m$ more meals
+Though your expected luck for any meal is 0, the variance of your luck accumulates. What's important to consider is not just how lucky you are at any time, but your luck as a percentage of what you owe $S = \sum_i s_i$. This is the percent error of what you pay vs what you owe. $S$ grows linearly with the number of meals, while $L$ grows like its standard deviation, which scales like the square root of the number of meals. So for $n$ meals,
 
 $$
-\sigma_{m + n} = \sigma_n \sqrt\frac{n + m}{n}
+\frac{L}{S} \sim \frac{\sqrt n}{n} \to 0
 $$
 
-So to reduce your luck by a factor of $\alpha$ you'll need $m = n (\alpha^2 - 1)$ more meals.
+In this sense the payments work out: as you keep playing, the amount you are ahead or behind becomes vanishingly small compared to the total amount you owe, and this scales like $\frac{1}{\sqrt n}$. So, for example, you are around 10% of what you owe at around 100 meals.
+
 
 ### Does bill size matter?
 
-Something to notice about $\sigma^2$ is that a bill's total enters your variance quadratically, so one that's $k$ times your usual carries about $k^2$ ordinary meals' worth of swing. It dominates your luck until you've logged roughly $k^2$ other meals, and fades only after that. Equivalently, a bill dominates all other meals whenever its total $T_{\text{big}} \gtrsim \sqrt n T_{\text{avg}}$. The longer you play, no one bill will dominate.
+Something to notice about $\sigma^2$ is that a bill's total enters your variance quadratically, so one that's $k$ times your usual carries about $m^2$ ordinary meals' worth of swing. It dominates your luck until you've logged roughly $m^2$ other meals, and fades only after that. Equivalently, a bill dominates all other meals whenever its total $T_{\text{big}} \gtrsim \sqrt n T_{\text{avg}}$. The longer you play, the less any single bill can dominate.
 
 ## Real Usage
 
@@ -112,6 +103,6 @@ I've been using [TableStakes](https://tablestakes.cc) anytime a friend is willin
 <img src="/assets/img/tablestakes/luck_time.png" alt="luck over time">
 <img src="/assets/img/tablestakes/luck_current.png" alt="current luck">
 </div>
-*$\frac{L}{S}$ over time decaying like $\frac{1}{\sqrt n}$*
+*$L/S$ inside its $\pm 2\sigma/S$ envelope, which closes like $1/\sqrt n$*
 
 The app shows your relative luck $\frac{L}{S}$ over time using an assumption of equal splitting $s_i = \frac{T_i}{k_i}$ (where $k_i$ are the number of people splitting meal $i$) as a baseline. We can see that the error is decreasing like $\frac{1}{\sqrt n}$ which is pretty cool to see!
