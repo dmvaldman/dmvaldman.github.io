@@ -4,7 +4,7 @@
   --color-text-muted: #878580;
   --color-text-faint: #575653;
   --color-link: #CECDC3;
-  --color-link-active: #efeee5;
+  --color-link-active: #5d93c0;
   --color-black: #100F0F;
   --color-dark-gray: #202020;
   --color-gray: #575653;
@@ -122,6 +122,11 @@ h1 {
   font-weight: bold;
 }
 
+.post h1 {
+  margin: var(--spacing-lg) 0 var(--spacing-lg) 0 !important;
+  font-style: italic;
+}
+
 h2 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-bolder);
@@ -129,6 +134,7 @@ h2 {
 
 .post h2 {
   margin: var(--spacing-md) 0 var(--spacing-md) 0 !important;
+  font-style: italic;
 }
 
 h3 {
@@ -138,6 +144,7 @@ h3 {
 
 .post h3 {
   margin: var(--spacing-md) 0 var(--spacing-md) 0 !important;
+  font-style: italic;
 }
 
 h4 {
@@ -400,10 +407,6 @@ hr.section-divider {
 
 .post sup a.footnote {
   position: static;
-}
-
-.post h1 {
-  font-size: var(--font-size-xxl);
 }
 
 .post img {
