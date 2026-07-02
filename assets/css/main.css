@@ -76,7 +76,7 @@ body {
   margin-top: calc(-1 * var(--spacing-md));
   margin-bottom: var(--spacing-md);
   font-style: italic;
-  line-height: .6em;
+  line-height: 1em;
 }
 
 .footnotes {
