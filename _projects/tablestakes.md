@@ -7,102 +7,100 @@ link: tablestakes.cc
 tags: [Web]
 ---
 
-How do you split a bill? Do you each get separate checks (slow but fair)? Does everyone throw in their card and split evenly (slow and not fair)? Does one person pay and everyone else pays them (slow and maybe fair)? Does one person treat everyone (fast but not fair)? If only there was a way that was both fast and fair! Well, turns out there is, but it requires a certain amount of faith.
+How do *you* split a bill? Do you each get separate checks (slow but fair)? Does everyone split evenly (slow and unfair)? Does one person pay and everyone else pays them (slow and maybe fair)? Does one person treat everyone (fast but unfair)? If only there were a way that was both fast and fair! Well, turns out there is, but it requires a certain amount of faith.
 
-Years ago I came across a [fascinating article](https://messymatters.com/expectorant/) about these statisticians who devised a way to split a bill that's as fast as "credit card roulette" (one person chosen randomly pays for everyone) while also being fair. Amazingly, their procedure asks for only a single piece of information about the meal!
+![](/assets/img/tablestakes/quadrants.png)
 
-In their formulation one person pays the bill, but that person is chosen probabilistically based on the meal. If you keep paying this way, on average you will pay what you owe. And there's no way to cheat! A helpful mental frame is that though in reality you never actually pay what you owe, you are always paying what you owe "in expectation". That is, the chance you pay the bill is equal to your share of it. You operate calmly inside an uncollapsed platonic universe of probabilities, meanwhile violent collapse is happening all around you.
+Years ago I came across a [fascinating article](https://messymatters.com/expectorant/) from these statisticians who devised a way to split a bill that's as fast as "credit card roulette" (one person chosen randomly pays for everyone) while also being fair. Amazingly, once given the receipt, their procedure only asks for a single piece of information about the meal!
 
-Here's how it works, and it's quite simple, albeit counterintuitive. Imagine the bill as a pie, and each item is a wedge whose area equals that item's fraction of the total. Now, throw a dart at the pie. Whoever's item the dart lands on pays for the meal. That's it! It's straightforward to see that the probability the dart lands on one of your items is exactly your share of the bill. Notice though, we don't need to keep record of who bought what, we just need to ask who bought the item the dart landed on. By choosing an item weighted by its cost, you're encapsulating all the information you need to choose the person fairly.
+In their formulation, one person pays the bill, but that person is chosen probabilistically based on the meal. If you keep paying this way, on average you will pay what you owe. And there's no way to cheat! A helpful mental frame is that though in reality you never actually pay what you owe, you are always paying what you owe "in expectation." That is, the chance you pay the bill is equal to your share of it. You operate calmly inside an uncollapsed platonic universe of probabilities, meanwhile violent collapse is happening all around you.
+
+Here's how it works. It's quite simple, albeit counterintuitive. Imagine the bill as a pie, and each item is a wedge whose area is that item's fraction of the total. Now, throw a dart at the pie. Whoever's item the dart lands on pays for the meal. That's it! The probability the dart lands on one of your items is exactly your share of the bill (your share is the area of all your wedges over the area of the pie). Notice though, we don't need to keep record of who bought what, we just need to ask who bought the item the dart landed on. By choosing an item weighted by its cost, you're encapsulating all the information you need to choose the person fairly.
+
+![](/assets/img/tablestakes/pie.png)
 
 Of course, it's not that straightforward to select an item weighted by its costs in your head, so I made a web app [tablestakes.cc](tablestakes.cc) for that. For each meal, take a picture of the receipt and the app selects an item according to the above process, whoever bought that item pays!
 
 A few edge cases to consider:
 
-- **What if the item picked was shared between people?**\\
-Choose the person based on how much of the shared item they had. E.g., it was evenly shared, randomly pick the person. The way to see this is that the dart landed on the wedge of a single item, and we are now splitting that wedge into subwedges according to how much each sharer consumed and asking which subwedge the dart landed on.
+- **What if the item selected was shared between people?**\\
+Choose the person based on how much of the shared item they had. E.g., if it was evenly shared, randomly pick the person. The way to see this is that we are now splitting the wedge the dart landed on into subwedges according to how much each sharer consumed and asking "which subwedge did the dart land on?"
 
 - **What if more than one person ordered the selected item?**\\
-Randomly pick the payee from the people that ordered the item. The way to see this is to imagine that all the items were really just one item shared evenly by each person who ordered it, and you are back in the case above where the item is evenly shared.
+Randomly pick the payer from the people that ordered the item. The way to see this is to imagine that all the items were really just one item shared evenly by each person who ordered it, and you are back in the case above where the item is evenly shared.
 
 - **What if you never eat with the same people again?**\\
-All that matters is how many times you play, not who you eat with. The fewer times you play, you can be lucky or unlucky, but if you play a lot, it will work out.
+All that matters is how many times you play, not who you eat with. The fewer times you play, you can be lucky or unlucky, but if you play a lot, it will work out, and that's true for everyone you eat with, too.
 
-- **What about tipping?**\\
-Since a tip is a fixed percent of the meal, it doesn't change the relative sizes of the item wedges in the pie. So it's safe to ignore.
-
-## Analysis (Optional)
+## Analysis (optional)
 
 That you are expected to pay what you owe is now clear, what's less clear is just how far away you get from paying (or not) what you owe at any given time.
 
 A few questions may come to mind:
-- [How can I measure what I actually paid vs what I should have paid?](#how-can-i-get-a-sense-of-my-payouts-over-time-vs-what-i-should-have-spent)
+- [How can I measure what I actually paid vs what I owe?](#how-can-i-get-a-sense-of-my-payouts-over-time-vs-what-i-should-have-spent)
 - [How many times do I need to play before things "even out"?](#how-many-times-do-i-need-to-play-before-things-even-out)
-- [Should I really use this for that michelin star meal I'm having tonight, or just that coffee with a friend?](#does-bill-size-matter)
+- [Should I really use this for that fancy meal, or just that coffee with a friend?](#does-bill-size-matter)
 
 Let's analyze this game rigorously to get at some of these questions.
 
-Say the $i^{\text{th}}$ bill has total $T_i$, and your actual share (which we don't record) is $s_i$. You'll pay the bill with probability $p_i = \frac{s_i}{T_i}$, otherwise you pay nothing. Define what you actually pay as the random variable $X_i$.
+Say the $i^{\text{th}}$ bill has total $T_i$, and what you actually owe (which we don't record) is $s_i$. You'll pay the bill with probability $p_i = \frac{s_i}{T_i}$, otherwise you pay nothing. Let's define what you actually pay, $X_i$, and your luck $L_i$ as what you owed minus what you paid:.
 
 $$
-X_i =
+\begin{align}
+X_i = &
 \begin{cases}
-T_i & \text{with probability } p_i,\\
+T_i & \text{with probability } p_i,\\[0.4em]
 0   & \text{with probability } 1 - p_i,
-\end{cases}
+\end{cases} \\
+L_i = & s_i - X_i
+\end{align}
 $$
 
-Let's define your luck $L_i$ as what you owed minus what you actually paid: $L_i = s_i - X_i$. This is mean 0 and, since $s_i$ is fixed, its variance is the variance of $X_i$ which is $T_i^2 p_i (1 - p_i)$. We want to track how your luck $L_i$ aggregates over many meals $L = \sum_{i} L_i$.
-
-By the central limit theorem, your aggregate luck $L$ is approximated by a normal distribution. Since each meal is independent, the variance of this distribution is the sum of variances of each meal
+Your luck $L_i$ is mean 0 and, since $s_i$ is fixed, its variance is the variance of $X_i$ which is $T_i^2 p_i (1 - p_i)$. We want to track how your luck $L_i$ aggregates over many meals $L = \sum_{i} L_i$. By the central limit theorem, your aggregate luck $L$ is approximated by a normal distribution. Since each meal is independent, the variance of this distribution is the sum of variances of each meal
 
 $$
 \begin{aligned}
-L &\sim N(0, \sigma^2) \\
+L &\sim N(0, \sigma^2) \\[0.4em]
 \sigma^2 &= \sum_i T_i^2 p_i (1 - p_i)
 \end{aligned}
 $$
 
-### How can I get a sense of my payouts over time vs what I should have spent?
+The variance of your luck accumulates over time, but as a percent of what you owe it becomes negligable over time. Define $S = \sum_i S_i$ the sum of all you owe. A natural measure for comparing your payouts to what you should have spent is $\frac{L}{S}$, the percentage you are up/down versus what you owe.
+
+$$
+\frac{L}{S} \sim N\left(0, \left(\frac{\sigma}{S}\right)^2\right)
+$$
+
+### How can I get a sense of my payouts over time vs what I owe?
 
 Though we don't record what you actually spent, we can estimate it. The app does gather how many people are dining together, $k_i$, so let's assume what you owe is an even split of the meal, $s_i = \frac{T_i}{k_i}$. Then $p_i = \frac{1}{k_i}$ and
 
 $$
 \begin{align}
-L = & \sum_i \big(\frac{T_i}{k_i} - X_i\big) \\
+L = & \sum_i \left(\frac{T_i}{k_i} - X_i\right) \\[0.2em]
 \sigma^2 = & \sum_i T_i^2 \frac{1}{k_i} \left(1 - \frac{1}{k_i}\right)
 \end{align}
 $$
 
-which we can calculate.
+(It turns out we can even relax the assumption that what you owe is an even split of the meal. We need only assume that on average you owe an even split of the meal and the math works out to the same functional form. It's only if you consistently over- or under-order that this measure becomes biased.)
 
-A measure of how lucky/unlucky you are is how many standard deviations out your luck is, $\frac{L}{\sigma} \sim N(0, 1)$. A positive score means you're on the lucky side of things, a negative score means you're on the unlucky side of things. We show this score in the app.
+Now we can calculate $\frac{L}{S}$ and compare it to $\frac{\sigma}{S}$ to see what percent you are up/down versus what's expected. The app plots this over time. Here's my current view
 
-It turns out we can even relax the assumption that what you owe is an even split of the meal. We only need to assume that on average you actually owe an even split of the meal and the math works out to the same functional form. It's only if you consistently over- or under-order that this measure become biased.
+![](/assets/img/tablestakes/luck_time.png)
+*$L/S$ inside its $\pm 2\sigma/S$ envelope which narrows as $\frac{1}{\sqrt n}$. The 0% line is the even-split baseline.*
 
 ### How many times do I need to play before things "even out"?
 
-Though your expected luck for any meal is 0, the variance of your luck accumulates. What's important to consider is not just how lucky you are at any time, but your luck as a percentage of what you owe $S = \sum_i s_i$. This is the percent error of what you pay vs what you owe. $S$ grows linearly with the number of meals, while $L$ grows like its standard deviation, which scales like the square root of the number of meals. So for $n$ meals,
+$S$ grows linearly with the number of meals, while $L$ grows like its standard deviation, which scales like the square root of the number of meals. So for $n$ meals,
 
 $$
 \frac{L}{S} \sim \frac{\sqrt n}{n} \to 0
 $$
 
-In this sense the payments work out: as you keep playing, the amount you are ahead or behind becomes vanishingly small compared to the total amount you owe, and this scales like $\frac{1}{\sqrt n}$. So, for example, you are around 10% of what you owe at around 100 meals.
-
+As you keep playing, the amount you are ahead or behind becomes vanishingly small compared to the total amount you owe, and this ratio scales like $\frac{1}{\sqrt n}$. For example, after about 100 meals you should be within 10% of what you owe.
 
 ### Does bill size matter?
 
-Something to notice about $\sigma^2$ is that a bill's total enters your variance quadratically, so one that's $k$ times your usual carries about $m^2$ ordinary meals' worth of swing. It dominates your luck until you've logged roughly $m^2$ other meals, and fades only after that. Equivalently, a bill dominates all other meals whenever its total $T_{\text{big}} \gtrsim \sqrt n T_{\text{avg}}$. The longer you play, the less any single bill can dominate.
+Something to notice about $\sigma^2$ is that a bill's total enters your variance quadratically, so one that's $m$ times your usual carries about $m^2$ ordinary meals' worth of swing. It dominates your luck until you've logged roughly $m^2$ other meals, and fades only after that. The longer you play, though, the less any single bill can dominate. Equivalently, a bill only dominates all other meals whenever its total is more than $\sqrt n T_{\text{avg}}$.
 
-## Real Usage
-
-I've been using [TableStakes](https://tablestakes.cc) anytime a friend is willing to entertain the idea. Here's been my experience so far
-
-<div class="image-grid">
-<img src="/assets/img/tablestakes/luck_time.png" alt="luck over time">
-<img src="/assets/img/tablestakes/luck_current.png" alt="current luck">
-</div>
-*$L/S$ inside its $\pm 2\sigma/S$ envelope, which closes like $1/\sqrt n$*
-
-The app shows your relative luck $\frac{L}{S}$ over time using an assumption of equal splitting $s_i = \frac{T_i}{k_i}$ (where $k_i$ are the number of people splitting meal $i$) as a baseline. We can see that the error is decreasing like $\frac{1}{\sqrt n}$ which is pretty cool to see!
+If you keep playing, none of this matters, but to help track things in the early days, I'd reserve TableStakes for smaller bills until you accumulate a healthy total.

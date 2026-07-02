@@ -3,8 +3,8 @@
   --color-text: #CECDC3;
   --color-text-muted: #878580;
   --color-text-faint: #575653;
-  --color-link: #CECDC3;
-  --color-link-active: #5d93c0;
+  --color-link: #5d93c0;
+  --color-link-active: #CECDC3;
   --color-black: #100F0F;
   --color-dark-gray: #202020;
   --color-gray: #575653;
@@ -73,8 +73,10 @@ body {
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
-  margin: var(--spacing-xs) 0;
+  margin-top: calc(-1 * var(--spacing-md));
+  margin-bottom: var(--spacing-md);
   font-style: italic;
+  line-height: .6em;
 }
 
 .footnotes {
@@ -115,6 +117,7 @@ strong {
 h1, h2, h3, h4, h5, h6 {
   margin: var(--spacing-sm) 0 var(--spacing-sm) 0;
   font-weight: var(--font-bold);
+  line-height: 1.2em;
 }
 
 h1 {
@@ -138,7 +141,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-bolder);
 }
 
