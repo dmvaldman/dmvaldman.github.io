@@ -104,3 +104,7 @@ As you keep playing, the amount you are ahead or behind becomes vanishingly smal
 Something to notice about $\sigma^2$ is that a bill's total enters your variance quadratically, so one that's $m$ times your usual carries about $m^2$ ordinary meals' worth of swing. It dominates your luck until you've logged roughly $m^2$ other meals, and fades only after that. The longer you play, though, the less any single bill can dominate. Equivalently, a bill only dominates all other meals when its total is more than $\sqrt n T_{\text{avg}}$.
 
 If you keep playing, none of this matters, but to help track things in the early days, I'd reserve TableStakes for smaller bills until you accumulate a healthy total.
+
+--------------
+
+Give [TableStakes](https://tablestakes.cc) a try and do let me know how it goes!
