@@ -166,6 +166,7 @@ h4 {
 a {
   text-decoration: none;
   color: var(--color-link);
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -302,7 +303,7 @@ hr.section-divider {
 
 .section-header {
   color: var(--color-text-muted);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-thin);
   margin: var(--spacing-lg) 0 0 0;
 }
@@ -469,6 +470,7 @@ hr.section-divider {
   border: 1px solid var(--color-text-faint);
   padding: 6px 14px;
   display: inline-block;
+  transition: color 0.2s ease, border 0.2s ease;
 }
 
 .pagination-button:hover {
@@ -497,6 +499,11 @@ hr.section-divider {
   display: inline-block;
   min-width: 55px;
   text-align: center;
+  color: var(--color-text-muted);
+}
+
+.menu-content a:hover {
+  color: var(--color-text);
 }
 
 .menu-content a:nth-child(1) { min-width: 58px; }  /* Home */
@@ -615,7 +622,6 @@ th, td {
   margin-left: 16px;
   color: var(--color-text-muted);
   text-decoration: none;
-  transition: color 0.2s ease;
   line-height: inherit;
   vertical-align: baseline;
 }
@@ -746,7 +752,6 @@ blockquote em:before {
 
   /* Section headers */
   .section-header {
-    font-size: var(--font-size-lg);
     font-weight: var(--font-regular);
     margin-top: var(--spacing-md);
   }
