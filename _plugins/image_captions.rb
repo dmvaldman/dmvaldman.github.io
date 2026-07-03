@@ -4,7 +4,7 @@ module ImageCaptions
 
     html = html.gsub(
       %r{<p>(\s*(?:<a\b[^>]*>\s*)?<img\b[^>]*>\s*(?:</a>\s*)?)<em>(.*?)</em>\s*</p>}m,
-      "<p>\\1</p>\n<div class=\"image-caption\">\\2</div>"
+      "<p>\\1<span class=\"image-caption\">\\2</span></p>"
     )
 
     html.gsub(
