@@ -662,6 +662,7 @@ blockquote em:before {
   gap: 16px;
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
+  margin-top: var(--spacing-lg);
 }
 
 .mug {
