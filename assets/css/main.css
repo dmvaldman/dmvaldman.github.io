@@ -606,6 +606,8 @@ th, td {
 .social-icons {
   display: flex;
   align-items: baseline;
+  font-size: var(--font-size-xl);
+  line-height: 1.2em;
 }
 
 .social-icon {
@@ -614,7 +616,7 @@ th, td {
   color: var(--color-text-muted);
   text-decoration: none;
   transition: color 0.2s ease;
-  line-height: 1;
+  line-height: inherit;
   vertical-align: baseline;
 }
 
@@ -626,7 +628,7 @@ th, td {
   display: inline-block;
   width: 18px;
   height: 18px;
-  vertical-align: text-bottom;
+  vertical-align: -0.125em;
 }
 
 table + p em {
