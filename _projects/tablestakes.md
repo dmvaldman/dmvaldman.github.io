@@ -11,7 +11,7 @@ How do *you* split a bill? Do you each get separate checks (slow but fair)? Does
 
 ![](/assets/img/tablestakes/quadrants.png)
 
-Years ago I came across a [fascinating article](https://messymatters.com/expectorant/) about statisticians who devised a way to split a bill that's is both fast and fair, but based on chance. Amazingly, given the receipt, their procedure only asks for a single piece of information about the meal!
+Years ago I came across a [fascinating article](https://messymatters.com/expectorant/) about statisticians who devised a way to split a bill that is both fast and fair, but based on chance. Amazingly, given the receipt, their procedure only asks for a single piece of information about the meal!
 
 In their formulation, one person pays the bill, but that person is chosen probabilistically based on the meal. If you keep paying according to their rules, on average you will pay what you owe. And there's no way to cheat! A helpful mental frame is that though in reality you never actually pay what you owe, you are always paying what you owe "in expectation." That is, the chance you pay the bill is equal to your share of it. You operate calmly inside an uncollapsed platonic universe of probabilities, meanwhile violent collapse is happening all around you.
 
@@ -37,7 +37,7 @@ All that matters is how many times you play, not who you eat with. The fewer tim
 That you are expected to pay what you owe is now clear, what's less clear is just how your actual payments drift from what you owe over time.
 
 A few questions may come to mind:
-- [How can I measure what I actually paid vs what I owe?](#how-can-i-get-a-sense-of-my-payouts-over-time-vs-what-i-should-have-spent)
+- [How can I measure what I actually paid vs what I owe?](#how-can-i-get-a-sense-of-my-payouts-over-time-vs-what-i-owe)
 - [How many times do I need to play before things "even out"?](#how-many-times-do-i-need-to-play-before-things-even-out)
 - [Should I really use this for that fancy meal, or just that coffee with a friend?](#does-bill-size-matter)
 
