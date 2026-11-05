@@ -14,8 +14,8 @@ social:
 
 # Pagination settings
 pagination:
-  projects: 5
-  writing: 5
+  projects: 6
+  writing: 6
   next_page: 'Newer'
   previous_page: 'Older'
 

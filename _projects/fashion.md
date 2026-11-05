@@ -3,7 +3,7 @@ layout: post
 title: Make Clothes with AI
 excerpt: Driving CLO 3D with OpenAI's Astra
 date: 2026-10-15
-tags: []
+tags: [Agents]
 ---
 
 I've been teaching OpenAI's Astra to operate [CLO 3D](https://www.clo3d.com/en), a CAD program built for fashion. Designers use it to stitch 2D fabric panels together and simulate the resulting garment on an avatar. I wanted to know whether AI could take a single image of a garment and drive CLO through the whole construction process, known as [patternmaking](https://en.wikipedia.org/wiki/Pattern_(sewing)).
