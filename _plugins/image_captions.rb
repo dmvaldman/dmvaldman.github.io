@@ -7,6 +7,11 @@ module ImageCaptions
       "<p>\\1<span class=\"image-caption\">\\2</span></p>"
     )
 
+    html = html.gsub(
+      %r{(<iframe\b[^>]*>\s*</iframe>(?:\s*</p>)?)\s*<p><em>(.*?)</em></p>}m,
+      "\\1\n<div class=\"image-caption\">\\2</div>"
+    )
+
     html.gsub(
       %r{(<(div|p)\b[^>]*class="[^"]*\bimage-grid\b[^"]*"[^>]*>.*?</\2>)\s*<p><em>(.*?)</em></p>}m,
       "\\1\n<div class=\"image-caption\">\\3</div>"

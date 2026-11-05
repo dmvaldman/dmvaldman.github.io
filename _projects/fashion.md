@@ -1,8 +1,8 @@
 ---
-layout: draft
+layout: post
 title: Make Clothes with AI
 excerpt: Driving CLO3D with OpenAI's Astra
-date: 2026-8-15
+date: 2026-10-15
 tags: []
 ---
 
