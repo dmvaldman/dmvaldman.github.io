@@ -11,6 +11,9 @@
       {% endif %}
       <a href="{{ site.github.url }}{{ item.url }}" data-text="{{ item.name }}" {% if is_active %}class="active"{% endif %}>{{ item.name }}</a>
     {% endfor %}
+    {% if jekyll.environment == "development" %}
+      <a href="{{ site.github.url }}/drafts/" data-text="Drafts" {% if page.url == '/drafts/' %}class="active"{% endif %}>Drafts</a>
+    {% endif %}
   </nav>
   <nav class="social-icons">
     {% include social-icons.html %}

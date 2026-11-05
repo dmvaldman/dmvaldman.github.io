@@ -1,25 +1,32 @@
-<!doctype html>
-<html>
+---
+layout: default
+---
 
-{% include head.html %}
+<div class="post">
+<div class="post-header">
+  <h1>
+    {{ page.title }}
+    <span id="draft">Draft</span>
+  </h1>
+  <span class="post-date">
+    {{ page.date | date: "%Y" }} · {{ page.date | date: "%B %-d" }} · {% include read-time.html %}
+  </span>
+</div>
 
-<body>
-  <div class="container">
-    <div class="post">
-        <h1>
-            {{ page.title }}
-            <span id="draft">Draft</span>
-          </h1>
+{% if page.image %}
+<div class="banner">
+  {% if page.link %}
+    <a href="{{ page.link }}" target="_blank">
+      <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+    </a>
+  {% else %}
+    <img src="/assets/img/{{ page.image }}" alt="{{ page.title }}">
+  {% endif %}
+  {% if page.caption %}
+    <div class="image-caption">{{ page.caption }}</div>
+  {% endif %}
+</div>
+{% endif %}
 
-          {% if page.image %}
-            <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-            {% if page.caption %}
-              <div class="image-caption">{{ page.caption }}</div>
-            {% endif %}
-          {% endif %}
-
-          {{ content | image_captions }}
-    </div>
-  </div>
-</body>
-</html>
+{{ content | image_captions }}
+</div>

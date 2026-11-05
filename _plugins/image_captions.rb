@@ -8,8 +8,8 @@ module ImageCaptions
     )
 
     html.gsub(
-      %r{(<div\b[^>]*class="[^"]*\bimage-grid\b[^"]*"[^>]*>.*?</div>)\s*<p><em>(.*?)</em></p>}m,
-      "\\1\n<div class=\"image-caption\">\\2</div>"
+      %r{(<(div|p)\b[^>]*class="[^"]*\bimage-grid\b[^"]*"[^>]*>.*?</\2>)\s*<p><em>(.*?)</em></p>}m,
+      "\\1\n<div class=\"image-caption\">\\3</div>"
     )
   end
 end
