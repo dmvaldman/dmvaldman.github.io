@@ -1,14 +1,14 @@
 ---
-layout: draft
+layout: post
 title: Building a Voice Ring
 excerpt: "Control your phone with an AI voice ring"
-date: 2026-4-15
-tags: ["Hardware"]
+date: 2026-3-15
+tags: ["esp32"]
 ---
 
 Software is dead, so let's build some hardware.
 
-![](/assets/img/ring/ring.png)
+![Ring](/assets/img/ring/ring.png)
 
 A ring enclosure with esp32 board, mic, battery and pushbutton to be exact.
 
